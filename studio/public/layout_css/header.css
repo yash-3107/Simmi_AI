@@ -1,0 +1,419 @@
+/*! CSS Used from: https://vanij.adya.ai/assets/index-Gr8ZDnGk.css */
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border-width: 0 !important;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.sticky {
+    position: sticky !important;
+}
+
+.top-0 {
+    top: 0 !important;
+}
+
+.z-\[52\] {
+    z-index: 52 !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.inline-flex {
+    display: inline-flex !important;
+}
+
+.h-10 {
+    height: 2.5rem !important;
+}
+
+.h-14 {
+    height: 3.5rem !important;
+}
+
+.h-4 {
+    height: 1rem !important;
+}
+
+.h-9 {
+    height: 2.25rem !important;
+}
+
+.h-full {
+    height: 100% !important;
+}
+
+.w-10 {
+    width: 2.5rem !important;
+}
+
+.w-4 {
+    width: 1rem !important;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.items-center {
+    align-items: center !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.justify-between {
+    justify-content: space-between !important;
+}
+
+.gap-2 {
+    gap: .5rem !important;
+}
+
+.gap-4 {
+    gap: 1rem !important;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap !important;
+}
+
+.rounded {
+    border-radius: .25rem !important;
+}
+
+.rounded-full {
+    border-radius: 9999px !important;
+}
+
+.rounded-md {
+    border-radius: calc(var(--radius) - 2px) !important;
+}
+
+.rounded-b-lg {
+    border-bottom-right-radius: var(--radius) !important;
+    border-bottom-left-radius: var(--radius) !important;
+}
+
+.border {
+    border-width: 1px !important;
+}
+
+.border-\[3px\] {
+    border-width: 3px !important;
+}
+
+.border-t-0 {
+    border-top-width: 0px !important;
+}
+
+.border-background {
+    border-color: hsl(var(--background)) !important;
+}
+
+.border-muted {
+    border-color: hsl(var(--muted)) !important;
+}
+
+.bg-page-background {
+    background-color: hsl(var(--page-background)) !important;
+}
+
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+}
+
+.from-\[\#DEEDFA\] {
+    --tw-gradient-from: #DEEDFA var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: rgb(222 237 250 / 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.from-primary {
+    --tw-gradient-from: hsl(var(--primary)) var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: hsl(var(--primary) / 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-\[\#9ED0F9\] {
+    --tw-gradient-to: #9ED0F9 var(--tw-gradient-to-position) !important;
+}
+
+.to-primary\/60 {
+    --tw-gradient-to: hsl(var(--primary) / .6) var(--tw-gradient-to-position) !important;
+}
+
+.bg-clip-text {
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+}
+
+.p-1 {
+    padding: .25rem !important;
+}
+
+.px-3 {
+    padding-left: .75rem !important;
+    padding-right: .75rem !important;
+}
+
+.px-4 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.pr-10 {
+    padding-right: 2.5rem !important;
+}
+
+.text-sm {
+    font-size: .875rem !important;
+    line-height: 1.25rem !important;
+}
+
+.text-xl {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+}
+
+.font-bold {
+    font-weight: 700 !important;
+}
+
+.font-medium {
+    font-weight: 500 !important;
+}
+
+.text-foreground {
+    color: hsl(var(--foreground)) !important;
+}
+
+.text-secondary-foreground {
+    color: hsl(var(--secondary-foreground)) !important;
+}
+
+.text-transparent {
+    color: transparent !important;
+}
+
+.opacity-100 {
+    opacity: 1 !important;
+}
+
+.shadow {
+    --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1) !important;
+    --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.ring-offset-background {
+    --tw-ring-offset-color: hsl(var(--background)) !important;
+}
+
+.transition-all {
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1) !important;
+    transition-duration: .15s !important;
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke !important;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1) !important;
+    transition-duration: .15s !important;
+}
+
+.duration-200 {
+    transition-duration: .2s !important;
+}
+
+.duration-300 {
+    transition-duration: .3s !important;
+}
+
+.ease-in-out {
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1) !important;
+}
+
+.duration-200 {
+    animation-duration: .2s !important;
+}
+
+.duration-300 {
+    animation-duration: .3s !important;
+}
+
+.ease-in-out {
+    animation-timing-function: cubic-bezier(.4, 0, .2, 1) !important;
+}
+
+:focus-visible {
+    outline: none !important;
+    outline-offset: 0px !important;
+}
+
+.hover\:scale-105:hover {
+    --tw-scale-x: 1.05 !important;
+    --tw-scale-y: 1.05 !important;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+
+.hover\:border:hover {
+    border-width: 1px !important;
+}
+
+.hover\:border-primary\/20:hover {
+    border-color: hsl(var(--primary) / .2) !important;
+}
+
+.hover\:bg-accent\/80:hover {
+    background-color: hsl(var(--accent) / .8) !important;
+}
+
+.hover\:bg-background:hover {
+    background-color: hsl(var(--background)) !important;
+}
+
+.hover\:text-accent-foreground:hover {
+    color: hsl(var(--accent-foreground)) !important;
+}
+
+.disabled\:pointer-events-none:disabled {
+    pointer-events: none !important;
+}
+
+.disabled\:\!bg-transparent:disabled {
+    background-color: transparent !important;
+}
+
+.disabled\:bg-muted:disabled {
+    background-color: hsl(var(--muted)) !important;
+}
+
+.disabled\:text-foreground\/50:disabled {
+    color: hsl(var(--foreground) / .5) !important;
+}
+
+.disabled\:opacity-100:disabled {
+    opacity: 1 !important;
+}
+
+.\[\&_svg\]\:pointer-events-none svg {
+    pointer-events: none !important;
+}
+
+.\[\&_svg\]\:size-4 svg {
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+.\[\&_svg\]\:shrink-0 svg {
+    flex-shrink: 0 !important;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+:before,
+:after {
+    --tw-content: "";
+}
+
+h1 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    text-transform: none;
+}
+
+button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+:disabled {
+    cursor: default;
+}
+
+img,
+svg {
+    display: block;
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    border-color: hsl(var(--border));
+}
+
+*,
+:before,
+:after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
