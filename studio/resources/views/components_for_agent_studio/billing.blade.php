@@ -1,6 +1,5 @@
-
 <main class="flex-1 
-px-6 pt-4" style="height:90vh !important;overflow: scroll;">
+px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
   <div class="flex flex-col gap-3">
     <div class="w-full flex justify-between items-center">
       <h1 class="text-2xl font-semibold flex gap-3 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24"

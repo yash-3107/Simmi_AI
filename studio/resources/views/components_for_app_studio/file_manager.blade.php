@@ -1,12 +1,10 @@
-
 <main class="flex-1 
-px-6 pt-4" style="height:90vh !important;overflow: scroll;">
+px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
     <div id="flow-deployment-index-container" class="space-y-3">
         <div class="flex text-2xl gap-3 items-center" id="components-index-breadcrumbs-container"><svg
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-folder w-5 h-5" aria-hidden="true" data-testid="icon-folder"
-                style="stroke-width: 1.5;">
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder w-5 h-5"
+                aria-hidden="true" data-testid="icon-folder" style="stroke-width: 1.5;">
                 <path
                     d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z">
                 </path>
@@ -30,9 +28,8 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
                     <div class="w-full flex items-center justify-center">
                         <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 max-w-5xl items-center justify-center">
                             <div class="h-96 w-full flex justify-center col-span-2"><img
-                                    src="https://vanij.adya.ai/assets/file-manager-Ciw0F9pP.webp"
-                                    alt="Start Building Your Space" class="h-full w-full object-contain"
-                                    draggable="false"></div>
+                                    src="https://vanij.adya.ai/assets/file-manager-Ciw0F9pP.webp" alt="Start Building Your Space"
+                                    class="h-full w-full object-contain" draggable="false"></div>
                             <div class="col-span-3 flex flex-col gap-y-12">
                                 <div class="flex flex-col gap-y-4">
                                     <h1 class="text-foreground font-semibold text-xl">Start Building Your Space</h1>

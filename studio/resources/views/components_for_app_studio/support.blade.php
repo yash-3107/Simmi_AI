@@ -1,12 +1,10 @@
-
 <main class="flex-1 
-px-6 pt-4" style="height:90vh !important;overflow: scroll;">
+px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
     <div id="flow-deployment-index-container" class="space-y-3">
         <div class="flex text-2xl gap-3 items-center" id="components-index-breadcrumbs-container"><svg
-                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-headset w-5 h-5" aria-hidden="true" data-testid="icon-headset"
-                style="stroke-width: 1.5;">
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-headset w-5 h-5"
+                aria-hidden="true" data-testid="icon-headset" style="stroke-width: 1.5;">
                 <path
                     d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z">
                 </path>
@@ -27,10 +25,9 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
                 <div class="w-full flex items-center justify-between">
                     <p class="font-semibold text-2xl leading-[32.78px] mb-3">All Tickets</p><button
                         class="noflow nopan nodelete nodrag inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-100 disabled:disabled-state [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 underline-offset-4 hover:underline text-primary disabled:pointer-events-none disabled:text-primary/50 bg-transparent h-9 px-3 rounded-md"
-                        type="button" id="support-feedback-button"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-message-square-more w-4 h-4" aria-hidden="true"
+                        type="button" id="support-feedback-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-message-square-more w-4 h-4" aria-hidden="true"
                             data-testid="icon-message-square-more" style="stroke-width: 1.5;">
                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                             <path d="M8 10h.01"></path>
@@ -44,17 +41,15 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
                             <div class="tracking-tight text-sm font-medium space-x-2"><span>Total Tickets</span><span
                                     class="inline-block">
                                     <div class="cursor-help text-muted-foreground h-3 w-3" data-state="closed"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                             class="lucide lucide-info h-full w-full" aria-hidden="true">
                                             <circle cx="12" cy="12" r="10"></circle>
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
+                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-tickets h-5 w-5 text-muted-foreground shrink-0" aria-hidden="true"
                                 data-testid="icon-tickets" style="stroke-width: 2;">
                                 <path d="m4.5 8 10.58-5.06a1 1 0 0 1 1.342.488L18.5 8"></path>
@@ -73,17 +68,15 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
                             <div class="tracking-tight text-sm font-medium space-x-2"><span>Open Tickets</span><span
                                     class="inline-block">
                                     <div class="cursor-help text-muted-foreground h-3 w-3" data-state="closed"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                             class="lucide lucide-info h-full w-full" aria-hidden="true">
                                             <circle cx="12" cy="12" r="10"></circle>
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
+                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="lucide lucide-ticket h-5 w-5 text-muted-foreground shrink-0" aria-hidden="true"
                                 data-testid="icon-ticket" style="stroke-width: 2;">
                                 <path
@@ -103,19 +96,17 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
                             <div class="tracking-tight text-sm font-medium space-x-2"><span>Reopen Tickets</span><span
                                     class="inline-block">
                                     <div class="cursor-help text-muted-foreground h-3 w-3" data-state="closed"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                             class="lucide lucide-info h-full w-full" aria-hidden="true">
                                             <circle cx="12" cy="12" r="10"></circle>
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-ticket-plus h-5 w-5 text-muted-foreground shrink-0"
-                                aria-hidden="true" data-testid="icon-ticket-plus" style="stroke-width: 2;">
+                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-ticket-plus h-5 w-5 text-muted-foreground shrink-0" aria-hidden="true"
+                                data-testid="icon-ticket-plus" style="stroke-width: 2;">
                                 <path
                                     d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
                                 </path>
@@ -132,19 +123,17 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
                             <div class="tracking-tight text-sm font-medium space-x-2"><span>Closed Tickets</span><span
                                     class="inline-block">
                                     <div class="cursor-help text-muted-foreground h-3 w-3" data-state="closed"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                             class="lucide lucide-info h-full w-full" aria-hidden="true">
                                             <circle cx="12" cy="12" r="10"></circle>
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-ticket-slash h-5 w-5 text-muted-foreground shrink-0"
-                                aria-hidden="true" data-testid="icon-ticket-slash" style="stroke-width: 2;">
+                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-ticket-slash h-5 w-5 text-muted-foreground shrink-0" aria-hidden="true"
+                                data-testid="icon-ticket-slash" style="stroke-width: 2;">
                                 <path
                                     d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
                                 </path>
@@ -160,19 +149,17 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
                             <div class="tracking-tight text-sm font-medium space-x-2"><span>Resolved Tickets</span><span
                                     class="inline-block">
                                     <div class="cursor-help text-muted-foreground h-3 w-3" data-state="closed"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                             class="lucide lucide-info h-full w-full" aria-hidden="true">
                                             <circle cx="12" cy="12" r="10"></circle>
                                             <path d="M12 16v-4"></path>
                                             <path d="M12 8h.01"></path>
                                         </svg></div>
-                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-ticket-check h-5 w-5 text-muted-foreground shrink-0"
-                                aria-hidden="true" data-testid="icon-ticket-check" style="stroke-width: 2;">
+                                </span></div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-ticket-check h-5 w-5 text-muted-foreground shrink-0" aria-hidden="true"
+                                data-testid="icon-ticket-check" style="stroke-width: 2;">
                                 <path
                                     d="M2 9a3 3 0 0 1 0 6v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a3 3 0 0 1 0-6V7a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z">
                                 </path>
