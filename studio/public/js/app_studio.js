@@ -17,7 +17,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_apps").on("click", function (event) {
+    $("#sidebar-menu-item-app-studio-apps").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({
