@@ -11,9 +11,9 @@ Route::get('/', function () {
 });
 
 //sidebar-main routes
-Route::get('/app_studio1',[SidebarController::class,'app_studio']);
-Route::get('/agent_studio',[SidebarController::class,'agent_studio']);
-Route::get('/sidebar_home',[SidebarController::class,'sidebar_home']);
+Route::get('/app_studio1', [SidebarController::class, 'app_studio']);
+Route::get('/agent_studio', [SidebarController::class, 'agent_studio']);
+Route::get('/sidebar_home', [SidebarController::class, 'sidebar_home']);
 //Agent Studio Module
 Route::get('/studio/agent/overview', [AgentStudioController::class, 'overview']);
 Route::get('/studio/agent/projects', [AgentStudioController::class, 'projects']);
@@ -31,9 +31,7 @@ Route::get('/studio/agent/billing', [AgentStudioController::class, 'billing']);
 Route::get('/studio/agent/faqs', [AgentStudioController::class, 'faqs']);
 
 //App studio module
-Route::get('/studio', [StudioController::class, 'index']);
 Route::get('/studio/app/overview', [AppStudioController::class, 'overview']);
-Route::get('/studio',[StudioController::class,'index']);
 Route::get('/studio/app/overview', [AppStudioController::class, 'overview']);
 Route::get('/studio/app/apps', [AppStudioController::class, 'apps']);
 Route::get('/studio/app/deployments', [AppStudioController::class, 'deployments']);

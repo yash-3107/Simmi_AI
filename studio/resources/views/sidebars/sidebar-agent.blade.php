@@ -23,9 +23,8 @@
         <nav class="space-y-1 p-2 flex-grow overflow-y-auto"><a id="sidebar-menu-item-agent-studio-overview"
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
                 href="/agent-studio/overview" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-layout-dashboard h-4 w-4 mr-1 shrink-0" aria-hidden="true"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-layout-dashboard h-4 w-4 mr-1 shrink-0" aria-hidden="true"
                     data-testid="icon-layout-dashboard" style="stroke-width: 1.5;">
                     <rect width="7" height="9" x="3" y="3" rx="1"></rect>
                     <rect width="7" height="5" x="14" y="3" rx="1"></rect>
@@ -34,10 +33,9 @@
                 </svg><span class="truncate">Overview</span></a><a id="sidebar-menu-item-agent-studio-projects"
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
                 href="/agent-studio/projects" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-folder-git2 lucide-folder-git-2 h-4 w-4 mr-1 shrink-0" aria-hidden="true"
-                    data-testid="icon-FolderGit2" style="stroke-width: 1.5;">
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-folder-git2 lucide-folder-git-2 h-4 w-4 mr-1 shrink-0"
+                    aria-hidden="true" data-testid="icon-FolderGit2" style="stroke-width: 1.5;">
                     <path
                         d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5">
                     </path>
@@ -47,9 +45,9 @@
                 </svg><span class="truncate">Projects</span></a><a id="sidebar-menu-item-agent-studio-components"
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
                 href="/agent-studio/components" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-boxes h-4 w-4 mr-1 shrink-0"
-                    aria-hidden="true" data-testid="icon-boxes" style="stroke-width: 1.5;">
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-boxes h-4 w-4 mr-1 shrink-0" aria-hidden="true"
+                    data-testid="icon-boxes" style="stroke-width: 1.5;">
                     <path
                         d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z">
                     </path>
@@ -62,25 +60,23 @@
                     <path d="m17 16.5-5-3"></path>
                     <path d="m17 16.5 4.74-2.85"></path>
                     <path d="M17 16.5v5.17"></path>
-                    <path
-                        d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z">
+                    <path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z">
                     </path>
                     <path d="M12 8 7.26 5.15"></path>
                     <path d="m12 8 4.74-2.85"></path>
                     <path d="M12 13.5V8"></path>
                 </svg><span class="truncate">Components</span></a><a id="sidebar-menu-item-agent-studio-flow-deployment"
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
-                href="/agent-studio/flow-deployment" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-network h-4 w-4 mr-1 shrink-0"
-                    aria-hidden="true" data-testid="icon-network" style="stroke-width: 1.5;">
+                href="/agent-studio/flow-deployment" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-network h-4 w-4 mr-1 shrink-0" aria-hidden="true"
+                    data-testid="icon-network" style="stroke-width: 1.5;">
                     <rect x="16" y="16" width="6" height="6" rx="1"></rect>
                     <rect x="2" y="16" width="6" height="6" rx="1"></rect>
                     <rect x="9" y="2" width="6" height="6" rx="1"></rect>
                     <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
                     <path d="M12 12V8"></path>
-                </svg><span class="truncate">Flow Deployment</span></a><a
-                id="sidebar-menu-item-agent-studio-comp-deployment"
+                </svg><span class="truncate">Flow Deployment</span></a><a id="sidebar-menu-item-agent-studio-comp-deployment"
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
                 href="/agent-studio/component-deployment" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg"
                     width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -91,13 +87,11 @@
                     </path>
                     <path d="m3.3 7 8.7 5 8.7-5"></path>
                     <path d="M12 22V12"></path>
-                </svg><span class="truncate">Comp. Deployment</span></a><a
-                id="sidebar-menu-item-agent-studio-observability"
+                </svg><span class="truncate">Comp. Deployment</span></a><a id="sidebar-menu-item-agent-studio-observability"
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
-                href="/agent-studio/observability" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg"
-                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-file-chart-column h-4 w-4 mr-1 shrink-0" aria-hidden="true"
+                href="/agent-studio/observability" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-file-chart-column h-4 w-4 mr-1 shrink-0" aria-hidden="true"
                     data-testid="icon-file-chart-column" style="stroke-width: 1.5;">
                     <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
                     <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
@@ -108,10 +102,10 @@
             <div data-orientation="horizontal" role="none" class="shrink-0 bg-border h-[1px] w-full"></div><a
                 id="sidebar-menu-item-user-management"
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
-                href="/user-management" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users h-4 w-4 mr-1 shrink-0"
-                    aria-hidden="true" data-testid="icon-users" style="stroke-width: 1.5;">
+                href="/user-management" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-users h-4 w-4 mr-1 shrink-0" aria-hidden="true"
+                    data-testid="icon-users" style="stroke-width: 1.5;">
                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                     <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -130,8 +124,8 @@
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
                 href="/audit-trail" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="lucide lucide-flag-triangle-right h-4 w-4 mr-1 shrink-0"
-                    aria-hidden="true" data-testid="icon-flag-triangle-right" style="stroke-width: 1.5;">
+                    stroke-linejoin="round" class="lucide lucide-flag-triangle-right h-4 w-4 mr-1 shrink-0" aria-hidden="true"
+                    data-testid="icon-flag-triangle-right" style="stroke-width: 1.5;">
                     <path d="M7 22V2l10 5-10 5"></path>
                 </svg><span class="truncate">Audit Trail</span></a><a id="sidebar-menu-item-key-vault"
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
@@ -144,52 +138,52 @@
                     </path>
                     <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
                 </svg><span class="truncate">Key Vault</span></a><a id="sidebar-menu-item-support"
-                class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
-                href="/support" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="lucide lucide-headset h-4 w-4 mr-1 shrink-0" aria-hidden="true"
-                    data-testid="icon-headset" style="stroke-width: 1.5;">
+                class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10" href="/support"
+                data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-headset h-4 w-4 mr-1 shrink-0" aria-hidden="true" data-testid="icon-headset"
+                    style="stroke-width: 1.5;">
                     <path
                         d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z">
                     </path>
                     <path d="M21 16v2a4 4 0 0 1-4 4h-5"></path>
                 </svg><span class="truncate">Support</span></a><a id="sidebar-menu-item-subscription-plans"
                 class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
-                href="/subscription-plans" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-banknote h-4 w-4 mr-1 shrink-0"
-                    aria-hidden="true" data-testid="icon-banknote" style="stroke-width: 1.5;">
+                href="/subscription-plans" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" class="lucide lucide-banknote h-4 w-4 mr-1 shrink-0" aria-hidden="true"
+                    data-testid="icon-banknote" style="stroke-width: 1.5;">
                     <rect width="20" height="12" x="2" y="6" rx="2"></rect>
                     <circle cx="12" cy="12" r="2"></circle>
                     <path d="M6 12h.01M18 12h.01"></path>
                 </svg><span class="truncate">Subscription Plans</span></a><a id="sidebar-menu-item-billing"
-                class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
-                href="/billing" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="lucide lucide-receipt-text h-4 w-4 mr-1 shrink-0" aria-hidden="true"
-                    data-testid="icon-receipt-text" style="stroke-width: 1.5;">
+                class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10" href="/billing"
+                data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-receipt-text h-4 w-4 mr-1 shrink-0" aria-hidden="true" data-testid="icon-receipt-text"
+                    style="stroke-width: 1.5;">
                     <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path>
                     <path d="M14 8H8"></path>
                     <path d="M16 12H8"></path>
                     <path d="M13 16H8"></path>
                 </svg><span class="truncate">Billing</span></a><a id="sidebar-menu-item-faqs"
-                class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
-                href="/faqs" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" class="lucide lucide-book-check h-4 w-4 mr-1 shrink-0" aria-hidden="true"
-                    data-testid="icon-book-check" style="stroke-width: 1.5;">
+                class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10" href="/faqs"
+                data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-book-check h-4 w-4 mr-1 shrink-0" aria-hidden="true" data-testid="icon-book-check"
+                    style="stroke-width: 1.5;">
                     <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20">
                     </path>
                     <path d="m9 9.5 2 2 4-4"></path>
                 </svg><span class="truncate">FAQs</span></a>
         </nav>
         <div class="pl-3 pr-2 pt-2 mt-auto">
-            <div class="rounded-xl border bg-card text-card-foreground shadow flex items-center gap-2 p-1.5 hover:bg-gray-50 transition-colors cursor-pointer group relative"
+            <div
+                class="rounded-xl border bg-card text-card-foreground shadow flex items-center gap-2 p-1.5 hover:bg-gray-50 transition-colors cursor-pointer group relative"
                 id="sidebar-wallet-button">
-                <div class="bg-page-background p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
-                        stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wallet w-5 h-5"
-                        aria-hidden="true">
+                <div class="bg-page-background p-3 rounded-lg"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-wallet w-5 h-5" aria-hidden="true">
                         <path
                             d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1">
                         </path>
@@ -199,15 +193,16 @@
                     <p class="text-sm text-muted-foreground whitespace-nowrap">Wallet Balance</p>
                     <p class="text-lg font-semibold truncate max-w-[8rem]" data-state="closed">₹0.00</p>
                 </div>
-                <div
-                    class="absolute right-2 top-2 opacity-0 group-hover:opacity-100 transition-opacity justify-self-start">
+                <div class="absolute right-2 top-2 opacity-0 group-hover:opacity-100 transition-opacity justify-self-start">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-arrow-up-right w-5 h-5 bg-page-background" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
-                    </svg></div>
+                    </svg>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script src="js/agent_studio.js"></script>

@@ -17,7 +17,7 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $("#overview").on("click", function (event) {
+  $("#sidebar-menu-item-agent-studio-overview").on("click", function (event) {
     event.preventDefault(); 
     event.stopPropagation();
       $.ajax({
@@ -39,7 +39,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $("#projects").on("click", function (event) {
+    $("#sidebar-menu-item-agent-studio-projects").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
   
@@ -58,7 +58,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#components").on("click", function (event) {
+    $("#sidebar-menu-item-agent-studio-components").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -76,7 +76,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#flow_deployment").on("click", function (event) {
+    $("#sidebar-menu-item-agent-studio-flow-deployment").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -94,7 +94,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#component_deployment").on("click", function (event) {
+    $("#sidebar-menu-item-agent-studio-comp-deployment").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -112,7 +112,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#observability").on("click", function (event) {
+    $("#sidebar-menu-item-agent-studio-observability").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -130,7 +130,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#manage_users").on("click", function (event) {
+    $("#sidebar-menu-item-user-management").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -148,7 +148,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#file_manager").on("click", function (event) {
+    $("#sidebar-menu-item-file-manager").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -166,7 +166,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#audit_trail").on("click", function (event) {
+    $("#sidebar-menu-item-audit-trail").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -184,7 +184,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#key_vault").on("click", function (event) {
+    $("#sidebar-menu-item-key-vault").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -202,7 +202,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#support").on("click", function (event) {
+    $("#sidebar-menu-item-support").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -220,7 +220,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#subscription_plans").on("click", function (event) {
+    $("#sidebar-menu-item-subscription-plans").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -238,7 +238,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#billing").on("click", function (event) {
+    $("#sidebar-menu-item-billing").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
@@ -256,7 +256,7 @@ $(document).ready(function () {
   });
 
   $(document).ready(function () {
-    $("#faqs").on("click", function (event) {
+    $("#sidebar-menu-item-faqs").on("click", function (event) {
       event.preventDefault(); 
       event.stopPropagation();
       $.ajax({
