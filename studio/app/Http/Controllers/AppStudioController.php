@@ -18,7 +18,7 @@ class AppStudioController extends Controller
 
     public function deployments()
     {
-        return view('components_for_app_studio.app_deployments');
+        return view('components_for_app_studio.app_deployment');
     }
 
     public function observability()
@@ -58,7 +58,7 @@ class AppStudioController extends Controller
 
     public function billing()
     {
-        return view('components_for_app_studio.billings');
+        return view('components_for_app_studio.billing');
     }
 
     public function faqs()

@@ -1,4 +1,6 @@
-<main class="flex-1 overflow-auto px-6 pt-4">
+
+<main class="flex-1 
+px-6 pt-4" style="height:90vh !important;width:90vw !important;overflow: scroll;width:auto;">
   <div class="flex flex-col w-full">
     <div class="space-y-6">
       <div class="flex flex-col gap-y-6 w-full ">

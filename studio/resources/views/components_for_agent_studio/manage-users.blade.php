@@ -1,4 +1,6 @@
-<main class="flex-1 overflow-auto px-6 pt-4">
+
+<main class="flex-1 
+px-6 pt-4" style="height:90vh !important;overflow: scroll;">
   <div class="flex flex-col gap-4">
     <div class="flex items-center gap-3 pb-2 border-b border-border"><svg xmlns="http://www.w3.org/2000/svg" width="24"
         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

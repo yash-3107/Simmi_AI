@@ -32,7 +32,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_deployments").on("click", function (event) {
+    $("#sidebar-menu-item-app-studio-app-deployments").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({
@@ -47,7 +47,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_observability").on("click", function (event) {
+    $("#sidebar-menu-item-app-studio-observability").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({
@@ -62,7 +62,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_manage_users").on("click", function (event) {
+    $("#sidebar-menu-item-user-management").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({
@@ -77,7 +77,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_file_manager").on("click", function (event) {
+    $("#sidebar-menu-item-file-manager").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({
@@ -92,7 +92,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_audit_trail").on("click", function (event) {
+    $("#sidebar-menu-item-audit-trail").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({
@@ -107,7 +107,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_key_vault").on("click", function (event) {
+    $("#sidebar-menu-item-key-vault").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({
@@ -122,7 +122,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_support").on("click", function (event) {
+    $("#sidebar-menu-item-support").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({
@@ -137,7 +137,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_subscription_plans").on("click", function (event) {
+    $("#sidebar-menu-item-subscription-plans").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({
@@ -152,9 +152,11 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_billing").on("click", function (event) {
+    $("#sidebar-menu-item-billing").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
+        console.log('in billing');
+        
         $.ajax({
             url: "/studio/app/billing",
             method: "GET",
@@ -167,7 +169,7 @@ $(document).ready(function () {
         });
     });
 
-    $("#app_studio_faqs").on("click", function (event) {
+    $("#sidebar-menu-item-faqs").on("click", function (event) {
         event.preventDefault();
         event.stopPropagation();
         $.ajax({

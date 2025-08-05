@@ -1,4 +1,6 @@
-<main class="flex-1 overflow-auto px-6 pt-4">
+
+<main class="flex-1 
+px-6 pt-4" style="height:90vh !important;overflow: scroll;">
   <div>
     <div class="flex items-center justify-between pb-3 mb-3 border-b border-border">
       <h1 class="text-xl font-semibold">Subscription Plans</h1>

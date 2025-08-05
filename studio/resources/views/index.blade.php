@@ -3,9 +3,14 @@
 @section('title', 'Dashboard')
 
 @section('content')
-<div id="parent-main"></div>
+<div id="parent-main" ></div>
 @endsection
 @push('styles')
+
+<link rel="stylesheet" href="{{asset('/index.css')}}">
+<link rel="stylesheet" href="{{asset('/body.css')}}">
+<link rel="stylesheet" href="{{asset('/root.css')}}">
+<link rel="stylesheet" href="{{asset('/inside_root.css')}}">
 <link rel="stylesheet" href="{{asset('/layout_css/sidebar.css')}}">
 <link rel="stylesheet" href="{{asset('/layout_css/footer.css')}}">
 <link rel="stylesheet" href="{{asset('/layout_css/header.css')}}">
@@ -30,6 +35,15 @@
 
 <link rel="stylesheet" href="{{asset('/app_studio_css/overview.css')}}">
 <link rel="stylesheet" href="{{asset('/app_studio_css/apps.css')}}">
+<link rel="stylesheet" href="{{asset('/app_studio_css/deployments.css')}}">
+<link rel="stylesheet" href="{{asset('/app_studio_css/billings.css')}}">
+<link rel="stylesheet" href="{{asset('/app_studio_css/faqs.css')}}">
+<link rel="stylesheet" href="{{asset('/app_studio_css/file_manager.css')}}">
+<link rel="stylesheet" href="{{asset('/app_studio_css/key_vault.css')}}">
+<link rel="stylesheet" href="{{asset('/app_studio_css/manage_users.css')}}">
+<link rel="stylesheet" href="{{asset('/app_studio_css/subscription_plans.css')}}">
+<link rel="stylesheet" href="{{asset('/app_studio_css/support.css')}}">
+<link rel="stylesheet" href="{{asset('/app_studio_css/observability.css')}}">
 @endpush
 @push('scripts')
 <script src="js/sidebar.js"></script>

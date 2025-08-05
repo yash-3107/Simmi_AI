@@ -68,7 +68,7 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4" style="height:90vh !important;overflow: scroll;">
             @yield('content')
         </main>
     </div>

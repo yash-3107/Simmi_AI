@@ -1,5 +1,5 @@
 <div
-    class="flex rounded-lg shadow-lg border-[3px] border-background mt-0.5 transition-all duration-300 ease-in-out z-50 w-[18rem]">
+    class="flex rounded-lg shadow-lg border-[3px] border-background mt-0.5 transition-all duration-300 ease-in-out z-50 w-[18rem]" style="height:90vh !important;">
     <div
         class="h-full py-4 px-3 flex flex-col justify-between relative rounded-md rounded-r-none bg-gradient-to-b from-[#DEEDFA] to-[#9ED0F9]">
         <nav class="space-y-2">
@@ -38,9 +38,9 @@
                 </svg></button></div>
     </div>
     <div id="sidebar-parent"
-        class="h-full pt-4 pb-2 bg-background transition-all duration-300 ease-in-out overflow-hidden relative w-56 opacity-100">
-        <div class="h-full flex flex-col">
-            <div class="flex items-center justify-between ml-4 mr-2 pb-2 mb-2 border-b ">
+        class="h-full pt-4 pb-2 bg-background transition-all duration-300 ease-in-out overflow-hidden overflow-y-scroll relative w-56 opacity-100">
+        <div class="h-full flex flex-col overflow-y-scroll">
+            <div class="flex items-center justify-between ml-4 mr-2 pb-2 mb-2 border-b">
                 <div class="tracking-wide truncate">Home</div><button class="p-1 rounded-lg hover:bg-accent"
                     id="panel-close-icon-button"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                         xmlns="http://www.w3.org/2000/svg" class="h-4 w-4">
@@ -59,7 +59,7 @@
                         </defs>
                     </svg></button>
             </div>
-            <nav class="space-y-1 p-2 flex-grow overflow-y-auto"><a id="sidebar-menu-item-core-dashboard"
+            <nav class="space-y-1 p-2 flex-grow"><a id="sidebar-menu-item-core-dashboard"
                     class="flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-all hover:bg-primary/10"
                     href="/dashboard" data-discover="true"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                         height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

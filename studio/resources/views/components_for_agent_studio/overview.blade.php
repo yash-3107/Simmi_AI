@@ -1,4 +1,6 @@
-<main class="flex-1 overflow-auto px-6 pt-4">
+
+<main class="flex-1 
+px-6 pt-4" style="height:90vh !important;overflow: scroll;">
   <div class="flex-1 space-y-6 p-4 pt-2">
     <div class="flex items-center justify-between space-y-2">
       <h2 class="text-3xl font-bold tracking-tight">Dashboard</h2>

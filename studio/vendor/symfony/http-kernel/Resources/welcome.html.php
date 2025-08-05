@@ -277,7 +277,7 @@ SVG;
         </section>
     </header>
 
-    <main>
+    <main style="height:90vh !important;overflow: scroll;">
         <div class="wrapper">
             <article>
                 <nav>

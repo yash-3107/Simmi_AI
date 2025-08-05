@@ -1,4 +1,6 @@
-<main class="flex-1 overflow-auto px-6 pt-4">
+
+<main class="flex-1 
+px-6 pt-4" style="height:90vh !important;overflow: scroll;">
   <div id="faqs-container" class="pt-2 px-10 w-full mx-auto">
     <div id="faqs-header" class="flex items-center justify-between">
       <div id="faqs-header-title" class="text-2xl font-semibold">FAQs</div>

@@ -1,4 +1,6 @@
-<main class="flex-1 overflow-auto px-6 pt-4">
+
+<main class="flex-1 
+px-6 pt-4" style="height:90vh !important;overflow: scroll;">
   <div id="projects-module-index-container" class="space-y-3">
     <div class="flex text-2xl gap-3 items-center" id="projects-module-index-breadcrumbs-container"><svg
         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"

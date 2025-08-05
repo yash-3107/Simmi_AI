@@ -1,4 +1,6 @@
-<main class="flex-1 overflow-auto px-6 pt-4">
+
+<main class="flex-1 
+px-6 pt-4" style="height:90vh !important;overflow: scroll;">
   <div id="components-index-container">
     <div class="flex justify-between items-center">
       <div class="flex text-2xl gap-3 items-center" id="components-index-breadcrumbs-container"><svg
