@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="{{asset('/agent_studio_css/observability-projects.css')}}">
+<link rel="stylesheet" href="{{asset('/agent_studio_css/observability-wallet-usage.css')}}">
+<link rel="stylesheet" href="{{asset('/agent_studio_css/observability-key-credentials.css')}}">
+<link rel="stylesheet" href="{{asset('/agent_studio_css/observability-component-deployments.css')}}">
 <main class="flex-1 
 px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
   <div id="projects-module-index-container" class="space-y-3">
@@ -32,25 +36,25 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
           class="inline-flex items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground h-auto"
           id="billing-tabs" tabindex="0" data-orientation="horizontal" style="outline: none;"><button type="button"
             role="tab" aria-selected="true" aria-controls="radix-:ri:-content-wallet-usage" data-state="active"
-            id="billing-tabs-wallet-usage-0"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6 py-1.5"
+            id="observability_wallet_usage"
+            class="inline-flex items-center tab-button justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6 py-1.5"
             tabindex="-1" data-orientation="horizontal" data-radix-collection-item="">Wallet Usage</button><button
             type="button" role="tab" aria-selected="false" aria-controls="radix-:ri:-content-projects"
-            data-state="inactive" id="billing-tabs-projects-1"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6 py-1.5"
+            data-state="inactive" id="observability_projects"
+            class="inline-flex items-center tab-button justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6 py-1.5"
             tabindex="-1" data-orientation="horizontal" data-radix-collection-item="">Projects</button><button
             type="button" role="tab" aria-selected="false" aria-controls="radix-:ri:-content-keys-credentials"
-            data-state="inactive" id="billing-tabs-keys-credentials-2"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6 py-1.5"
+            data-state="inactive" id="obervability_key_credentials"
+            class="inline-flex tab-button items-center tab-button justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6 py-1.5"
             tabindex="-1" data-orientation="horizontal" data-radix-collection-item="">Keys &amp;
             credentials</button><button type="button" role="tab" aria-selected="false"
             aria-controls="radix-:ri:-content-components-deployments" data-state="inactive"
-            id="billing-tabs-components-deployments-3"
-            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6 py-1.5"
+            id="observability_components_deployments"
+            class="inline-flex tab-button items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6 py-1.5"
             tabindex="-1" data-orientation="horizontal" data-radix-collection-item="">Comp &amp; Dep</button></div>
       </div>
-      <div class="p-2">
-        <div class="space-y-4">
+      <div class="p-2" id="observability_component_list">
+        <div class=" space-y-4">
           <div class="w-full flex justify-end"></div>
           <div class="max-w-[15rem] overflow-hidden">
             <p></p>
@@ -74,3 +78,4 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
     </div>
   </div>
 </main>
+<script src="js/agent_studio_sub_tabs/observability.js"></script>

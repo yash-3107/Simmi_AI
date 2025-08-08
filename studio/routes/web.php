@@ -4,6 +4,9 @@ use App\Http\Controllers\AppStudioController;
 use App\Http\Controllers\SidebarController;
 use App\Http\Controllers\StudioController;
 use App\Http\Controllers\AgentStudioController;
+use App\Http\Controllers\AgentStudioFlowDeploymentController;
+use App\Http\Controllers\AgentStudioComponentDeploymentController;
+use App\Http\Controllers\AgentStudioObservabilityController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -29,6 +32,16 @@ Route::get('/studio/agent/support', [AgentStudioController::class, 'support']);
 Route::get('/studio/agent/subscription_plans', [AgentStudioController::class, 'subscription_plans']);
 Route::get('/studio/agent/billing', [AgentStudioController::class, 'billing']);
 Route::get('/studio/agent/faqs', [AgentStudioController::class, 'faqs']);
+Route::get('/agent_studio/flow_deployment/all_projects', [AgentStudioFlowDeploymentController::class, 'all_projects']);
+Route::get('/agent_studio/flow_deployment/deployed_projects', [AgentStudioFlowDeploymentController::class, 'deployed_projects']);
+Route::get('/agent_studio/component_deployment/ready_to_deploy_components', [AgentStudioComponentDeploymentController::class, 'ready_to_deploy_components']);
+Route::get('/agent_studio/component_deployment/deployed_components', [AgentStudioComponentDeploymentController::class, 'deployed_components']);
+Route::get('/agent_studio/observability/observability_wallet_usage', [AgentStudioObservabilityController::class, 'observability_wallet_usage']);
+Route::get('/agent_studio/observability/observability_projects', [AgentStudioObservabilityController::class, 'observability_projects']);
+Route::get('/agent_studio/observability/observability_key_credentials', [AgentStudioObservabilityController::class, 'observability_key_credentials']);
+Route::get('/agent_studio/observability/observability_component_deployments', [AgentStudioObservabilityController::class, 'observability_component_deployments']);
+Route::get('/agent_studio/observability/root_and_users', [AgentStudioObservabilityController::class, 'root_and_users']);
+Route::get('/agent_studio/observability/company_summary', [AgentStudioObservabilityController::class, 'company_summary']);
 
 //App studio module
 Route::get('/studio/app/overview', [AppStudioController::class, 'overview']);

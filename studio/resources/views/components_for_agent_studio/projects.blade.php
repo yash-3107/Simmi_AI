@@ -581,8 +581,9 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                 <div class="flex gap-x-4"><span aria-label="Please do subscription to get access for this feature"
                     class=""><button
                       class="[&amp;:not(:disabled)]:bg-[linear-gradient(90deg,#088EDC_0%,#0450B2_100%)] [&amp;:not(:disabled)]:hover:bg-[position:100%_0] text-background noflow nopan nodelete nodrag inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-100 disabled:disabled-state [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[size:200%_200%] disabled:bg-muted !text-foreground disabled:!text-muted-foreground transition-[background-position] duration-500 ease-in-out h-9 px-3 rounded-md"
-                      type="button" id="all-projects-list-create-new-project-button">Create New Project</button></span>
-                  <div class="relative"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      type="button" id="openProjectModalBtn">Create New
+                      Project</button></span>
+                  <div class=" relative"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                       viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                       stroke-linejoin="round"
                       class="lucide lucide-search absolute left-4 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground/50"
@@ -747,4 +748,359 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
       </div>
     </div>
   </div>
+
+
+
+
 </main>
+<div role="presentation" class="MuiModal-root css-ebvv7v">
+  <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-um19vb"
+    style="opacity: 1; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);"></div>
+  <div tabindex="0" data-testid="sentinelStart"></div>
+  <div class="undefined MuiBox-root css-1s71n02" tabindex="-1">
+    <div class="w-[900px] text-foreground" id="all-projects-create-project-model">
+      <h2
+        class="text-2xl font-semibold border-b px-5 py-3 bg-primary/20 bg-opacity-10 rounded-t-2xl text-foreground flex gap-2 items-center">
+        New project<button
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-xl !ml-auto !text-inherit css-1yxmbwk"
+          tabindex="0" type="button" id="all-projects-create-project-close-button"><svg stroke="currentColor"
+            fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 17 17" class="w-4 h-4"
+            id="delete-model-container-close-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <g></g>
+            <path
+              d="M9.207 8.5l6.646 6.646-0.707 0.707-6.646-6.646-6.646 6.646-0.707-0.707 6.646-6.646-6.647-6.646 0.707-0.707 6.647 6.646 6.646-6.646 0.707 0.707-6.646 6.646z">
+            </path>
+          </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></h2>
+      <form>
+        <div class="flex items-center py-4 px-5 border-b border-white border-opacity-20"><label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated w-4/12 text-foreground text-sm css-13maa2j"
+            for="projectName">Project Name</label>
+          <div class="w-2/3">
+            <div class="MuiFormControl-root MuiTextField-root w-full css-l76ov3">
+              <div
+                class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd css-1bn53lx">
+                <input aria-invalid="false" id="all-projects-create-project-name-textfield"
+                  placeholder="Enter your project name" required="" type="text"
+                  class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-b52kj1"
+                  value="">
+                <div
+                  class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeSmall flex text-sm text-[#9ca3af] css-1nvf7g0">
+                  0 / 50</div>
+                <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                  <legend class="css-ihdtdm"><span class="notranslate">​</span></legend>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" flex items-center py-4 px-5 border-b border-white border-opacity-20"><label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated w-4/12 text-foreground text-sm css-13maa2j">Project
+            Description</label>
+          <div class="MuiFormControl-root MuiTextField-root w-2/3 css-l76ov3">
+            <div
+              class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd css-1bn53lx">
+              <input aria-invalid="false" id="all-projects-create-project-description-textfield"
+                placeholder="Enter your project description" required="" type="text"
+                class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd css-b52kj1"
+                value="">
+              <div
+                class="MuiInputAdornment-root MuiInputAdornment-positionEnd MuiInputAdornment-outlined MuiInputAdornment-sizeSmall flex text-sm text-[#9ca3af] css-1nvf7g0">
+                0 / 250</div>
+              <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                <legend class="css-ihdtdm"><span class="notranslate">​</span></legend>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center py-4 px-5 border-b border-white border-opacity-20"><label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated w-4/12 text-foreground text-sm css-13maa2j">Project
+            Logo</label>
+          <div class="w-2/3 flex gap-x-1"><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-[#4338CA] !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Folder Git"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-folder-git2 lucide-folder-git-2 h-5 w-5" aria-hidden="true"
+                data-testid="icon-FolderGit2" style="stroke-width: 1.5;">
+                <path
+                  d="M9 20H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H20a2 2 0 0 1 2 2v5">
+                </path>
+                <circle cx="13" cy="12" r="2"></circle>
+                <path d="M18 19c-2.8 0-5-2.2-5-5v8"></path>
+                <circle cx="20" cy="19" r="2"></circle>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Folder Open-dot"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-folder-open-dot h-5 w-5" aria-hidden="true"
+                data-testid="icon-folder-open-dot" style="stroke-width: 1.5;">
+                <path
+                  d="m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2">
+                </path>
+                <circle cx="14" cy="15" r="1"></circle>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Send to back"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-send-to-back h-5 w-5" aria-hidden="true"
+                data-testid="icon-send-to-back" style="stroke-width: 1.5;">
+                <rect x="14" y="14" width="8" height="8" rx="2"></rect>
+                <rect x="2" y="2" width="8" height="8" rx="2"></rect>
+                <path d="M7 14v1a2 2 0 0 0 2 2h1"></path>
+                <path d="M14 7h1a2 2 0 0 1 2 2v1"></path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Earth"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-earth h-5 w-5" aria-hidden="true" data-testid="icon-earth"
+                style="stroke-width: 1.5;">
+                <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
+                <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
+                <circle cx="12" cy="12" r="10"></circle>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Egg fried"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-egg-fried h-5 w-5" aria-hidden="true"
+                data-testid="icon-egg-fried" style="stroke-width: 1.5;">
+                <circle cx="11.5" cy="12.5" r="3.5"></circle>
+                <path
+                  d="M3 8c0-3.5 2.5-6 6.5-6 5 0 4.83 3 7.5 5s5 2 5 6c0 4.5-2.5 6.5-7 6.5-2.5 0-2.5 2.5-6 2.5s-7-2-7-5.5c0-3 1.5-3 1.5-5C3.5 10 3 9 3 8Z">
+                </path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Land plot"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-land-plot h-5 w-5" aria-hidden="true"
+                data-testid="icon-land-plot" style="stroke-width: 1.5;">
+                <path d="m12 8 6-3-6-3v10"></path>
+                <path d="m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12">
+                </path>
+                <path d="m6.49 12.85 11.02 6.3"></path>
+                <path d="M17.51 12.85 6.5 19.15"></path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Ship wheel"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-ship-wheel h-5 w-5" aria-hidden="true"
+                data-testid="icon-ship-wheel" style="stroke-width: 1.5;">
+                <circle cx="12" cy="12" r="8"></circle>
+                <path d="M12 2v7.5"></path>
+                <path d="m19 5-5.23 5.23"></path>
+                <path d="M22 12h-7.5"></path>
+                <path d="m19 19-5.23-5.23"></path>
+                <path d="M12 14.5V22"></path>
+                <path d="M10.23 13.77 5 19"></path>
+                <path d="M9.5 12H2"></path>
+                <path d="M10.23 10.23 5 5"></path>
+                <circle cx="12" cy="12" r="2.5"></circle>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Fan"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-fan h-5 w-5" aria-hidden="true" data-testid="icon-fan"
+                style="stroke-width: 1.5;">
+                <path
+                  d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z">
+                </path>
+                <path d="M12 12v.01"></path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Package"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-package h-5 w-5" aria-hidden="true"
+                data-testid="icon-package" style="stroke-width: 1.5;">
+                <path
+                  d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z">
+                </path>
+                <path d="M12 22V12"></path>
+                <polyline points="3.29 7 12 12 20.71 7"></polyline>
+                <path d="m7.5 4.27 9 5.15"></path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Shapes"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-shapes h-5 w-5" aria-hidden="true"
+                data-testid="icon-shapes" style="stroke-width: 1.5;">
+                <path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z">
+                </path>
+                <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+                <circle cx="17.5" cy="17.5" r="3.5"></circle>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Radar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-radar h-5 w-5" aria-hidden="true" data-testid="icon-radar"
+                style="stroke-width: 1.5;">
+                <path d="M19.07 4.93A10 10 0 0 0 6.99 3.34"></path>
+                <path d="M4 6h.01"></path>
+                <path d="M2.29 9.62A10 10 0 1 0 21.31 8.35"></path>
+                <path d="M16.24 7.76A6 6 0 1 0 8.23 16.67"></path>
+                <path d="M12 18h.01"></path>
+                <path d="M17.99 11.66A6 6 0 0 1 15.77 16.67"></path>
+                <circle cx="12" cy="12" r="2"></circle>
+                <path d="m13.41 10.59 5.66-5.66"></path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Rocket"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-rocket h-5 w-5" aria-hidden="true"
+                data-testid="icon-rocket" style="stroke-width: 1.5;">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                </path>
+                <path
+                  d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                </path>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Cannabis"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-cannabis h-5 w-5" aria-hidden="true"
+                data-testid="icon-cannabis" style="stroke-width: 1.5;">
+                <path d="M12 22v-4"></path>
+                <path
+                  d="M7 12c-1.5 0-4.5 1.5-5 3 3.5 1.5 6 1 6 1-1.5 1.5-2 3.5-2 5 2.5 0 4.5-1.5 6-3 1.5 1.5 3.5 3 6 3 0-1.5-.5-3.5-2-5 0 0 2.5.5 6-1-.5-1.5-3.5-3-5-3 1.5-1 4-4 4-6-2.5 0-5.5 1.5-7 3 0-2.5-.5-5-2-7-1.5 2-2 4.5-2 7-1.5-1.5-4.5-3-7-3 0 2 2.5 5 4 6">
+                </path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
+              type="button" aria-label="Satellite"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="lucide lucide-satellite h-5 w-5" aria-hidden="true"
+                data-testid="icon-satellite" style="stroke-width: 1.5;">
+                <path
+                  d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5">
+                </path>
+                <path d="M16.5 7.5 19 5"></path>
+                <path
+                  d="m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5">
+                </path>
+                <path d="M9 21a6 6 0 0 0-6-6"></path>
+                <path
+                  d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z">
+                </path>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+        </div>
+        <div class=" flex items-center py-4 px-5 border-b border-white border-opacity-20"><label
+            class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated w-4/12 text-foreground text-sm css-13maa2j">Privacy</label>
+          <div class="flex flex-col w-2/3">
+            <fieldset class="MuiFormControl-root css-13sljp9">
+              <div class="MuiFormGroup-root MuiRadioGroup-root space-y-3 css-1h7anqn" role="radiogroup"
+                aria-label="privacy" id="all-projects-create-project-access-type-form"><label
+                  class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd flex items-start css-1jaw3da"
+                  id="all-projects-create-project-access-type-public-radio"><span
+                    class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall css-1a5icme"><input
+                      class="PrivateSwitchBase-input css-1m9pwf3" name="privacy-settings" type="radio"
+                      value="public"><span class="css-hyxlzm"><svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-cpa9t9" focusable="false" aria-hidden="true"
+                        viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon">
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
+                        </path>
+                      </svg><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1exsolk" focusable="false"
+                        aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon">
+                        <path
+                          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z">
+                        </path>
+                      </svg></span><span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
+                    class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3">
+                    <div>
+                      <p class="font-medium text-sm">Public access</p>
+                      <p class="text-gray-500 text-xs">Everyone in the organisation will see this project</p>
+                    </div>
+                  </span></label><label
+                  class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd flex items-start css-1jaw3da"
+                  id="all-projects-create-project-access-type-private-to-members-radio"><span
+                    class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall css-1a5icme"><input
+                      class="PrivateSwitchBase-input css-1m9pwf3" name="privacy-settings" type="radio"
+                      value="private-members"><span class="css-hyxlzm"><svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-cpa9t9" focusable="false" aria-hidden="true"
+                        viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon">
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
+                        </path>
+                      </svg><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1exsolk" focusable="false"
+                        aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon">
+                        <path
+                          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z">
+                        </path>
+                      </svg></span><span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
+                    class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3">
+                    <div>
+                      <p class="font-medium text-sm">Private to Project Members</p>
+                      <p class="text-xs text-gray-500">Only members of this project would be able to access</p>
+                    </div>
+                  </span></label><label
+                  class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd flex items-start css-1jaw3da"
+                  id="all-projects-create-project-access-type-private-to-you-radio"><span
+                    class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall Mui-checked MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall css-1a5icme"><input
+                      class="PrivateSwitchBase-input css-1m9pwf3" name="privacy-settings" type="radio"
+                      value="private-you" checked=""><span class="css-hyxlzm"><svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-cpa9t9" focusable="false" aria-hidden="true"
+                        viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon">
+                        <path
+                          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
+                        </path>
+                      </svg><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vrv9vb" focusable="false"
+                        aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon">
+                        <path
+                          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z">
+                        </path>
+                      </svg></span><span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
+                    class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3">
+                    <div>
+                      <p class="font-medium text-sm">Private to you</p>
+                      <p class="text-xs text-gray-500">You are the only one able to access this project</p>
+                    </div>
+                  </span></label></div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="flex justify-between px-4 py-4 pr-4">
+          <div class="flex gap-4 ml-auto"><button
+              class="noflow nopan nodelete nodrag inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-100 disabled:disabled-state [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input hover:bg-input hover:text-accent-foreground disabled:pointer-events-none disabled:bg-muted disabled:text-foreground/50 px-10 py-2 rounded-xl"
+              type="button" id="all-projects-create-project-cancel-button"
+              style="font-size: 14px; font-weight: bold;">Cancel</button><button
+              class="[&amp;:not(:disabled)]:bg-[linear-gradient(90deg,#088EDC_0%,#0450B2_100%)] [&amp;:not(:disabled)]:hover:bg-[position:100%_0] text-background noflow nopan nodelete nodrag inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-100 disabled:disabled-state [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[size:200%_200%] disabled:bg-muted !text-foreground disabled:!text-muted-foreground transition-[background-position] duration-500 ease-in-out px-10 py-2 rounded-xl"
+              type="submit" id="all-projects-create-project-create-button" style="font-size: 14px; font-weight: bold;"
+              disabled="">Create</button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div tabindex="0" data-testid="sentinelEnd"></div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#openProjectModalBtn').on('click', function() {
+      const $modal = $('.MuiModal-root');
+
+      $modal.css({
+        display: 'flex',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        'z-index': 1300,
+        'align-items': 'center',
+        'justify-content': 'center',
+        'background-color': 'rgba(0,0,0,0.5)', // Semi-transparent dark backdrop
+        opacity: 1, // Ensure full visibility
+        visibility: 'visible', // Remove hidden state
+        'pointer-events': 'auto' // Allow user interaction
+      });
+
+      // Also fix modal content if needed
+      $modal.find('.MuiPaper-root').css({
+        'background-color': '#fff',
+        padding: '16px',
+        'border-radius': '8px',
+        opacity: 1,
+      });
+    });
+  });
+</script>

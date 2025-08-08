@@ -738,3 +738,19 @@ img {
     display: block;
   }
 }
+
+.mui-style-select {
+  /* Matches Material UI input styling without border */
+  border: none;
+  /* <--- Hide border */
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  height: 25px;
+  outline: none;
+  width: 250px;
+  background-color: #fff;
+
+  /* Hide the default dropdown arrow */
+}

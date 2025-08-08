@@ -1,4 +1,5 @@
-
+<link rel="stylesheet" href="{{asset('/agent_studio_css/flow-deployment-all-projects.css')}}">
+<link rel="stylesheet" href="{{asset('/agent_studio_css/flow-deployment-deployed-projects.css')}}">
 <main class="flex-1 
 px-6 pt-4" style="height:90vh !important;overflow: scroll;">
   <div id="flow-deployment-index-container" class="space-y-3">
@@ -33,28 +34,14 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
                 <div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1nx4p1j">
                   <div
                     class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-segi59">
-                    <input aria-invalid="false" autocomplete="off"
-                      id="flow-deployment-environment-dropdown-autocomplete" placeholder="Select Environment"
-                      type="text"
-                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-b52kj1"
-                      aria-autocomplete="list" aria-expanded="false" autocapitalize="none" spellcheck="false"
-                      role="combobox" value="Both UAT and Production">
-                    <div class="MuiAutocomplete-endAdornment css-mxlkbn"><button
-                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-clearIndicator css-edpqz1"
-                        tabindex="-1" type="button" aria-label="Clear" title="Clear"><svg
-                          class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false"
-                          aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
-                          <path
-                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
-                          </path>
-                        </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-uge3vf"
-                        tabindex="-1" type="button" aria-label="Open" title="Open"><svg
-                          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                          class="lucide lucide-chevron-down h-4 w-4" aria-hidden="true">
-                          <path d="m6 9 6 6 6-6"></path>
-                        </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+                    <select id="flow-deployment-environment-dropdown-autocomplete" name="environment"
+                      class="mui-style-select">
+                      <option value="both">Both UAT and Production</option>
+                      <option value="production">Production</option>
+                      <option value="uat">UAT</option>
+                    </select>
+
+                    <div class="MuiAutocomplete-endAdornment css-mxlkbn"></div>
                     <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
                       <legend class="css-ihdtdm"><span class="notranslate">​</span></legend>
                     </fieldset>
@@ -123,28 +110,28 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
         </div>
       </div>
       <div data-orientation="horizontal" role="none" class="shrink-0 bg-border h-[1px] w-full my-5"></div>
-      <div id="flow-deployment-projects-list-container">
+      <div>
         <div dir="ltr" data-orientation="horizontal" class="space-y-4">
           <div role="tablist" aria-orientation="horizontal"
             class="inline-flex h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground"
             tabindex="0" data-orientation="horizontal" style="outline: none;"><button type="button" role="tab"
               aria-selected="true" aria-controls="radix-:r3j:-content-deployed" data-state="active"
-              id="radix-:r3j:-trigger-deployed"
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6"
+              id="deployed_projects"
+              class="inline-flex items-center tab-button justify-center whitespace-nowrap rounded-md py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6"
               tabindex="-1" data-orientation="horizontal" data-radix-collection-item="">Deployed</button><button
               type="button" role="tab" aria-selected="false" aria-controls="radix-:r3j:-content-ready-to-deploy"
-              data-state="inactive" id="radix-:r3j:-trigger-ready-to-deploy"
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6"
+              data-state="inactive" id="all_projects"
+              class="inline-flex items-center tab-button justify-center whitespace-nowrap rounded-md py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6"
               tabindex="-1" data-orientation="horizontal" data-radix-collection-item="">All Projects</button></div>
-          <div data-state="active" data-orientation="horizontal" role="tabpanel"
-            aria-labelledby="radix-:r3j:-trigger-deployed" id="radix-:r3j:-content-deployed" tabindex="0"
-            class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            style="">
+
+          <div id="flow-deployment-projects-list-container">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <div class="flex items-center gap-4">
                   <h2 id="flow-deployment-deployed-projects-list-title" class="text-xl font-semibold">Deployed projects
                   </h2>
+
+                  <div id="badge-container" class="flex items-center gap-2"></div>
                 </div>
                 <div class="flex items-center gap-4"></div>
               </div>
@@ -168,6 +155,8 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
               </div>
             </div>
           </div>
+
+
           <div data-state="inactive" data-orientation="horizontal" role="tabpanel"
             aria-labelledby="radix-:r3j:-trigger-ready-to-deploy" hidden="" id="radix-:r3j:-content-ready-to-deploy"
             tabindex="0"
@@ -178,3 +167,4 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
     </div>
   </div>
 </main>
+<script src="/js/agent_studio_sub_tabs/flow_deployment.js"></script>
