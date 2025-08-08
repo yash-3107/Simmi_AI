@@ -758,9 +758,10 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
     style="opacity: 1; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);"></div>
   <div tabindex="0" data-testid="sentinelStart"></div>
   <div class="undefined MuiBox-root css-1s71n02" tabindex="-1">
-    <div class="w-[900px] text-foreground" id="all-projects-create-project-model">
-      <h2
-        class="text-2xl font-semibold border-b px-5 py-3 bg-primary/20 bg-opacity-10 rounded-t-2xl text-foreground flex gap-2 items-center">
+    <div class="w-[900px] text-foreground" style="background-color: white !important; border-radius: 15px !important;"
+      id="all-projects-create-project-model">
+      <h2 class="text-2xl font-semibold border-b px-5 py-3 bg-primary/20 bg-opacity-10 rounded-t-2xl text-foreground
+        flex gap-2 items-center">
         New project<button
           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-xl !ml-auto !text-inherit css-1yxmbwk"
           tabindex="0" type="button" id="all-projects-create-project-close-button"><svg stroke="currentColor"
@@ -1094,13 +1095,15 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
         'pointer-events': 'auto' // Allow user interaction
       });
 
+      $('#all-projects-create-project-cancel-button').click(function() {
+        $('.MuiModal-root').hide();
+      })
+
+      $('#all-projects-create-project-close-button').click(function() {
+        $('.MuiModal-root').hide();
+      })
       // Also fix modal content if needed
-      $modal.find('.MuiPaper-root').css({
-        'background-color': '#fff',
-        padding: '16px',
-        'border-radius': '8px',
-        opacity: 1,
-      });
+
     });
   });
 </script>
