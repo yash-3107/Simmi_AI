@@ -49,7 +49,6 @@ $(document).ready(function () {
         success: function (response) {
           console.log("Success:", response);
           $('#parent-main').html(response);
-          modal_popup();
         },
         error: function (xhr, status, error) {
           console.error("Error:", error);
@@ -343,14 +342,5 @@ $(document).ready(function () {
 
 // --- Function to hide the modal and initialize it ---
 // This is the main function you call after your AJAX call succeeds.
-function modal_popup() {
-  const modal = $('#parent-main .MuiModal-root');
-  if (modal.length) {
-      modal.hide();
-      // After hiding the modal, set up all its interactive elements.
-      // setupInteractiveModal();
-  } else {
-      console.warn("modal_popup() was called, but no modal was found.");
-  }
-}
+
 

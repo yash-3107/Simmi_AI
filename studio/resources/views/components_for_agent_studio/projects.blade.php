@@ -46,10 +46,28 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
             pre-built projects</h2>
           <div class="" id="all-projects-pre-built-project-swiper">
             <div class="relative group" id="undefined-container">
+
+
+              <!-- Left / Previous Button -->
+              <!-- Left / Previous Button -->
+              <!-- Left / Previous Button -->
+              <!-- Left / Previous Button -->
+              <button id="slider_prev"
+                class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out h-full absolute left-0 z-20 top-1/2 transform -translate-y-1/2 text-foreground hover:text-opacity-80 bg-gradient-to-r from-black/20 hover:from-black/40 to-transparent px-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+              </button>
+
+
+
+
+
+
               <div
-                class="swiper swiper-initialized swiper-horizontal mySwiper cursor-grab active:cursor-grabbing !items-start !justify-start pb-1 swiper-backface-hidden">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide swiper-slide-active w-fit" id="undefined-0" style="margin-right: 20px;">
+                class="swiper slider-container swiper-initialized swiper-horizontal mySwiper cursor-grab active:cursor-grabbing !items-start !justify-start pb-1 swiper-backface-hidden">
+                <div class="swiper-wrapper slides">
+                  <div class="slide swiper-slide-active w-fit" id="card-0" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-0-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -99,7 +117,7 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide swiper-slide-next w-fit" id="undefined-1" style="margin-right: 20px;">
+                  <div class="slide swiper-slide-next w-fit" id="card-1" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-1-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -150,7 +168,7 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide w-fit" id="undefined-2" style="margin-right: 20px;">
+                  <div class="slide w-fit" id="card-2" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-2-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -202,7 +220,7 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide w-fit" id="undefined-3" style="margin-right: 20px;">
+                  <div class="slide w-fit" id="card-3" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-3-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -253,7 +271,7 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide w-fit" id="undefined-4" style="margin-right: 20px;">
+                  <div class="slide w-fit" id="card-4" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-4-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -304,7 +322,7 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide w-fit" id="undefined-5" style="margin-right: 20px;">
+                  <div class="slide w-fit" id="card-5" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-5-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -356,7 +374,7 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide w-fit" id="undefined-6" style="margin-right: 20px;">
+                  <div class="slide w-fit" id="card-6" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-6-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -376,8 +394,8 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                             </svg>
                             <h2 class="font-semibold line-clamp-1" id="all-projects-pre-built-project-card-6-title"
                               data-state="closed"> Language/Advanced Chatbot</h2>
-                          </div><button
-                            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk"
+                          </div>
+                          <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk"
                             tabindex="0" type="button" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg"
                               width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                               stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -391,7 +409,8 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                               <path
                                 d="M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0">
                               </path>
-                            </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                            </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+                          </button>
                         </div>
                         <div id="all-projects-pre-built-project-card-6-description"
                           class="text-sm line-clamp-2 text-muted-foreground" data-state="closed">A Language Chatbot is
@@ -408,7 +427,7 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide w-fit" id="undefined-7" style="margin-right: 20px;">
+                  <div class="slide w-fit" id="card-7" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-7-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -460,7 +479,7 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide w-fit" id="undefined-8" style="margin-right: 20px;">
+                  <div class="slide w-fit" id="card-8" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-8-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -510,7 +529,7 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide w-fit" id="undefined-9" style="margin-right: 20px;">
+                  <div class="slide w-fit" id="card-9" style="margin-right: 20px;">
                     <div id="all-projects-pre-built-project-card-9-container-custom-card"
                       class="rounded-lg bg-agent-studio-background p-4 h-36 w-[22rem] cursor-pointer hover:shadow-md transition-all duration-300 ease-in-out flex flex-col justify-between">
                       <div class="space-y-1">
@@ -563,13 +582,15 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                     </div>
                   </div>
                 </div>
-              </div><button
+              </div>
+              <button id="slider_button"
                 class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorPrimary opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out h-full absolute right-0 z-20 top-1/2 transform -translate-y-1/2 text-foreground hover:text-opacity-80 bg-gradient-to-l from-black/20 hover:from-black/40 to-transparent px-2 css-1uh9j5m"
                 tabindex="0" type="button" id="undefined-next-arrow"><svg
                   class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-1k33q06" focusable="false" aria-hidden="true"
                   viewBox="0 0 24 24" data-testid="ArrowForwardIosIcon">
                   <path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
-                </svg></button>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -748,18 +769,17 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
       </div>
     </div>
   </div>
-
-
-
-
 </main>
+
+
+
+
 <div role="presentation" class="MuiModal-root css-ebvv7v">
   <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-um19vb"
     style="opacity: 1; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);"></div>
   <div tabindex="0" data-testid="sentinelStart"></div>
   <div class="undefined MuiBox-root css-1s71n02" tabindex="-1">
-    <div class="w-[900px] text-foreground" style="background-color: white !important; border-radius: 15px !important;"
-      id="all-projects-create-project-model">
+    <div class="w-[900px] text-foreground" id="all-projects-create-project-model">
       <h2 class="text-2xl font-semibold border-b px-5 py-3 bg-primary/20 bg-opacity-10 rounded-t-2xl text-foreground
         flex gap-2 items-center">
         New project<button
@@ -816,8 +836,8 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
         <div class="flex items-center py-4 px-5 border-b border-white border-opacity-20"><label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated w-4/12 text-foreground text-sm css-13maa2j">Project
             Logo</label>
-          <div class="w-2/3 flex gap-x-1"><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-[#4338CA] !text-4xl css-1yxmbwk"
+          <div class="w-2/3 flex gap-x-1" id="icon-container">
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
               tabindex="0" type="button" aria-label="Folder Git"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                 height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round"
@@ -829,12 +849,13 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                 <circle cx="13" cy="12" r="2"></circle>
                 <path d="M18 19c-2.8 0-5-2.2-5-5v8"></path>
                 <circle cx="20" cy="19" r="2"></circle>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Folder Open-dot"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="lucide lucide-folder-open-dot h-5 w-5" aria-hidden="true"
-                data-testid="icon-folder-open-dot" style="stroke-width: 1.5;">
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Folder Open-dot"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder-open-dot h-5 w-5"
+                aria-hidden="true" data-testid="icon-folder-open-dot" style="stroke-width: 1.5;">
                 <path
                   d="m6 14 1.45-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.55 6a2 2 0 0 1-1.94 1.5H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2h3.93a2 2 0 0 1 1.66.9l.82 1.2a2 2 0 0 0 1.66.9H18a2 2 0 0 1 2 2v2">
                 </path>
@@ -849,22 +870,24 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                 <rect x="2" y="2" width="8" height="8" rx="2"></rect>
                 <path d="M7 14v1a2 2 0 0 0 2 2h1"></path>
                 <path d="M14 7h1a2 2 0 0 1 2 2v1"></path>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Earth"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="lucide lucide-earth h-5 w-5" aria-hidden="true" data-testid="icon-earth"
-                style="stroke-width: 1.5;">
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Earth"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-earth h-5 w-5" aria-hidden="true"
+                data-testid="icon-earth" style="stroke-width: 1.5;">
                 <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
                 <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path>
                 <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path>
                 <circle cx="12" cy="12" r="10"></circle>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Egg fried"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="lucide lucide-egg-fried h-5 w-5" aria-hidden="true"
-                data-testid="icon-egg-fried" style="stroke-width: 1.5;">
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Egg fried"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-egg-fried h-5 w-5"
+                aria-hidden="true" data-testid="icon-egg-fried" style="stroke-width: 1.5;">
                 <circle cx="11.5" cy="12.5" r="3.5"></circle>
                 <path
                   d="M3 8c0-3.5 2.5-6 6.5-6 5 0 4.83 3 7.5 5s5 2 5 6c0 4.5-2.5 6.5-7 6.5-2.5 0-2.5 2.5-6 2.5s-7-2-7-5.5c0-3 1.5-3 1.5-5C3.5 10 3 9 3 8Z">
@@ -880,12 +903,13 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                 </path>
                 <path d="m6.49 12.85 11.02 6.3"></path>
                 <path d="M17.51 12.85 6.5 19.15"></path>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Ship wheel"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="lucide lucide-ship-wheel h-5 w-5" aria-hidden="true"
-                data-testid="icon-ship-wheel" style="stroke-width: 1.5;">
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Ship wheel"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ship-wheel h-5 w-5"
+                aria-hidden="true" data-testid="icon-ship-wheel" style="stroke-width: 1.5;">
                 <circle cx="12" cy="12" r="8"></circle>
                 <path d="M12 2v7.5"></path>
                 <path d="m19 5-5.23 5.23"></path>
@@ -896,9 +920,10 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                 <path d="M9.5 12H2"></path>
                 <path d="M10.23 10.23 5 5"></path>
                 <circle cx="12" cy="12" r="2.5"></circle>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Fan"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Fan"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" class="lucide lucide-fan h-5 w-5" aria-hidden="true" data-testid="icon-fan"
                 style="stroke-width: 1.5;">
@@ -906,11 +931,12 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                   d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z">
                 </path>
                 <path d="M12 12v.01"></path>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Package"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="lucide lucide-package h-5 w-5" aria-hidden="true"
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Package"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package h-5 w-5" aria-hidden="true"
                 data-testid="icon-package" style="stroke-width: 1.5;">
                 <path
                   d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z">
@@ -918,22 +944,24 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                 <path d="M12 22V12"></path>
                 <polyline points="3.29 7 12 12 20.71 7"></polyline>
                 <path d="m7.5 4.27 9 5.15"></path>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Shapes"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="lucide lucide-shapes h-5 w-5" aria-hidden="true"
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Shapes"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shapes h-5 w-5" aria-hidden="true"
                 data-testid="icon-shapes" style="stroke-width: 1.5;">
                 <path d="M8.3 10a.7.7 0 0 1-.626-1.079L11.4 3a.7.7 0 0 1 1.198-.043L16.3 8.9a.7.7 0 0 1-.572 1.1Z">
                 </path>
                 <rect x="3" y="14" width="7" height="7" rx="1"></rect>
                 <circle cx="17.5" cy="17.5" r="3.5"></circle>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Radar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="lucide lucide-radar h-5 w-5" aria-hidden="true" data-testid="icon-radar"
-                style="stroke-width: 1.5;">
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Radar"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radar h-5 w-5" aria-hidden="true"
+                data-testid="icon-radar" style="stroke-width: 1.5;">
                 <path d="M19.07 4.93A10 10 0 0 0 6.99 3.34"></path>
                 <path d="M4 6h.01"></path>
                 <path d="M2.29 9.62A10 10 0 1 0 21.31 8.35"></path>
@@ -942,11 +970,12 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                 <path d="M17.99 11.66A6 6 0 0 1 15.77 16.67"></path>
                 <circle cx="12" cy="12" r="2"></circle>
                 <path d="m13.41 10.59 5.66-5.66"></path>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Rocket"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="lucide lucide-rocket h-5 w-5" aria-hidden="true"
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Rocket"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-rocket h-5 w-5" aria-hidden="true"
                 data-testid="icon-rocket" style="stroke-width: 1.5;">
                 <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
                 </path>
@@ -965,12 +994,13 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                 <path
                   d="M7 12c-1.5 0-4.5 1.5-5 3 3.5 1.5 6 1 6 1-1.5 1.5-2 3.5-2 5 2.5 0 4.5-1.5 6-3 1.5 1.5 3.5 3 6 3 0-1.5-.5-3.5-2-5 0 0 2.5.5 6-1-.5-1.5-3.5-3-5-3 1.5-1 4-4 4-6-2.5 0-5.5 1.5-7 3 0-2.5-.5-5-2-7-1.5 2-2 4.5-2 7-1.5-1.5-4.5-3-7-3 0 2 2.5 5 4 6">
                 </path>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-              class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk" tabindex="0"
-              type="button" aria-label="Satellite"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" class="lucide lucide-satellite h-5 w-5" aria-hidden="true"
-                data-testid="icon-satellite" style="stroke-width: 1.5;">
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+            <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-4xl css-1yxmbwk"
+              tabindex="0" type="button" aria-label="Satellite"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-satellite h-5 w-5"
+                aria-hidden="true" data-testid="icon-satellite" style="stroke-width: 1.5;">
                 <path
                   d="m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5">
                 </path>
@@ -982,21 +1012,26 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                 <path
                   d="M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z">
                 </path>
-              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+              </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+            </button>
+          </div>
         </div>
         <div class=" flex items-center py-4 px-5 border-b border-white border-opacity-20"><label
             class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-animated w-4/12 text-foreground text-sm css-13maa2j">Privacy</label>
           <div class="flex flex-col w-2/3">
             <fieldset class="MuiFormControl-root css-13sljp9">
               <div class="MuiFormGroup-root MuiRadioGroup-root space-y-3 css-1h7anqn" role="radiogroup"
-                aria-label="privacy" id="all-projects-create-project-access-type-form"><label
+                aria-label="privacy" id="all-projects-create-project-access-type-form">
+                <label
                   class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd flex items-start css-1jaw3da"
-                  id="all-projects-create-project-access-type-public-radio"><span
-                    class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall css-1a5icme"><input
-                      class="PrivateSwitchBase-input css-1m9pwf3" name="privacy-settings" type="radio"
-                      value="public"><span class="css-hyxlzm"><svg
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-cpa9t9" focusable="false" aria-hidden="true"
-                        viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon">
+                  id="all-projects-create-project-access-type-public-radio">
+                  <span
+                    class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall css-1a5icme">
+                    <input class="PrivateSwitchBase-input css-1m9pwf3" name="privacy-settings" type="radio"
+                      id="first_radio_button" value="public">
+                    <span class="css-hyxlzm">
+                      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-cpa9t9" focusable="false"
+                        aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon">
                         <path
                           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
                         </path>
@@ -1005,18 +1040,22 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                         <path
                           d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z">
                         </path>
-                      </svg></span><span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
+                      </svg>
+                    </span>
+                    <span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
                     class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3">
                     <div>
                       <p class="font-medium text-sm">Public access</p>
                       <p class="text-gray-500 text-xs">Everyone in the organisation will see this project</p>
                     </div>
-                  </span></label><label
+                  </span>
+                </label>
+                <label
                   class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd flex items-start css-1jaw3da"
                   id="all-projects-create-project-access-type-private-to-members-radio"><span
                     class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall css-1a5icme"><input
-                      class="PrivateSwitchBase-input css-1m9pwf3" name="privacy-settings" type="radio"
-                      value="private-members"><span class="css-hyxlzm"><svg
+                      id="second_radio_button" id class=" PrivateSwitchBase-input css-1m9pwf3" name="privacy-settings"
+                      type="radio" value="private-members"><span class="css-hyxlzm"><svg
                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-cpa9t9" focusable="false" aria-hidden="true"
                         viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon">
                         <path
@@ -1037,17 +1076,12 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                   class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd flex items-start css-1jaw3da"
                   id="all-projects-create-project-access-type-private-to-you-radio"><span
                     class="MuiButtonBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall PrivateSwitchBase-root MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall Mui-checked MuiRadio-root MuiRadio-colorPrimary MuiRadio-sizeSmall css-1a5icme"><input
-                      class="PrivateSwitchBase-input css-1m9pwf3" name="privacy-settings" type="radio"
-                      value="private-you" checked=""><span class="css-hyxlzm"><svg
+                      id="third_radio_button" class="PrivateSwitchBase-input css-1m9pwf3" name="privacy-settings"
+                      type="radio" value="private-you" checked=""><span class="css-hyxlzm"><svg
                         class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-cpa9t9" focusable="false" aria-hidden="true"
                         viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon">
                         <path
                           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z">
-                        </path>
-                      </svg><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vrv9vb" focusable="false"
-                        aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon">
-                        <path
-                          d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z">
                         </path>
                       </svg></span><span class="MuiTouchRipple-root css-w0pj6f"></span></span><span
                     class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-9l3uo3">
@@ -1055,9 +1089,13 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                       <p class="font-medium text-sm">Private to you</p>
                       <p class="text-xs text-gray-500">You are the only one able to access this project</p>
                     </div>
-                  </span></label></div>
+                  </span></label>
+              </div>
             </fieldset>
           </div>
+        </div>
+        <div class="flex items-center py-4 px-5 border-b border-white border-opacity-20" id="team_membsers_box">
+
         </div>
         <div class="flex justify-between px-4 py-4 pr-4">
           <div class="flex gap-4 ml-auto"><button
@@ -1073,27 +1111,111 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
   </div>
   <div tabindex="0" data-testid="sentinelEnd"></div>
 </div>
+
+
+
+<div role="presentation" class="MuiModal-root css-ebvv7v" id="add_team_members_modal">
+  <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-um19vb"
+    style="opacity: 1; transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);"></div>
+  <div tabindex="0" data-testid="sentinelStart"></div>
+  <div class="undefined MuiBox-root css-1s71n02" tabindex="-1">
+    <h2
+      class="text-2xl font-semibold border-b px-5 py-3 bg-primary/20 bg-opacity-10 rounded-t-2xl text-foreground flex gap-2 items-center">
+      Add Team Members<button id="close_team_members_modal_button"
+        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium !text-xl !ml-auto !text-inherit p-3 css-1yxmbwk"
+        tabindex="0" type="button"><svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1"
+          viewBox="0 0 17 17" class="w-4 h-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <g></g>
+          <path
+            d="M9.207 8.5l6.646 6.646-0.707 0.707-6.646-6.646-6.646 6.646-0.707-0.707 6.646-6.646-6.647-6.646 0.707-0.707 6.647 6.646 6.646-6.646 0.707 0.707-6.646 6.646z">
+          </path>
+        </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></h2>
+    <div class="py-5 px-6">
+      <div>
+        <div class="flex flex-row justify-center pt-2 pb-1">
+          <form class="w-full flex items-center gap-5">
+            <div id="all-projects-create-project-team-members-share-access" class="flex flex-col gap-1.5 w-full flex-1">
+              <div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon w-full flex-1 css-53m91q">
+                <div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root css-1nx4p1j">
+                  <div
+                    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-sizeSmall MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-segi59">
+                    <input aria-invalid="false" autocomplete="off"
+                      id="all-projects-create-project-team-members-share-access-autocomplete"
+                      placeholder="Select a Email" type="text"
+                      class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-b52kj1"
+                      aria-autocomplete="list" aria-expanded="false" autocapitalize="none" spellcheck="false"
+                      role="combobox" value="">
+                    <div class="MuiAutocomplete-endAdornment css-mxlkbn"><button
+                        class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator css-uge3vf"
+                        tabindex="-1" type="button" aria-label="Open" title="Open"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                          class="lucide lucide-chevron-down h-4 w-4" aria-hidden="true">
+                          <path d="m6 9 6 6 6-6"></path>
+                        </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+                    <fieldset aria-hidden="true" class="MuiOutlinedInput-notchedOutline css-igs3ac">
+                      <legend class="css-ihdtdm"><span class="notranslate">​</span></legend>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+            </div><button
+              class="[&amp;:not(:disabled)]:bg-[linear-gradient(90deg,#088EDC_0%,#0450B2_100%)] [&amp;:not(:disabled)]:hover:bg-[position:100%_0] text-background noflow nopan nodelete nodrag inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-100 disabled:disabled-state [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[size:200%_200%] disabled:bg-muted !text-foreground disabled:!text-muted-foreground transition-[background-position] duration-500 ease-in-out py-2 px-4"
+              disabled="" type="button" id="all-projects-create-project-team-members-share-access-addemail-button"><svg
+                class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true"
+                viewBox="0 0 24 24" data-testid="EmailIcon">
+                <path
+                  d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z">
+                </path>
+              </svg> Add Email</button>
+          </form>
+        </div>
+        <div class="w-full bg-card pb-3 pt-1 mt-3 rounded-3xl max-h-[220px] overflow-y-auto">
+          <p class="text-foreground font-medium text-sm py-2 border-b border-border border-opacity-20">People with
+            Access</p>
+          <p class="text-foreground font-medium text-sm py-2 text-center">No one has Access</p>
+        </div>
+        <div class="flex flex-col my-2">
+          <div class="w-full flex flex-row justify-end gap-3 pt-5"><button
+              class="[&amp;:not(:disabled)]:bg-[linear-gradient(90deg,#088EDC_0%,#0450B2_100%)] [&amp;:not(:disabled)]:hover:bg-[position:100%_0] text-background noflow nopan nodelete nodrag inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-100 disabled:disabled-state [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[size:200%_200%] disabled:bg-muted !text-foreground disabled:!text-muted-foreground transition-[background-position] duration-500 ease-in-out px-10 py-2 rounded-xl"
+              type="button" id="all-projects-create-project-team-members-share-access-submit-button">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div tabindex="0" data-testid="sentinelEnd"></div>
+</div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
+  $(document).ready(function() {
+    closeInitiallyProjectsModal()
+    $("#team_membsers_box").empty();
+  })
+
+  function closeInitiallyProjectsModal() {
+    const modal = $('#parent-main .MuiModal-root');
+
+    if (modal.length) {
+      modal.hide();
+    } else {
+      console.warn("modal_popup() was called, but no modal was found.");
+    }
+  }
+
   $(document).ready(function() {
     $('#openProjectModalBtn').on('click', function() {
       const $modal = $('.MuiModal-root');
 
-      $modal.css({
-        display: 'flex',
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        'z-index': 1300,
-        'align-items': 'center',
-        'justify-content': 'center',
-        'background-color': 'rgba(0,0,0,0.5)', // Semi-transparent dark backdrop
-        opacity: 1, // Ensure full visibility
-        visibility: 'visible', // Remove hidden state
-        'pointer-events': 'auto' // Allow user interaction
-      });
+      $modal.show();
+
+      const teamMembersModel = $("#add_team_members_modal");
+
+      if (teamMembersModel.length) {
+        teamMembersModel.hide();
+      } else {
+        console.warn("modal_popup() was called, but no modal was found.");
+      }
 
       $('#all-projects-create-project-cancel-button').click(function() {
         $('.MuiModal-root').hide();
@@ -1106,4 +1228,158 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
 
     });
   });
+
+
+
+  $(document).ready(function() {
+    // SVGs (copied from your markup)
+    const uncheckedSVG = `
+    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-cpa9t9" focusable="false"
+      aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path>
+    </svg>
+  `;
+
+    const checkedSVG = `
+    <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vrv9vb" focusable="false"
+      aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon">
+      <path d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 
+               16.44 14.63 15.535 15.535C14.63 16.44 13.38 17 12 17C9.24 17 
+               7 14.76 7 12C7 10.62 7.56 9.37 8.465 8.465Z"></path>
+    </svg>
+  `;
+
+    // Helper: reset all radios to unchecked + rebuild icons
+    function resetAllRadios() {
+      $("input[name='privacy-settings']").prop("checked", false);
+      $(".MuiRadio-root").removeClass("Mui-checked");
+      $(".MuiRadio-root").each(function() {
+        const $iconWrap = $(this).find(".css-hyxlzm").first();
+        if ($iconWrap.length) {
+          $iconWrap.empty().append(uncheckedSVG);
+        }
+      });
+    }
+
+    // Init: clear any pre-checked state and ensure unchecked icons exist
+    resetAllRadios();
+
+    // When an input changes (user selects a radio)
+    $(document).on("change", "input[name='privacy-settings']", function() {
+      // Rebuild all radios (clean slate)
+      $(".MuiRadio-root").each(function() {
+        const $iconWrap = $(this).find(".css-hyxlzm").first();
+        if ($iconWrap.length) {
+          $iconWrap.empty().append(uncheckedSVG);
+        }
+      });
+
+      const $team_members_element = `<label class=" MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary
+          MuiInputLabel-root MuiInputLabel-animated w-4/12 text-foreground text-sm css-13maa2j">Team
+            Members</label>
+          <div class="flex items-center flex-wrap gap-2 w-2/3 ">
+            <div class="MuiAvatarGroup-root css-1mceequ"></div>
+            <div
+              class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault border-2 border-dashed bg-transparent border-gray-200 cursor-pointer text-foreground css-1llrwy8">
+              <svg class="MuiSvgIcon-root MuiSvgIc(on-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true"
+                viewBox="0 0 24 24" data-testid="AddIcon"
+                id="all-projects-create-project-access-type-add-team-members-button">
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"></path>
+              </svg>
+            </div>
+          </div>`
+
+
+      $(this).attr('id') == "second_radio_button" ?
+        $("#team_membsers_box").append($team_members_element) :
+        $("#team_membsers_box").empty();
+
+      // Add checked SVG to the selected one and update classes
+      const $root = $(this).closest(".MuiRadio-root");
+      const $iconWrap = $root.find(".css-hyxlzm").first();
+      if ($iconWrap.length) {
+        $iconWrap.append(checkedSVG);
+      }
+
+      $(".MuiRadio-root").removeClass("Mui-checked");
+      $root.addClass("Mui-checked");
+
+      console.log("Selected:", $(this).val());
+    });
+
+    // Fallback: if label is clicked but input doesn't toggle (rare), force it
+    $(document).on("click", ".MuiFormControlLabel-root", function(e) {
+      const $input = $(this).find("input[name='privacy-settings']").first();
+      if ($input.length && !$input.prop("checked")) {
+        $input.prop("checked", true).trigger("change");
+      }
+    });
+  });
+
+  $(document).ready(function() {
+
+    $(document).on("click", "#all-projects-create-project-access-type-add-team-members-button", function() {
+      const teamMembersModel = $("#add_team_members_modal");
+
+      if (teamMembersModel.length) {
+        teamMembersModel.show();
+      } else {
+        console.warn("modal_popup() was called, but no modal was found.");
+      }
+    });
+
+    $(document).on("click", "#close_team_members_modal_button", function() {
+      const teamMembersModel = $("#add_team_members_modal");
+
+      if (teamMembersModel.length) {
+        teamMembersModel.hide();
+      } else {
+        console.warn("modal_popup() was called, but no modal was found.");
+      }
+    });
+  })
+
+  $(document).ready(function() {
+    // Select first icon by default
+    $("#icon-container button").first().addClass("icon-selected");
+
+    // On icon click
+    $("#icon-container").on("click", "button", function() {
+      console.log("Testing....")
+      // Remove selection from all
+      $("#icon-container button").removeClass("icon-selected");
+
+      // Add selection to clicked
+      $(this).addClass("icon-selected");
+    });
+  });
+
+  $(document).ready(function() {
+    let currentIndex = 0;
+    const $slides = $('.slide');
+    const totalSlides = $slides.length;
+
+    // If no slides, completely remove slider section
+    if (totalSlides === 0) {
+      $('.slider-container').remove(); // removes from DOM entirely
+      return;
+    }
+
+    function showSlide(index) {
+      $('.slides').css('transform', `translateX(-${index * 30}%)`);
+    }
+
+    // Next button
+    $('#slider_button').on('click', function() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      showSlide(currentIndex);
+    });
+
+    // Previous button
+    $('#slider_prev').on('click', function() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      showSlide(currentIndex);
+    });
+  });
 </script>
+<script src="js/agent_studio_sub_tabs/projects.js"></script>
