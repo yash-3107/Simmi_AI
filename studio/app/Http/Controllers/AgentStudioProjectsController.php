@@ -45,4 +45,14 @@ class AgentStudioProjectsController extends Controller
     {
         return view('components_for_agent_studio.projects_sub_pages.multi_agent');
     }
+
+    public function recruitment_agent()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.recruitment_agent');
+    }
+
+    public function simple_research_assistant()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.simple_research_assistant');
+    }
 }

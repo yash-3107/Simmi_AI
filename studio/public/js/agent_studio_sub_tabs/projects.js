@@ -78,4 +78,24 @@ $(document).ready(function() {
           }
        });
     })
+
+    $("#card-8").on("click", function() {
+       $.ajax({
+          url: "/agent_studio/projects/recruitment_agent",
+          type: "GET",
+          success: function(res) {
+             $("#parent-main").html(res);
+          }
+       });
+    })
+
+    $("#card-9").on("click", function() {
+       $.ajax({
+          url: "/agent_studio/projects/simple_research_assistant",
+          type: "GET",
+          success: function(res) {
+             $("#parent-main").html(res);
+          }
+       });
+    })
 })

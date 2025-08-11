@@ -51,6 +51,8 @@ Route::get('/agent_studio/projects/email_and_sms', [AgentStudioProjectsControlle
 Route::get('/agent_studio/projects/image_blog_and_qa_generator', [AgentStudioProjectsController::class, 'image_blog_and_qa_generator']);
 Route::get('/agent_studio/projects/language_advanced_chatbot', [AgentStudioProjectsController::class, 'language_advanced_chatbot']);
 Route::get('/agent_studio/projects/multi_agent', [AgentStudioProjectsController::class, 'multi_agent']);
+Route::get('/agent_studio/projects/recruitment_agent', [AgentStudioProjectsController::class, 'recruitment_agent']);
+Route::get('/agent_studio/projects/simple_research_assistant', [AgentStudioProjectsController::class, 'simple_research_assistant']);
 
 
 
