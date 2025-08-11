@@ -98,4 +98,14 @@ $(document).ready(function() {
           }
        });
     })
+
+    $("#all-projects-my-projects-grid-0-card-custom-card").on("click", function() {
+      $.ajax({
+         url: "/agent_studio/projects/my_project",
+         type: "GET",
+         success: function(res) {
+            $("#parent-main").html(res);
+         }
+      });
+   })
 })

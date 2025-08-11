@@ -53,7 +53,7 @@ Route::get('/agent_studio/projects/language_advanced_chatbot', [AgentStudioProje
 Route::get('/agent_studio/projects/multi_agent', [AgentStudioProjectsController::class, 'multi_agent']);
 Route::get('/agent_studio/projects/recruitment_agent', [AgentStudioProjectsController::class, 'recruitment_agent']);
 Route::get('/agent_studio/projects/simple_research_assistant', [AgentStudioProjectsController::class, 'simple_research_assistant']);
-
+Route::get('/agent_studio/projects/my_project', [AgentStudioProjectsController::class, 'my_project']);
 
 
 //App studio module

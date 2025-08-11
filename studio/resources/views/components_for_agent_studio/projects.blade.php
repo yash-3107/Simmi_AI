@@ -664,7 +664,8 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
                         <circle cx="13" cy="12" r="2"></circle>
                         <path d="M18 19c-2.8 0-5-2.2-5-5v8"></path>
                         <circle cx="20" cy="19" r="2"></circle>
-                      </svg>custom chatbot</div>
+                      </svg>custom chatbot
+                    </div>
                     <div class="flex items-center gap-1"><button
                         class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall css-1j7qk7u" tabindex="0"
                         type="button" id="radix-:r3a:" aria-haspopup="menu" aria-expanded="false"

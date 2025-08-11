@@ -55,4 +55,9 @@ class AgentStudioProjectsController extends Controller
     {
         return view('components_for_agent_studio.projects_sub_pages.simple_research_assistant');
     }
+
+    public function my_project()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.my_project');
+    }
 }
