@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="agent_studio_css/image_blog_and_qa_generator.css">
-<main class="flex-1 overflow-auto px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
+<link rel="stylesheet" href="agent_stusio_css/image_blog_and_qa_generator.css">
+<main class="flex-1 overflow-auto px-6 pt-4">
   <div id="projects-module-index-container" class="space-y-3">
     <div class="flex text-2xl gap-3 items-center" id="projects-module-index-breadcrumbs-container"><svg
         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -22,8 +22,8 @@
           </li>
           <li aria-hidden="true" class="MuiBreadcrumbs-separator css-3mf706">/</li>
           <li class="MuiBreadcrumbs-li">
-            <div class="text-foreground capitalize max-w-96 truncate" id="projects-module-index-breadcrumbs-1">14818
-            </div>
+            <div class="text-foreground capitalize max-w-96 truncate" id="projects-module-index-breadcrumbs-1">
+              Image,blog &amp; qa generator</div>
           </li>
         </ol>
       </nav>
@@ -48,7 +48,7 @@
       <div class="space-y-4">
         <div class="bg-agent-studio-background w-full p-4 rounded-xl">
           <div class="flex justify-between items-center">
-            <h1 class="text-foreground font-bold text-lg">Pre-built Project ()</h1>
+            <h1 class="text-foreground font-bold text-lg">Pre-built Project (Image,Blog &amp; QA Generator)</h1>
             <div class="flex items-center gap-5"><button
                 class="[&amp;:not(:disabled)]:bg-[linear-gradient(90deg,#088EDC_0%,#0450B2_100%)] [&amp;:not(:disabled)]:hover:bg-[position:100%_0] text-background noflow nopan nodelete nodrag inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-100 disabled:disabled-state [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-[size:200%_200%] disabled:bg-muted !text-foreground disabled:!text-muted-foreground transition-[background-position] duration-500 ease-in-out px-4 py-2 rounded-xl"
                 type="button">Clone Project</button><button
@@ -67,7 +67,9 @@
                 <div class="space-y-1">
                   <h2 class="text-foreground font-medium">Description</h2>
                   <div class="text-muted-foreground text-sm">
-                    <p class="line-clamp-3">No description provided</p>
+                    <p class="line-clamp-3">The Blog Q&amp;A Generator creates engaging Q&amp;A content for blogs,
+                      enhancing readability and SEO. It automatically generates relevant questions and detailed answers
+                      based on topics, helping bloggers improve content quality.</p>
                   </div>
                 </div>
               </div>
@@ -75,19 +77,21 @@
                 <h2 class="text-foreground font-medium">Owner</h2>
                 <div class="text-muted-foreground text-sm">
                   <div class="flex items-center gap-2"><span
-                      class="relative flex shrink-0 overflow-hidden rounded-full w-7 h-7"><span
-                        class="flex h-full w-full items-center justify-center rounded-full bg-muted uppercase"></span></span>
-                    <div class="text-sm">undefined undefined - undefined</div>
+                      class="relative flex shrink-0 overflow-hidden rounded-full w-7 h-7"><img
+                        class="aspect-square w-full h-full object-contain object-center bg-white p-1"
+                        alt="Prebuilt Account"
+                        src="https://adyatechstorage.blob.core.windows.net/onest-storage/default/testpath/92bc374d-c716-4283-9d4e-93ee0975a764.svg"></span>
+                    <div class="text-sm">Prebuilt Account - prebuilt@adya.ai</div>
                   </div>
                 </div>
               </div>
               <div class="space-y-1">
                 <h2 class="text-foreground font-medium">Created Date</h2>
-                <div class="text-muted-foreground text-sm">11-Aug-2025, 03:16 PM</div>
+                <div class="text-muted-foreground text-sm">13-Mar-2025, 05:19 PM</div>
               </div>
               <div class="space-y-1">
                 <h2 class="text-foreground font-medium">Last Updated Date</h2>
-                <div class="text-muted-foreground text-sm">11-Aug-2025, 03:16 PM</div>
+                <div class="text-muted-foreground text-sm">14-Mar-2025, 03:49 PM</div>
               </div>
             </div>
           </div>
@@ -147,18 +151,17 @@
           <div>
             <div class="grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4" id="all-projects-list-grid-view">
               <div id="project-view-pre-built-flows-0-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg cursor-pointer hover:shadow-md transition-all duration-300 flex flex-col gap-2">
+                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
                 <div class="flex gap-2 items-center justify-between">
                   <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="Gmail">Gmail</div>
+                    <div class="font-semibold line-clamp-1" title="Image Generator">Image Generator</div>
                   </div>
                   <div
                     class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
+                    Copilot</div>
                 </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">Email and SMS are communication methods
-                  used for sending messages electronically, with email being internet-based and SMS delivered via mobile
-                  networks.</p>
+                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">Retrieve the list of images which is useful
+                  to make website/blog etc.</p>
                 <div class="pt-1 mt-auto">
                   <div class="flex gap-2 items-start justify-between">
                     <div dir="ltr" class="relative overflow-hidden w-full"
@@ -180,10 +183,90 @@
                           <div class="flex items-center gap-2 pb-2">
                             <div
                               class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              Notifications</div>
+                              Generator</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="project-view-pre-built-flows-1-card-custom-card"
+                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
+                <div class="flex gap-2 items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <div class="font-semibold line-clamp-1" title="Document Q&amp;A">Document Q&amp;A</div>
+                  </div>
+                  <div
+                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
+                    Agent</div>
+                </div>
+                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">Integrates PDF reading with a language
+                  model to answer document-specific questions. Ideal for small-scale texts, it facilitates direct
+                  queries with immediate insights.</p>
+                <div class="pt-1 mt-auto">
+                  <div class="flex gap-2 items-start justify-between">
+                    <div dir="ltr" class="relative overflow-hidden w-full"
+                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
+                      <style>
+                        [data-radix-scroll-area-viewport] {
+                          scrollbar-width: none;
+                          -ms-overflow-style: none;
+                          -webkit-overflow-scrolling: touch;
+                        }
+
+                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+                          display: none
+                        }
+                      </style>
+                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
+                        style="overflow: scroll hidden;">
+                        <div style="min-width: 100%; display: table;">
+                          <div class="flex items-center gap-2 pb-2">
                             <div
                               class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              Marketing</div>
+                              Generator</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="project-view-pre-built-flows-2-card-custom-card"
+                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
+                <div class="flex gap-2 items-center justify-between">
+                  <div class="flex items-center gap-2">
+                    <div class="font-semibold line-clamp-1" title="Content/Blog Generator">Content/Blog Generator</div>
+                  </div>
+                  <div
+                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
+                    Agent</div>
+                </div>
+                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">Auto-generate a customized blog post from
+                  instructions and referenced articles.</p>
+                <div class="pt-1 mt-auto">
+                  <div class="flex gap-2 items-start justify-between">
+                    <div dir="ltr" class="relative overflow-hidden w-full"
+                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
+                      <style>
+                        [data-radix-scroll-area-viewport] {
+                          scrollbar-width: none;
+                          -ms-overflow-style: none;
+                          -webkit-overflow-scrolling: touch;
+                        }
+
+                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+                          display: none
+                        }
+                      </style>
+                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
+                        style="overflow: scroll hidden;">
+                        <div style="min-width: 100%; display: table;">
+                          <div class="flex items-center gap-2 pb-2">
+                            <div
+                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
+                              Generator</div>
                           </div>
                         </div>
                       </div>
@@ -199,10 +282,10 @@
                 <div
                   class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-8nphli">
                   <div class="MuiTablePagination-spacer css-1mrwq1p"></div>
-                  <p class="MuiTablePagination-selectLabel css-1chpzqh" id=":r14i:">Per Page:</p>
+                  <p class="MuiTablePagination-selectLabel css-1chpzqh" id=":rfn:">Per Page:</p>
                   <div class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-rmmij8">
-                    <div tabindex="0" role="combobox" aria-controls=":r14j:" aria-expanded="false"
-                      aria-haspopup="listbox" aria-labelledby=":r14i: :r14h:" id=":r14h:"
+                    <div tabindex="0" role="combobox" aria-controls=":rfo:" aria-expanded="false"
+                      aria-haspopup="listbox" aria-labelledby=":rfn: :rfm:" id=":rfm:"
                       class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1cccqvr">
                       12</div><input aria-invalid="false" aria-hidden="true" tabindex="-1"
                       class="MuiSelect-nativeInput css-1k3x8v3" value="12"><svg
