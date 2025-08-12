@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/ai_file_assistant_system.css">
+<link rel="stylesheet" href="agent_studio_css/ai_flight_assistant_system.css">
 <main class=" flex-1 overflow-auto px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
   <div id="projects-module-index-container" class="space-y-3">
     <div class="flex text-2xl gap-3 items-center" id="projects-module-index-breadcrumbs-container"><svg
@@ -117,9 +117,10 @@
               </div>
               <div class="flex items-center gap-x-5">
                 <div role="group" class="MuiToggleButtonGroup-root bg-background rounded-lg css-7rg7fp"
-                  id="all-projects-my-projects-toggle-group" aria-label="text alignment"><button
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
-                    tabindex="0" type="button" value="grid" aria-pressed="true"
+                  id="all-projects-my-projects-toggle-group" aria-label="text alignment">
+                  <button
+                    class="MuiButtonBase-root toggle-button MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
+                    data-state="active" tabindex="0" type="button" value="grid" aria-pressed="true"
                     id="all-projects-my-projects-toggle-group-grid" aria-label="left aligned" data-state="closed"><svg
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -129,9 +130,11 @@
                       <rect width="7" height="7" x="14" y="3" rx="1"></rect>
                       <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                       <rect width="7" height="7" x="3" y="14" rx="1"></rect>
-                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
-                    tabindex="0" type="button" value="list" aria-pressed="false"
+                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+                  </button>
+                  <button
+                    class="MuiButtonBase-root toggle-button MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
+                    tabindex="0" type="button" value="list" aria-pressed="false" data-state="active"
                     id="all-projects-my-projects-toggle-group-list" aria-label="left aligned" data-state="closed"><svg
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -143,7 +146,8 @@
                       <path d="M21 12h.01"></path>
                       <path d="M21 18h.01"></path>
                       <path d="M21 6h.01"></path>
-                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button></div>
+                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                </div>
               </div>
             </div>
           </div>
@@ -269,3 +273,23 @@
     </div>
   </div>
 </main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function() {
+  $(".toggle-button").on("click", function() {
+    // Remove 'Mui-selected' and set aria-pressed to false on all buttons
+    $(".toggle-button")
+      .removeClass("Mui-selected")
+      .attr("aria-pressed", "false");
+
+    // Add 'Mui-selected' to the clicked one and set aria-pressed to true
+    $(this)
+      .addClass("Mui-selected")
+      .attr("aria-pressed", "true");
+
+    let url = $(this).attr('id') == "all-projects-my-projects-toggle-group-grid" ?
+      '/agent_studio/projects/ai_flight_assistant_system/flows_included_cards' :
+      '/agent_studio/projects/ai_flight_assistant_system/flows_included_table'
+  });
+});
+</script>

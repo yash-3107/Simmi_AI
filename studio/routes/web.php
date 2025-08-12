@@ -44,6 +44,8 @@ Route::get('/agent_studio/observability/observability_component_deployments', [A
 Route::get('/agent_studio/observability/root_and_users', [AgentStudioObservabilityController::class, 'root_and_users']);
 Route::get('/agent_studio/observability/company_summary', [AgentStudioObservabilityController::class, 'company_summary']);
 Route::get('/agent_studio/projects/ai_flight_assistant_system', [AgentStudioProjectsController::class, 'ai_flight_assistant_system']);
+Route::get('/agent_studio/projects/ai_flight_assistant_system/flows_included_cards', [AgentStudioProjectsController::class, 'flows_included_cards']);
+Route::get('/agent_studio/projects/ai_flight_assistant_system/flows_included_table', [AgentStudioProjectsController::class, 'flows_included_table']);
 Route::get('/agent_studio/projects/basic_chatbot', [AgentStudioProjectsController::class, 'basic_chatbot']);
 Route::get('/agent_studio/projects/bhashini', [AgentStudioProjectsController::class, 'bhashini']);
 Route::get('/agent_studio/projects/buyer_app_copilot', [AgentStudioProjectsController::class, 'buyer_app_copilot']);
