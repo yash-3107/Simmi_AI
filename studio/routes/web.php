@@ -56,8 +56,14 @@ Route::get('/agent_studio/projects/buyer_app_copilot', [AgentStudioProjectsContr
 Route::get('/agent_studio/projects/buyer_app_copilot/buyer_app_copilot_flows_included_cards', [AgentStudioProjectsController::class, 'buyer_app_copilot_flows_included_cards']);
 Route::get('/agent_studio/projects/buyer_app_copilot/buyer_app_copilot_flows_included_table', [AgentStudioProjectsController::class, 'buyer_app_copilot_flows_included_table']);
 Route::get('/agent_studio/projects/email_and_sms', [AgentStudioProjectsController::class, 'email_and_sms']);
+Route::get('/agent_studio/projects/email_and_sms/email_and_sms_flows_included_cards', [AgentStudioProjectsController::class, 'email_and_sms_flows_included_cards']);
+Route::get('/agent_studio/projects/email_and_sms/email_and_sms_flows_included_table', [AgentStudioProjectsController::class, 'email_and_sms_flows_included_table']);
 Route::get('/agent_studio/projects/image_blog_and_qa_generator', [AgentStudioProjectsController::class, 'image_blog_and_qa_generator']);
+Route::get('/agent_studio/projects/image_blog_and_qa_generator/image_blog_and_qa_generator_flows_included_cards', [AgentStudioProjectsController::class, 'image_blog_and_qa_generator_flows_included_cards']);
+Route::get('/agent_studio/projects/image_blog_and_qa_generator/image_blog_and_qa_generator_flows_included_table', [AgentStudioProjectsController::class, 'image_blog_and_qa_generator_flows_included_table']);
 Route::get('/agent_studio/projects/language_advanced_chatbot', [AgentStudioProjectsController::class, 'language_advanced_chatbot']);
+Route::get('/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_table', [AgentStudioProjectsController::class, 'language_advanced_chatbot_flows_included_table']);
+Route::get('/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_cards', [AgentStudioProjectsController::class, 'language_advanced_chatbot_flows_included_cards']);
 Route::get('/agent_studio/projects/multi_agent', [AgentStudioProjectsController::class, 'multi_agent']);
 Route::get('/agent_studio/projects/recruitment_agent', [AgentStudioProjectsController::class, 'recruitment_agent']);
 Route::get('/agent_studio/projects/simple_research_assistant', [AgentStudioProjectsController::class, 'simple_research_assistant']);

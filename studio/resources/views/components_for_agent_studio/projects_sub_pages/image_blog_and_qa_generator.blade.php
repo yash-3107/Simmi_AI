@@ -119,7 +119,7 @@
               <div class="flex items-center gap-x-5">
                 <div role="group" class="MuiToggleButtonGroup-root bg-background rounded-lg css-7rg7fp"
                   id="all-projects-my-projects-toggle-group" aria-label="text alignment"><button
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
+                    class="MuiButtonBase-root toggle-button MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
                     tabindex="0" type="button" value="grid" aria-pressed="true"
                     id="all-projects-my-projects-toggle-group-grid" aria-label="left aligned" data-state="closed"><svg
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -131,7 +131,7 @@
                       <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                       <rect width="7" height="7" x="3" y="14" rx="1"></rect>
                     </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
+                    class="MuiButtonBase-root toggle-button MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
                     tabindex="0" type="button" value="list" aria-pressed="false"
                     id="all-projects-my-projects-toggle-group-list" aria-label="left aligned" data-state="closed"><svg
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -149,131 +149,9 @@
             </div>
           </div>
           <div>
-            <div class="grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4" id="all-projects-list-grid-view">
-              <div id="project-view-pre-built-flows-0-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="Image Generator">Image Generator</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Copilot</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">Retrieve the list of images which is useful
-                  to make website/blog etc.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
+            <div class="grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4"
+              id="image_blog_and_qa_generator_table_and_card_container">
 
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              Generator</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="project-view-pre-built-flows-1-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="Document Q&amp;A">Document Q&amp;A</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">Integrates PDF reading with a language
-                  model to answer document-specific questions. Ideal for small-scale texts, it facilitates direct
-                  queries with immediate insights.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
-
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              Generator</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="project-view-pre-built-flows-2-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="Content/Blog Generator">Content/Blog Generator</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">Auto-generate a customized blog post from
-                  instructions and referenced articles.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
-
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              Generator</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="flex w-full justify-center items-center mt-5 rounded-lg">
               <div
@@ -317,3 +195,52 @@
     </div>
   </div>
 </main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $.ajax({
+      url: '/agent_studio/projects/image_blog_and_qa_generator/image_blog_and_qa_generator_flows_included_cards',
+      type: 'GET',
+      success: function(res) {
+        $('#image_blog_and_qa_generator_table_and_card_container').html(res);
+      }
+    })
+
+    $(".toggle-button").on("click", function() {
+      // Remove 'Mui-selected' and set aria-pressed to false on all buttons
+      $(".toggle-button")
+        .removeClass("Mui-selected")
+        .attr("aria-pressed", "false");
+
+      // Add 'Mui-selected' to the clicked one and set aria-pressed to true
+      $(this)
+        .addClass("Mui-selected")
+        .attr("aria-pressed", "true");
+
+
+
+      let url = $(this).attr('id') == "all-projects-my-projects-toggle-group-grid" ?
+        '/agent_studio/projects/image_blog_and_qa_generator/image_blog_and_qa_generator_flows_included_cards' :
+        '/agent_studio/projects/image_blog_and_qa_generator/image_blog_and_qa_generator_flows_included_table'
+
+      if (url ==
+        '/agent_studio/projects/image_blog_and_qa_generator/image_blog_and_qa_generator_flows_included_cards') {
+        $('#image_blog_and_qa_generator_table_and_card_container').addClass(
+          'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
+      } else {
+        $('#image_blog_and_qa_generator_table_and_card_container').removeClass(
+          'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
+      }
+
+      $.ajax({
+        url: url,
+        type: 'GET',
+        success: function(res) {
+          $('#image_blog_and_qa_generator_table_and_card_container').html(res);
+        }
+      })
+    });
+  });
+</script>

@@ -100,4 +100,34 @@ class AgentStudioProjectsController extends Controller
     {
         return view('components_for_agent_studio.projects_sub_pages.tables.buyer_app_copilot_flows_included_table');
     }
+
+    public function email_and_sms_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.email_and_sms_flows_included_table');
+    }
+
+    public function email_and_sms_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.email_and_sms_flows_included_cards');
+    }
+
+    public function image_blog_and_qa_generator_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.image_blog_and_qa_generator_flows_included_cards');
+    }
+
+    public function image_blog_and_qa_generator_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.image_blog_and_qa_generator_flows_included_table');
+    }
+
+    public function language_advanced_chatbot_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.language_advanced_chatbot_flows_included_table');
+    }
+
+    public function language_advanced_chatbot_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.language_advanced_chatbot_flows_included_cards');
+    }
 }
