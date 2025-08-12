@@ -1,0 +1,324 @@
+/*! CSS Used from: https://vanij.adya.ai/assets/index-DDZnLYio.css */
+.flex {
+    display: flex !important;
+}
+
+.h-2 {
+    height: .5rem !important;
+}
+
+.w-2 {
+    width: .5rem !important;
+}
+
+.items-center {
+    align-items: center !important;
+}
+
+.gap-2 {
+    gap: .5rem !important;
+}
+
+.rounded-full {
+    border-radius: 9999px !important;
+}
+
+.bg-green-500 {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(34 197 94 / var(--tw-bg-opacity)) !important;
+}
+
+:focus-visible {
+    outline: none !important;
+    outline-offset: 0px !important;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+:before,
+:after {
+    --tw-content: "";
+}
+
+input {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    padding: 0;
+}
+
+input::placeholder {
+    opacity: 1;
+    color: #9ca3af;
+}
+
+:disabled {
+    cursor: default;
+}
+
+svg {
+    display: block;
+    vertical-align: middle;
+}
+
+* {
+    border-color: hsl(var(--border));
+}
+
+*,
+:before,
+:after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
+
+/*! CSS Used from: Embedded */
+.css-hbl6ho {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    min-width: 130px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.css-hbl6ho:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.87);
+}
+
+@media (hover: none) {
+    .css-hbl6ho:hover .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(0, 0, 0, 0.23);
+    }
+}
+
+.css-hbl6ho.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(25, 118, 210);
+    border-width: 2px;
+}
+
+.css-hbl6ho .MuiSelect-select {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 6px;
+    padding-left: 12px;
+    padding-right: 24px;
+}
+
+.css-hbl6ho .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.08);
+    border-width: 1px;
+}
+
+.css-hbl6ho:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.css-hbl6ho.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(25, 118, 210);
+    border-width: 1px;
+}
+
+.css-182didf {
+    appearance: none;
+    user-select: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: 100%;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 8.5px 14px;
+}
+
+.css-182didf:focus {
+    border-radius: 4px;
+}
+
+.css-182didf.css-182didf.css-182didf {
+    padding-right: 32px;
+}
+
+.css-182didf.MuiSelect-select {
+    height: auto;
+    min-height: 1.4375em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.css-182didf:focus {
+    outline: 0px;
+}
+
+.css-182didf:invalid {
+    box-shadow: none;
+}
+
+.css-1k3x8v3 {
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.css-igs3ac {
+    text-align: left;
+    position: absolute;
+    inset: -5px 0px 0px;
+    margin: 0px;
+    padding: 0px 8px;
+    pointer-events: none;
+    border-radius: inherit;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    min-width: 0%;
+    border-color: rgba(0, 0, 0, 0.23);
+}
+
+.css-ihdtdm {
+    float: unset;
+    width: auto;
+    overflow: hidden;
+    padding: 0px;
+    line-height: 11px;
+    transition: width 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.css-1yhq19e {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.5rem;
+    position: absolute;
+    right: 7px;
+    top: calc(50% - 0.5em);
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.54);
+    transform: rotate(180deg);
+}
+
+/*! CSS Used keyframes */
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+/* Styles for the dropdown menu */
+.framework-dropdown-menu {
+    /* Use position: absolute to place it freely on the page */
+    position: absolute;
+    top:5px;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    background-color: white;
+    z-index: 1000; /* High z-index to appear on top of other content */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    overflow: auto;
+}
+
+.framework-dropdown-item {
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.framework-dropdown-item:hover {
+    background-color: #f1f5f9;
+}

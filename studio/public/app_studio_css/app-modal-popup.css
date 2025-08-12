@@ -1,0 +1,1673 @@
+/*! CSS Used from: https://vanij.adya.ai/assets/index-DDZnLYio.css */
+.mx-2 {
+    margin-left: .5rem !important;
+    margin-right: .5rem !important;
+}
+
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.my-5 {
+    margin-top: 1.25rem !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.\!ml-auto {
+    margin-left: auto !important;
+}
+
+.mb-4 {
+    margin-bottom: 1rem !important;
+}
+
+.ml-1\.5 {
+    margin-left: .375rem !important;
+}
+
+.ml-2 {
+    margin-left: .5rem !important;
+}
+
+.mt-0\.5 {
+    margin-top: .125rem !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.inline-flex {
+    display: inline-flex !important;
+}
+
+.grid {
+    display: grid !important;
+}
+
+.size-full {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.h-10 {
+    height: 2.5rem !important;
+}
+
+.h-4 {
+    height: 1rem !important;
+}
+
+.h-\[6px\] {
+    height: 6px !important;
+}
+
+.h-fit {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+}
+
+.max-h-\[90vh\] {
+    max-height: 90vh !important;
+}
+
+.w-10 {
+    width: 2.5rem !important;
+}
+
+.w-2\/3 {
+    width: 66.666667% !important;
+}
+
+.w-4 {
+    width: 1rem !important;
+}
+
+.w-4\/12 {
+    width: 33.333333% !important;
+}
+
+.w-fit {
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+}
+
+.w-full {
+    width: 100% !important;
+}
+
+.min-w-\[30px\] {
+    min-width: 30px !important;
+}
+
+.max-w-2xl {
+    max-width: 42rem !important;
+}
+
+.flex-1 {
+    flex: 1 1 0% !important;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.flex-col {
+    flex-direction: column !important;
+}
+
+.items-start {
+    align-items: flex-start !important;
+}
+
+.items-center {
+    align-items: center !important;
+}
+
+.justify-end {
+    justify-content: flex-end !important;
+}
+
+.justify-center {
+    justify-content: center !important;
+}
+
+.gap-1\.5 {
+    gap: .375rem !important;
+}
+
+.gap-2 {
+    gap: .5rem !important;
+}
+
+.gap-3 {
+    gap: .75rem !important;
+}
+
+.gap-5 {
+    gap: 1.25rem !important;
+}
+
+.gap-x-1 {
+    -moz-column-gap: .25rem !important;
+    column-gap: .25rem !important;
+}
+
+.gap-x-2 {
+    -moz-column-gap: .5rem !important;
+    column-gap: .5rem !important;
+}
+
+.space-y-5>:not([hidden])~:not([hidden]) {
+    --tw-space-y-reverse: 0 !important;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse))) !important;
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse)) !important;
+}
+
+.overflow-y-auto {
+    overflow-y: auto !important;
+}
+
+.whitespace-nowrap {
+    white-space: nowrap !important;
+}
+
+.rounded {
+    border-radius: .25rem !important;
+}
+
+.rounded-full {
+    border-radius: 9999px !important;
+}
+
+.rounded-lg {
+    border-radius: var(--radius) !important;
+}
+
+.rounded-xl {
+    border-radius: .75rem !important;
+}
+
+.rounded-t-2xl {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+}
+
+.border {
+    border-width: 1px !important;
+}
+
+.border-2 {
+    border-width: 2px !important;
+}
+
+.border-b {
+    border-bottom-width: 1px !important;
+}
+
+.border-gray-200 {
+    --tw-border-opacity: 1 !important;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity)) !important;
+}
+
+.border-gray-300 {
+    --tw-border-opacity: 1 !important;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity)) !important;
+}
+
+.border-input {
+    border-color: hsl(var(--input)) !important;
+}
+
+.border-primary {
+    border-color: hsl(var(--primary)) !important;
+}
+
+.bg-primary {
+    background-color: hsl(var(--primary)) !important;
+}
+
+.bg-primary\/10 {
+    background-color: hsl(var(--primary) / .1) !important;
+}
+
+.bg-primary\/20 {
+    background-color: hsl(var(--primary) / .2) !important;
+}
+
+.bg-opacity-10 {
+    --tw-bg-opacity: .1 !important;
+}
+
+.bg-gradient-to-r {
+    background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+}
+
+.from-primary {
+    --tw-gradient-from: hsl(var(--primary)) var(--tw-gradient-from-position) !important;
+    --tw-gradient-to: hsl(var(--primary) / 0) var(--tw-gradient-to-position) !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-transparent {
+    --tw-gradient-to: transparent var(--tw-gradient-to-position) !important;
+}
+
+.p-2 {
+    padding: .5rem !important;
+}
+
+.p-2\.5 {
+    padding: .625rem !important;
+}
+
+.p-3 {
+    padding: .75rem !important;
+}
+
+.px-10 {
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+}
+
+.px-4 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.px-5 {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
+
+.py-2 {
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+}
+
+.py-3 {
+    padding-top: .75rem !important;
+    padding-bottom: .75rem !important;
+}
+
+.\!text-xl {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+}
+
+.text-2xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+}
+
+.text-sm {
+    font-size: .875rem !important;
+    line-height: 1.25rem !important;
+}
+
+.text-xs {
+    font-size: .75rem !important;
+    line-height: 1rem !important;
+}
+
+.font-medium {
+    font-weight: 500 !important;
+}
+
+.font-semibold {
+    font-weight: 600 !important;
+}
+
+.leading-tight {
+    line-height: 1.25 !important;
+}
+
+.\!text-inherit {
+    color: inherit !important;
+}
+
+.text-\[\#9ca3af\] {
+    --tw-text-opacity: 1 !important;
+    color: rgb(156 163 175 / var(--tw-text-opacity)) !important;
+}
+
+.text-background {
+    color: hsl(var(--background)) !important;
+}
+
+.text-black {
+    --tw-text-opacity: 1 !important;
+    color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
+}
+
+.text-foreground {
+    color: hsl(var(--foreground)) !important;
+}
+
+.text-gray-500 {
+    --tw-text-opacity: 1 !important;
+    color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
+}
+
+.text-primary-foreground {
+    color: hsl(var(--primary-foreground)) !important;
+}
+
+.text-red-500 {
+    --tw-text-opacity: 1 !important;
+    color: rgb(239 68 68 / var(--tw-text-opacity)) !important;
+}
+
+.ring-offset-background {
+    --tw-ring-offset-color: hsl(var(--background)) !important;
+}
+
+.transition-all {
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1) !important;
+    transition-duration: .15s !important;
+}
+
+.transition-colors {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke !important;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1) !important;
+    transition-duration: .15s !important;
+}
+
+:focus-visible {
+    outline: none !important;
+    outline-offset: 0px !important;
+}
+
+.hover\:border-primary\/50:hover {
+    border-color: hsl(var(--primary) / .5) !important;
+}
+
+.hover\:bg-input:hover {
+    background-color: hsl(var(--input)) !important;
+}
+
+.hover\:bg-primary-hover:hover {
+    background-color: hsl(var(--primary-hover)) !important;
+}
+
+.hover\:text-accent-foreground:hover {
+    color: hsl(var(--accent-foreground)) !important;
+}
+
+.disabled\:pointer-events-none:disabled {
+    pointer-events: none !important;
+}
+
+.disabled\:bg-muted:disabled {
+    background-color: hsl(var(--muted)) !important;
+}
+
+.disabled\:text-foreground\/50:disabled {
+    color: hsl(var(--foreground) / .5) !important;
+}
+
+.disabled\:opacity-100:disabled {
+    opacity: 1 !important;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+:before,
+:after {
+    --tw-content: "";
+}
+
+h2 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+button,
+input {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    text-transform: none;
+}
+
+button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+
+h2,
+p {
+    margin: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    padding: 0;
+}
+
+input::placeholder {
+    opacity: 1;
+    color: #9ca3af;
+}
+
+button {
+    cursor: pointer;
+}
+
+:disabled {
+    cursor: default;
+}
+
+svg {
+    display: block;
+    vertical-align: middle;
+}
+
+* {
+    border-color: hsl(var(--border));
+}
+
+*,
+:before,
+:after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
+
+/*! CSS Used from: Embedded */
+.css-igs3ac {
+    text-align: left;
+    position: absolute;
+    inset: -5px 0px 0px;
+    margin: 0px;
+    padding: 0px 8px;
+    pointer-events: none;
+    border-radius: inherit;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    min-width: 0%;
+    border-color: rgba(0, 0, 0, 0.23);
+}
+
+.css-ihdtdm {
+    float: unset;
+    width: auto;
+    overflow: hidden;
+    padding: 0px;
+    line-height: 11px;
+    transition: width 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.css-w0pj6f {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+
+.css-1fv9ymj {
+    position: fixed;
+    z-index: 1300;
+    inset: 0px;
+}
+
+.css-1fv9ymj .MuiBox-root {
+    width: 100%;
+    height: 100%;
+}
+
+.css-um19vb {
+    position: fixed;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.css-1s71n02 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(var(--background));
+    border-radius: 16px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.css-1yxmbwk {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 50%;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media print {
+    .css-1yxmbwk {
+        print-color-adjust: exact;
+    }
+}
+
+.css-1yxmbwk:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (hover: none) {
+    .css-1yxmbwk:hover {
+        background-color: transparent;
+    }
+}
+
+.css-13maa2j {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    padding: 0px;
+    position: relative;
+    display: block;
+    transform-origin: left top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    transition: color 200ms cubic-bezier(0, 0, 0.2, 1), transform 200ms cubic-bezier(0, 0, 0.2, 1), max-width 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.css-6ev3vj {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    vertical-align: top;
+}
+
+.css-6ev3vj .MuiInputBase-root {
+    border-radius: 0.5rem;
+    background-color: hsl(var(--background));
+}
+
+.css-1bn53lx {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+    padding-right: 14px;
+}
+
+.css-1bn53lx:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.87);
+}
+
+@media (hover: none) {
+    .css-1bn53lx:hover .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(0, 0, 0, 0.23);
+    }
+}
+
+.css-b52kj1 {
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: 100%;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 8.5px 0px 8.5px 14px;
+}
+
+.css-b52kj1:focus {
+    outline: 0px;
+}
+
+.css-b52kj1:invalid {
+    box-shadow: none;
+}
+
+.css-1nvf7g0 {
+    display: flex;
+    height: 0.01em;
+    max-height: 2em;
+    -webkit-box-align: center;
+    align-items: center;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.54);
+    margin-left: 8px;
+}
+
+.css-l76ov3 {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    vertical-align: top;
+}
+
+.css-l76ov3 .MuiInputBase-root {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border-color: rgb(59, 130, 246);
+    height: 2.5rem;
+}
+
+.css-l76ov3 .MuiInputBase-root:hover {
+    background-color: transparent;
+}
+
+.css-l76ov3 .MuiInputBase-input::placeholder {
+    color: rgb(156, 163, 175);
+    opacity: 1;
+}
+
+.css-1h7anqn {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.css-1a5icme {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 50%;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+@media print {
+    .css-1a5icme {
+        print-color-adjust: exact;
+    }
+}
+
+.css-1a5icme:hover {
+    background-color: rgba(25, 118, 210, 0.04);
+}
+
+@media (hover: none) {
+    .css-1a5icme:hover {
+        background-color: transparent;
+    }
+}
+
+.css-1a5icme.Mui-checked {
+    color: rgb(25, 118, 210);
+}
+
+.css-1m9pwf3 {
+    cursor: inherit;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+}
+
+.css-hyxlzm {
+    position: relative;
+    display: flex;
+}
+
+.css-cpa9t9 {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.25rem;
+    transform: scale(1);
+}
+
+.css-vrv9vb {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.25rem;
+    left: 0px;
+    position: absolute;
+    transform: scale(1);
+    transition: transform 150ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.css-1exsolk {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    font-size: 1.25rem;
+    left: 0px;
+    position: absolute;
+    transform: scale(0);
+    transition: transform 150ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+.css-gcze0h {
+    width: 100%;
+}
+
+@media (pointer: fine) {
+    .css-gcze0h:hover .MuiAutocomplete-clearIndicator {
+        visibility: visible;
+    }
+}
+
+.MuiAutocomplete-hasPopupIcon.css-gcze0h .MuiAutocomplete-inputRoot,
+.MuiAutocomplete-hasClearIcon.css-gcze0h .MuiAutocomplete-inputRoot {
+    padding-right: 30px;
+}
+
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-gcze0h .MuiAutocomplete-inputRoot {
+    padding-right: 56px;
+}
+
+.css-gcze0h .MuiAutocomplete-inputRoot .MuiAutocomplete-input {
+    width: 0px;
+    min-width: 30px;
+}
+
+.css-gcze0h .MuiOutlinedInput-root {
+    padding: 9px;
+}
+
+.MuiAutocomplete-hasPopupIcon.css-gcze0h .MuiOutlinedInput-root,
+.MuiAutocomplete-hasClearIcon.css-gcze0h .MuiOutlinedInput-root {
+    padding-right: 39px;
+}
+
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-gcze0h .MuiOutlinedInput-root {
+    padding-right: 65px;
+}
+
+.css-gcze0h .MuiOutlinedInput-root .MuiAutocomplete-input {
+    padding: 7.5px 4px 7.5px 5px;
+}
+
+.css-gcze0h .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+    right: 9px;
+}
+
+.css-gcze0h .MuiOutlinedInput-root.MuiInputBase-sizeSmall {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+}
+
+.css-gcze0h .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
+    padding: 2.5px 4px 2.5px 8px;
+}
+
+.css-gcze0h .MuiAutocomplete-input {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    opacity: 0;
+}
+
+.css-gcze0h .MuiAutocomplete-input {
+    opacity: 1;
+}
+
+.css-feqhe6 {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.css-segi59 {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    padding-right: 14px;
+}
+
+.css-segi59:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.87);
+}
+
+@media (hover: none) {
+    .css-segi59:hover .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(0, 0, 0, 0.23);
+    }
+}
+
+.css-mxlkbn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+.css-edpqz1 {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px -2px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 4px;
+    visibility: hidden;
+}
+
+@media print {
+    .css-edpqz1 {
+        print-color-adjust: exact;
+    }
+}
+
+.css-edpqz1:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (hover: none) {
+    .css-edpqz1:hover {
+        background-color: transparent;
+    }
+}
+
+.css-1k33q06 {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.25rem;
+}
+
+.css-uge3vf {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px -2px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 2px;
+}
+
+@media print {
+    .css-uge3vf {
+        print-color-adjust: exact;
+    }
+}
+
+.css-uge3vf:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (hover: none) {
+    .css-uge3vf:hover {
+        background-color: transparent;
+    }
+}
+
+.css-vubbuv {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.5rem;
+}
+
+/*! CSS Used keyframes */
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+/* Styles for the custom dropdown */
+.autocomplete-dropdown {
+    position: absolute;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    background-color: white;
+    z-index: 10;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.autocomplete-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.autocomplete-item:hover {
+    background-color: #f1f5f9;
+}
+
+/* Styles for the top-right selected icon */
+.radio-card-selected-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" /></svg>');
+    background-size: contain;
+    display: none;
+    /* Hidden by default */
+}
+
+/* Show the icon when the card has the 'is-selected' class */
+label.is-selected .radio-card-selected-icon {
+    display: block;
+}
+
+/* --- CSS for the Wizard Logic --- */
+/* Ensure only one step is shown */
+.form-step {
+    display: none !important;
+}
+
+.form-step.active-step {
+    display: block !important;
+}
+
+/* Prevent backdrop or scroll container from covering footer */
+.MuiBackdrop-root,
+.MuiModal-backdrop {
+    z-index: 10 !important;
+}
+
+.MuiBox-root,
+#app-studio-parent-main,
+.MuiBox-root.css-1s71n02 {
+    z-index: 9999 !important;
+    position: relative !important;
+}
+
+/* Bulletproof button visibility controls */
+.wizard-btn-hidden {
+    display: none !important;
+}
+
+/*! CSS Used from: https://vanij.adya.ai/assets/index-DDZnLYio.css */
+.flex {
+    display: flex !important;
+}
+
+.w-1\/3 {
+    width: 33.333333% !important;
+}
+
+.w-2\/3 {
+    width: 66.666667% !important;
+}
+
+.items-center {
+    align-items: center !important;
+}
+
+.px-5 {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+}
+
+.py-2 {
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+}
+
+.text-foreground {
+    color: hsl(var(--foreground)) !important;
+}
+
+:focus-visible {
+    outline: none !important;
+    outline-offset: 0px !important;
+}
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+:before,
+:after {
+    --tw-content: "";
+}
+
+button,
+input {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    text-transform: none;
+}
+
+button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    padding: 0;
+}
+
+input::placeholder {
+    opacity: 1;
+    color: #9ca3af;
+}
+
+button {
+    cursor: pointer;
+}
+
+:disabled {
+    cursor: default;
+}
+
+svg {
+    display: block;
+    vertical-align: middle;
+}
+
+* {
+    border-color: hsl(var(--border));
+}
+
+*,
+:before,
+:after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / .5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
+
+/*! CSS Used from: Embedded */
+.css-igs3ac {
+    text-align: left;
+    position: absolute;
+    inset: -5px 0px 0px;
+    margin: 0px;
+    padding: 0px 8px;
+    pointer-events: none;
+    border-radius: inherit;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    min-width: 0%;
+    border-color: rgba(0, 0, 0, 0.23);
+}
+
+.css-w0pj6f {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+
+.css-13maa2j {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    padding: 0px;
+    position: relative;
+    display: block;
+    transform-origin: left top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    transition: color 200ms cubic-bezier(0, 0, 0.2, 1), transform 200ms cubic-bezier(0, 0, 0.2, 1), max-width 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.css-feqhe6 {
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.css-segi59 {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    cursor: text;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    padding-right: 14px;
+}
+
+.css-segi59:hover .MuiOutlinedInput-notchedOutline {
+    border-color: rgba(0, 0, 0, 0.87);
+}
+
+@media (hover: none) {
+    .css-segi59:hover .MuiOutlinedInput-notchedOutline {
+        border-color: rgba(0, 0, 0, 0.23);
+    }
+}
+
+.css-mxlkbn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+
+.css-uge3vf {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0px;
+    border: 0px;
+    margin: 0px -2px 0px 0px;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    text-decoration: none;
+    text-align: center;
+    flex: 0 0 auto;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    overflow: visible;
+    color: rgba(0, 0, 0, 0.54);
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 2px;
+}
+
+@media print {
+    .css-uge3vf {
+        print-color-adjust: exact;
+    }
+}
+
+.css-uge3vf:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media (hover: none) {
+    .css-uge3vf:hover {
+        background-color: transparent;
+    }
+}
+
+.css-vubbuv {
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentcolor;
+    flex-shrink: 0;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.5rem;
+}
+
+.css-5xgjxw {
+    width: 100%;
+}
+
+.MuiAutocomplete-hasPopupIcon.css-5xgjxw .MuiAutocomplete-inputRoot {
+    padding-right: 30px;
+}
+
+.css-5xgjxw .MuiAutocomplete-inputRoot .MuiAutocomplete-input {
+    width: 0px;
+    min-width: 30px;
+}
+
+.css-5xgjxw .MuiOutlinedInput-root {
+    padding: 9px;
+}
+
+.MuiAutocomplete-hasPopupIcon.css-5xgjxw .MuiOutlinedInput-root {
+    padding-right: 39px;
+}
+
+.css-5xgjxw .MuiOutlinedInput-root .MuiAutocomplete-input {
+    padding: 7.5px 4px 7.5px 5px;
+}
+
+.css-5xgjxw .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
+    right: 9px;
+}
+
+.css-5xgjxw .MuiAutocomplete-input {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    opacity: 0;
+}
+
+.css-5xgjxw .MuiAutocomplete-input {
+    opacity: 1;
+}
+
+.css-p0rm37 {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4375em;
+    letter-spacing: 0.00938em;
+    padding: 0px;
+    display: block;
+    transform-origin: left top;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 24px);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(14px, 16px) scale(1);
+    transition: color 200ms cubic-bezier(0, 0, 0.2, 1), transform 200ms cubic-bezier(0, 0, 0.2, 1), max-width 200ms cubic-bezier(0, 0, 0.2, 1);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.css-1uvydh2 {
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: 100%;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 16.5px 0px 16.5px 14px;
+}
+
+.css-1uvydh2:focus {
+    outline: 0px;
+}
+
+.css-1uvydh2:invalid {
+    box-shadow: none;
+}
+
+.css-yjsfm1 {
+    float: unset;
+    width: auto;
+    overflow: hidden;
+    display: block;
+    padding: 0px;
+    height: 11px;
+    font-size: 0.75em;
+    visibility: hidden;
+    max-width: 0.01px;
+    transition: max-width 50ms cubic-bezier(0, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.css-yjsfm1>span {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    opacity: 0;
+    visibility: visible;
+}
+
+/*! CSS Used keyframes */
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@-webkit-keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+
+@keyframes mui-auto-fill-cancel {
+    0% {
+        display: block;
+    }
+}
+#team-members-app-studio-app {
+    transition: none !important; /* Remove any CSS transitions that might interfere */
+}
+
+#team-members-app-studio-app.force-hidden {
+    display: none !important;
+}
+
+#team-members-app-studio-app.force-visible {
+    display: flex !important;
+}
