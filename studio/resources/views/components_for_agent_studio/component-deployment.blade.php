@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{asset('/agent_studio_css/component-deployment-deployed-components.css')}}">
+<link rel="stylesheet" href="{{asset('/agent_studio_css/component-deployment-ready-to-deploy-components.css')}}">
 <main class="flex-1 
 px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
   <div id="flow-deployment-index-container" class="space-y-3">
@@ -36,17 +38,14 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
             class="inline-flex h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground"
             tabindex="0" data-orientation="horizontal" style="outline: none;"><button type="button" role="tab"
               aria-selected="true" aria-controls="radix-:ra:-content-deployed" data-state="active"
-              id="radix-:ra:-trigger-deployed"
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6"
+              id="deployed_components"
+              class="inline-flex tab-button items-center justify-center whitespace-nowrap rounded-md py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6"
               tabindex="-1" data-orientation="horizontal" data-radix-collection-item="">Deployed</button><button
               type="button" role="tab" aria-selected="false" aria-controls="radix-:ra:-content-ready-to-deploy"
-              data-state="inactive" id="radix-:ra:-trigger-ready-to-deploy"
-              class="inline-flex items-center justify-center whitespace-nowrap rounded-md py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6"
+              data-state="inactive" id="ready_to_deploy_components"
+              class="inline-flex items-center tab-button justify-center whitespace-nowrap rounded-md py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow px-6"
               tabindex="-1" data-orientation="horizontal" data-radix-collection-item="">Ready to Deploy</button></div>
-          <div data-state="active" data-orientation="horizontal" role="tabpanel"
-            aria-labelledby="radix-:ra:-trigger-deployed" id="radix-:ra:-content-deployed" tabindex="0"
-            class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            style="animation-duration: 0s;">
+          <div id="component_list">
             <div class="space-y-4">
               <div class="flex items-center justify-between">
                 <h2 class="text-xl font-semibold">Deployed Components</h2>
@@ -72,13 +71,16 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 80vw;">
               </div>
             </div>
           </div>
-          <div data-state="inactive" data-orientation="horizontal" role="tabpanel"
-            aria-labelledby="radix-:ra:-trigger-ready-to-deploy" hidden="" id="radix-:ra:-content-ready-to-deploy"
-            tabindex="0"
-            class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-          </div>
+        </div>
+        <div data-state="inactive" data-orientation="horizontal" role="tabpanel"
+          aria-labelledby="radix-:ra:-trigger-ready-to-deploy" hidden="" id="radix-:ra:-content-ready-to-deploy"
+          tabindex="0"
+          class="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
         </div>
       </div>
     </div>
   </div>
+  </div>
 </main>
+
+<script src="js/agent_studio_sub_tabs/component_deployment.js"></script>

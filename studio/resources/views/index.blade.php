@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content')
-<div id="parent-main" ></div>
+<div id="parent-main"></div>
 @endsection
 @push('styles')
 
@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="{{asset('/agent_studio_css/subscription-plans.css')}}">
 <link rel="stylesheet" href="{{asset('/agent_studio_css/billing.css')}}">
 <link rel="stylesheet" href="{{asset('/agent_studio_css/faqs.css')}}">
+
 
 <link rel="stylesheet" href="{{asset('/app_studio_css/overview.css')}}">
 <link rel="stylesheet" href="{{asset('/app_studio_css/apps.css')}}">
