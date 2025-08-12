@@ -60,4 +60,44 @@ class AgentStudioProjectsController extends Controller
     {
         return view('components_for_agent_studio.projects_sub_pages.my_project');
     }
+
+    public function flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.flows_included_table');
+    }
+
+    public function flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.flows_included_cards');
+    }
+
+    public function basic_chatbot_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.basic_chatbot_flows_included_cards');
+    }
+
+    public function basic_chatbot_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.basic_chatbot_flows_included_table');
+    }
+
+    public function bhashini_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.bhashini_flows_included_table');
+    }
+
+    public function bhashini_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.bhashini_flows_included_cards');
+    }
+
+    public function buyer_app_copilot_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.buyer_app_copilot_flows_included_cards');
+    }
+
+    public function buyer_app_copilot_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.buyer_app_copilot_flows_included_table');
+    }
 }

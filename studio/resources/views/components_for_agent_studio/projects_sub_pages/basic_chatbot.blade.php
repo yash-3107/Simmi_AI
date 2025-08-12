@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/basic_chatbot.ss">
+<link rel="stylesheet" href="agent_studio_css/basic_chatbot.css">
 <main class="flex-1 overflow-auto px-6 pt-4">
   <div id="projects-module-index-container" class="space-y-3">
     <div class="flex text-2xl gap-3 items-center" id="projects-module-index-breadcrumbs-container"><svg
@@ -119,7 +119,8 @@
               <div class="flex items-center gap-x-5">
                 <div role="group" class="MuiToggleButtonGroup-root bg-background rounded-lg css-7rg7fp"
                   id="all-projects-my-projects-toggle-group" aria-label="text alignment"><button
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
+                    id="basic_chatbot_cards"
+                    class="MuiButtonBase-root  toggle-button MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
                     tabindex="0" type="button" value="grid" aria-pressed="true"
                     id="all-projects-my-projects-toggle-group-grid" aria-label="left aligned" data-state="closed"><svg
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -130,8 +131,8 @@
                       <rect width="7" height="7" x="14" y="3" rx="1"></rect>
                       <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                       <rect width="7" height="7" x="3" y="14" rx="1"></rect>
-                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
+                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button id="basic_chatbot_table"
+                    class="MuiButtonBase-root toggle-button gMuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
                     tabindex="0" type="button" value="list" aria-pressed="false"
                     id="all-projects-my-projects-toggle-group-list" aria-label="left aligned" data-state="closed"><svg
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -148,211 +149,42 @@
               </div>
             </div>
           </div>
-          <div>
-            <div class="grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4" id="all-projects-list-grid-view">
-              <div id="project-view-pre-built-flows-0-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="OpenAI">OpenAI</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">A chatbot is an AI-powered software that
-                  can simulate human-like conversations with users through text or voice, often used for customer
-                  service, support, and automation tasks.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
+          <div id="basic_chatbot_cards_and_table_container">
+            <!-- tables and cards will render here -->
 
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              LLM</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          </div>
+          <div class="flex w-full justify-center items-center mt-5 rounded-lg">
+            <div
+              class="MuiTablePagination-root flex justify-center items-center rounded-lg w-fit shadow sm:rounded-lg bg-background css-o9ey65"
+              id="undefined-pagination">
+              <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-8nphli">
+                <div class="MuiTablePagination-spacer css-1mrwq1p"></div>
+                <p class="MuiTablePagination-selectLabel css-1chpzqh" id=":roc:">Per Page:</p>
+                <div class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-rmmij8">
+                  <div tabindex="0" role="combobox" aria-controls=":rod:" aria-expanded="false" aria-haspopup="listbox"
+                    aria-labelledby=":roc: :rob:" id=":rob:"
+                    class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1cccqvr">
+                    12</div><input aria-invalid="false" aria-hidden="true" tabindex="-1"
+                    class="MuiSelect-nativeInput css-1k3x8v3" value="12"><svg
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-1utq5rl"
+                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon">
+                    <path d="M7 10l5 5 5-5z"></path>
+                  </svg>
                 </div>
-              </div>
-              <div id="project-view-pre-built-flows-1-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="AzureOpenAI">AzureOpenAI</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">A chatbot is an AI-powered software that
-                  can simulate human-like conversations with users through text or voice, often used for customer
-                  service, support, and automation tasks.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
-
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              LLM</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="project-view-pre-built-flows-2-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="Gemini">Gemini</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">A chatbot is an AI-powered software that
-                  can simulate human-like conversations with users through text or voice, often used for customer
-                  service, support, and automation tasks.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
-
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              LLM</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="project-view-pre-built-flows-3-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="Groq">Groq</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">A chatbot is an AI-powered software that
-                  can simulate human-like conversations with users through text or voice, often used for customer
-                  service, support, and automation tasks.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
-
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              LLM</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex w-full justify-center items-center mt-5 rounded-lg">
-              <div
-                class="MuiTablePagination-root flex justify-center items-center rounded-lg w-fit shadow sm:rounded-lg bg-background css-o9ey65"
-                id="undefined-pagination">
-                <div
-                  class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-8nphli">
-                  <div class="MuiTablePagination-spacer css-1mrwq1p"></div>
-                  <p class="MuiTablePagination-selectLabel css-1chpzqh" id=":roc:">Per Page:</p>
-                  <div class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-rmmij8">
-                    <div tabindex="0" role="combobox" aria-controls=":rod:" aria-expanded="false"
-                      aria-haspopup="listbox" aria-labelledby=":roc: :rob:" id=":rob:"
-                      class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1cccqvr">
-                      12</div><input aria-invalid="false" aria-hidden="true" tabindex="-1"
-                      class="MuiSelect-nativeInput css-1k3x8v3" value="12"><svg
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-1utq5rl"
-                      focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon">
-                      <path d="M7 10l5 5 5-5z"></path>
-                    </svg>
-                  </div>
-                  <p class="MuiTablePagination-displayedRows css-1chpzqh">0–0 of 0</p>
-                  <div class="MuiTablePagination-actions"><button
-                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
-                      tabindex="-1" type="button" disabled="" aria-label="Go to previous page"
-                      title="Go to previous page"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowLeftIcon">
-                        <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path>
-                      </svg></button><button
-                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
-                      tabindex="-1" type="button" disabled="" aria-label="Go to next page" title="Go to next page"><svg
-                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
-                        aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowRightIcon">
-                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
-                      </svg></button></div>
-                </div>
+                <p class="MuiTablePagination-displayedRows css-1chpzqh">0–0 of 0</p>
+                <div class="MuiTablePagination-actions"><button
+                    class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
+                    tabindex="-1" type="button" disabled="" aria-label="Go to previous page"
+                    title="Go to previous page"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                      focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowLeftIcon">
+                      <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path>
+                    </svg></button><button
+                    class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
+                    tabindex="-1" type="button" disabled="" aria-label="Go to next page" title="Go to next page"><svg
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true"
+                      viewBox="0 0 24 24" data-testid="KeyboardArrowRightIcon">
+                      <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
+                    </svg></button></div>
               </div>
             </div>
           </div>
@@ -361,3 +193,44 @@
     </div>
   </div>
 </main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+  $(document).ready(function() {
+
+    $.ajax({
+      url: '/agent_studio/projects/basic_chatbot/basic_chatbot_flows_included_cards',
+      type: 'GET',
+      success: function(res) {
+        $('#basic_chatbot_cards_and_table_container').html(res);
+      }
+    })
+
+    $(".toggle-button").on("click", function() {
+      // Remove 'Mui-selected' and set aria-pressed to false on all buttons
+      $(".toggle-button")
+        .removeClass("Mui-selected")
+        .attr("aria-pressed", "false");
+
+      // Add 'Mui-selected' to the clicked one and set aria-pressed to true
+      $(this)
+        .addClass("Mui-selected")
+        .attr("aria-pressed", "true");
+
+
+
+      let url = $(this).attr('id') == "basic_chatbot_cards" ?
+        '/agent_studio/projects/basic_chatbot/basic_chatbot_flows_included_cards' :
+        '/agent_studio/projects/basic_chatbot/basic_chatbot_flows_included_table'
+
+
+      $.ajax({
+        url: url,
+        type: 'GET',
+        success: function(res) {
+          console.log("Testing", res)
+          $('#basic_chatbot_cards_and_table_container').html(res);
+        }
+      })
+    });
+  });
+</script>

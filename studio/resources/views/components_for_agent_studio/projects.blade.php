@@ -1189,59 +1189,60 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
 </div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-  $(document).ready(function() {
-    closeInitiallyProjectsModal()
+$(document).ready(function() {
+  closeInitiallyProjectsModal()
+  $("#team_membsers_box").empty();
+})
+
+function closeInitiallyProjectsModal() {
+  const modal = $('#parent-main .MuiModal-root');
+
+  if (modal.length) {
+    modal.hide();
+  } else {
+    console.warn("modal_popup() was called, but no modal was found.");
+  }
+}
+
+$(document).ready(function() {
+  $('#openProjectModalBtn').on('click', function() {
+    const $modal = $('.MuiModal-root');
     $("#team_membsers_box").empty();
-  })
+    $modal.show();
 
-  function closeInitiallyProjectsModal() {
-    const modal = $('#parent-main .MuiModal-root');
 
-    if (modal.length) {
-      modal.hide();
+    const teamMembersModel = $("#add_team_members_modal");
+
+    if (teamMembersModel.length) {
+      teamMembersModel.hide();
     } else {
       console.warn("modal_popup() was called, but no modal was found.");
     }
-  }
 
-  $(document).ready(function() {
-    $('#openProjectModalBtn').on('click', function() {
-      const $modal = $('.MuiModal-root');
+    $('#all-projects-create-project-cancel-button').click(function() {
+      $('.MuiModal-root').hide();
+    })
 
-      $modal.show();
+    $('#all-projects-create-project-close-button').click(function() {
+      $('.MuiModal-root').hide();
+    })
+    // Also fix modal content if needed
 
-      const teamMembersModel = $("#add_team_members_modal");
-
-      if (teamMembersModel.length) {
-        teamMembersModel.hide();
-      } else {
-        console.warn("modal_popup() was called, but no modal was found.");
-      }
-
-      $('#all-projects-create-project-cancel-button').click(function() {
-        $('.MuiModal-root').hide();
-      })
-
-      $('#all-projects-create-project-close-button').click(function() {
-        $('.MuiModal-root').hide();
-      })
-      // Also fix modal content if needed
-
-    });
   });
+});
 
 
 
-  $(document).ready(function() {
-    // SVGs (copied from your markup)
-    const uncheckedSVG = `
+$(document).ready(function() {
+  // SVGs (copied from your markup)
+  const uncheckedSVG = `
     <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-cpa9t9" focusable="false"
       aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonUncheckedIcon">
       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path>
     </svg>
   `;
 
-    const checkedSVG = `
+  const checkedSVG = `
     <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall css-vrv9vb" focusable="false"
       aria-hidden="true" viewBox="0 0 24 24" data-testid="RadioButtonCheckedIcon">
       <path d="M8.465 8.465C9.37 7.56 10.62 7 12 7C14.76 7 17 9.24 17 12C17 13.38 
@@ -1250,32 +1251,32 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
     </svg>
   `;
 
-    // Helper: reset all radios to unchecked + rebuild icons
-    function resetAllRadios() {
-      $("input[name='privacy-settings']").prop("checked", false);
-      $(".MuiRadio-root").removeClass("Mui-checked");
-      $(".MuiRadio-root").each(function() {
-        const $iconWrap = $(this).find(".css-hyxlzm").first();
-        if ($iconWrap.length) {
-          $iconWrap.empty().append(uncheckedSVG);
-        }
-      });
-    }
+  // Helper: reset all radios to unchecked + rebuild icons
+  function resetAllRadios() {
+    $("input[name='privacy-settings']").prop("checked", false);
+    $(".MuiRadio-root").removeClass("Mui-checked");
+    $(".MuiRadio-root").each(function() {
+      const $iconWrap = $(this).find(".css-hyxlzm").first();
+      if ($iconWrap.length) {
+        $iconWrap.empty().append(uncheckedSVG);
+      }
+    });
+  }
 
-    // Init: clear any pre-checked state and ensure unchecked icons exist
-    resetAllRadios();
+  // Init: clear any pre-checked state and ensure unchecked icons exist
+  resetAllRadios();
 
-    // When an input changes (user selects a radio)
-    $(document).on("change", "input[name='privacy-settings']", function() {
-      // Rebuild all radios (clean slate)
-      $(".MuiRadio-root").each(function() {
-        const $iconWrap = $(this).find(".css-hyxlzm").first();
-        if ($iconWrap.length) {
-          $iconWrap.empty().append(uncheckedSVG);
-        }
-      });
+  // When an input changes (user selects a radio)
+  $(document).on("change", "input[name='privacy-settings']", function() {
+    // Rebuild all radios (clean slate)
+    $(".MuiRadio-root").each(function() {
+      const $iconWrap = $(this).find(".css-hyxlzm").first();
+      if ($iconWrap.length) {
+        $iconWrap.empty().append(uncheckedSVG);
+      }
+    });
 
-      const $team_members_element = `<label class=" MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary
+    const $team_members_element = `<label class=" MuiFormLabel-root MuiInputLabel-root MuiInputLabel-animated MuiFormLabel-colorPrimary
           MuiInputLabel-root MuiInputLabel-animated w-4/12 text-foreground text-sm css-13maa2j">Team
             Members</label>
           <div class="flex items-center flex-wrap gap-2 w-2/3 ">
@@ -1291,96 +1292,96 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll; width: 82vw;">
           </div>`
 
 
-      $(this).attr('id') == "second_radio_button" ?
-        $("#team_membsers_box").append($team_members_element) :
-        $("#team_membsers_box").empty();
+    $(this).attr('id') == "second_radio_button" ?
+      $("#team_membsers_box").append($team_members_element) :
+      $("#team_membsers_box").empty();
 
-      // Add checked SVG to the selected one and update classes
-      const $root = $(this).closest(".MuiRadio-root");
-      const $iconWrap = $root.find(".css-hyxlzm").first();
-      if ($iconWrap.length) {
-        $iconWrap.append(checkedSVG);
-      }
-
-      $(".MuiRadio-root").removeClass("Mui-checked");
-      $root.addClass("Mui-checked");
-
-      console.log("Selected:", $(this).val());
-    });
-
-    // Fallback: if label is clicked but input doesn't toggle (rare), force it
-    $(document).on("click", ".MuiFormControlLabel-root", function(e) {
-      const $input = $(this).find("input[name='privacy-settings']").first();
-      if ($input.length && !$input.prop("checked")) {
-        $input.prop("checked", true).trigger("change");
-      }
-    });
-  });
-
-  $(document).ready(function() {
-
-    $(document).on("click", "#all-projects-create-project-access-type-add-team-members-button", function() {
-      const teamMembersModel = $("#add_team_members_modal");
-
-      if (teamMembersModel.length) {
-        teamMembersModel.show();
-      } else {
-        console.warn("modal_popup() was called, but no modal was found.");
-      }
-    });
-
-    $(document).on("click", "#close_team_members_modal_button", function() {
-      const teamMembersModel = $("#add_team_members_modal");
-
-      if (teamMembersModel.length) {
-        teamMembersModel.hide();
-      } else {
-        console.warn("modal_popup() was called, but no modal was found.");
-      }
-    });
-  })
-
-  $(document).ready(function() {
-    // Select first icon by default
-    $("#icon-container button").first().addClass("icon-selected");
-
-    // On icon click
-    $("#icon-container").on("click", "button", function() {
-      console.log("Testing....")
-      // Remove selection from all
-      $("#icon-container button").removeClass("icon-selected");
-
-      // Add selection to clicked
-      $(this).addClass("icon-selected");
-    });
-  });
-
-  $(document).ready(function() {
-    let currentIndex = 0;
-    const $slides = $('.slide');
-    const totalSlides = $slides.length;
-
-    // If no slides, completely remove slider section
-    if (totalSlides === 0) {
-      $('.slider-container').remove(); // removes from DOM entirely
-      return;
+    // Add checked SVG to the selected one and update classes
+    const $root = $(this).closest(".MuiRadio-root");
+    const $iconWrap = $root.find(".css-hyxlzm").first();
+    if ($iconWrap.length) {
+      $iconWrap.append(checkedSVG);
     }
 
-    function showSlide(index) {
-      $('.slides').css('transform', `translateX(-${index * 30}%)`);
-    }
+    $(".MuiRadio-root").removeClass("Mui-checked");
+    $root.addClass("Mui-checked");
 
-    // Next button
-    $('#slider_button').on('click', function() {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      showSlide(currentIndex);
-    });
-
-    // Previous button
-    $('#slider_prev').on('click', function() {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-      showSlide(currentIndex);
-    });
+    console.log("Selected:", $(this).val());
   });
+
+  // Fallback: if label is clicked but input doesn't toggle (rare), force it
+  $(document).on("click", ".MuiFormControlLabel-root", function(e) {
+    const $input = $(this).find("input[name='privacy-settings']").first();
+    if ($input.length && !$input.prop("checked")) {
+      $input.prop("checked", true).trigger("change");
+    }
+  });
+});
+
+$(document).ready(function() {
+
+  $(document).on("click", "#all-projects-create-project-access-type-add-team-members-button", function() {
+    const teamMembersModel = $("#add_team_members_modal");
+
+    if (teamMembersModel.length) {
+      teamMembersModel.show();
+    } else {
+      console.warn("modal_popup() was called, but no modal was found.");
+    }
+  });
+
+  $(document).on("click", "#close_team_members_modal_button", function() {
+    const teamMembersModel = $("#add_team_members_modal");
+
+    if (teamMembersModel.length) {
+      teamMembersModel.hide();
+    } else {
+      console.warn("modal_popup() was called, but no modal was found.");
+    }
+  });
+})
+
+$(document).ready(function() {
+  // Select first icon by default
+  $("#icon-container button").first().addClass("icon-selected");
+
+  // On icon click
+  $("#icon-container").on("click", "button", function() {
+    console.log("Testing....")
+    // Remove selection from all
+    $("#icon-container button").removeClass("icon-selected");
+
+    // Add selection to clicked
+    $(this).addClass("icon-selected");
+  });
+});
+
+$(document).ready(function() {
+  let currentIndex = 0;
+  const $slides = $('.slide');
+  const totalSlides = $slides.length;
+
+  // If no slides, completely remove slider section
+  if (totalSlides === 0) {
+    $('.slider-container').remove(); // removes from DOM entirely
+    return;
+  }
+
+  function showSlide(index) {
+    $('.slides').css('transform', `translateX(-${index * 30}%)`);
+  }
+
+  // Next button
+  $('#slider_button').on('click', function() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  });
+
+  // Previous button
+  $('#slider_prev').on('click', function() {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+  });
+});
 </script>
 <script src="js/agent_studio_sub_tabs/projects.js"></script>

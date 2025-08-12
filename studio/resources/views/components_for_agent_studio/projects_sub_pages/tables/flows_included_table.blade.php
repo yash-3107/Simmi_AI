@@ -230,39 +230,4 @@
       </table>
     </div>
   </div>
-  <div class="flex w-full justify-center items-center mt-5 rounded-lg">
-    <div
-      class="MuiTablePagination-root flex justify-center items-center rounded-lg w-fit shadow sm:rounded-lg bg-background css-o9ey65"
-      id="undefined-pagination">
-      <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-8nphli">
-        <div class="MuiTablePagination-spacer css-1mrwq1p"></div>
-        <p class="MuiTablePagination-selectLabel css-1chpzqh" id=":rbn:">Per Page:</p>
-        <div class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-rmmij8">
-          <div tabindex="0" role="combobox" aria-controls=":rbo:" aria-expanded="false" aria-haspopup="listbox"
-            aria-labelledby=":rbn: :rbm:" id=":rbm:"
-            class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1cccqvr">12
-          </div><input aria-invalid="false" aria-hidden="true" tabindex="-1" class="MuiSelect-nativeInput css-1k3x8v3"
-            value="12"><svg
-            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-1utq5rl"
-            focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon">
-            <path d="M7 10l5 5 5-5z"></path>
-          </svg>
-        </div>
-        <p class="MuiTablePagination-displayedRows css-1chpzqh">0–0 of 0</p>
-        <div class="MuiTablePagination-actions"><button
-            class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
-            tabindex="-1" type="button" disabled="" aria-label="Go to previous page" title="Go to previous page"><svg
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true"
-              viewBox="0 0 24 24" data-testid="KeyboardArrowLeftIcon">
-              <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path>
-            </svg></button><button
-            class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
-            tabindex="-1" type="button" disabled="" aria-label="Go to next page" title="Go to next page"><svg
-              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true"
-              viewBox="0 0 24 24" data-testid="KeyboardArrowRightIcon">
-              <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
-            </svg></button></div>
-      </div>
-    </div>
-  </div>
 </div>

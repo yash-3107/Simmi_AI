@@ -47,8 +47,14 @@ Route::get('/agent_studio/projects/ai_flight_assistant_system', [AgentStudioProj
 Route::get('/agent_studio/projects/ai_flight_assistant_system/flows_included_cards', [AgentStudioProjectsController::class, 'flows_included_cards']);
 Route::get('/agent_studio/projects/ai_flight_assistant_system/flows_included_table', [AgentStudioProjectsController::class, 'flows_included_table']);
 Route::get('/agent_studio/projects/basic_chatbot', [AgentStudioProjectsController::class, 'basic_chatbot']);
+Route::get('/agent_studio/projects/basic_chatbot/basic_chatbot_flows_included_cards', [AgentStudioProjectsController::class, 'basic_chatbot_flows_included_cards']);
+Route::get('/agent_studio/projects/basic_chatbot/basic_chatbot_flows_included_table', [AgentStudioProjectsController::class, 'basic_chatbot_flows_included_table']);
 Route::get('/agent_studio/projects/bhashini', [AgentStudioProjectsController::class, 'bhashini']);
+Route::get('/agent_studio/projects/bhashini/bhashini_flows_included_cards', [AgentStudioProjectsController::class, 'bhashini_flows_included_cards']);
+Route::get('/agent_studio/projects/bhashini/bhashini_flows_included_table', [AgentStudioProjectsController::class, 'bhashini_flows_included_table']);
 Route::get('/agent_studio/projects/buyer_app_copilot', [AgentStudioProjectsController::class, 'buyer_app_copilot']);
+Route::get('/agent_studio/projects/buyer_app_copilot/buyer_app_copilot_flows_included_cards', [AgentStudioProjectsController::class, 'buyer_app_copilot_flows_included_cards']);
+Route::get('/agent_studio/projects/buyer_app_copilot/buyer_app_copilot_flows_included_table', [AgentStudioProjectsController::class, 'buyer_app_copilot_flows_included_table']);
 Route::get('/agent_studio/projects/email_and_sms', [AgentStudioProjectsController::class, 'email_and_sms']);
 Route::get('/agent_studio/projects/image_blog_and_qa_generator', [AgentStudioProjectsController::class, 'image_blog_and_qa_generator']);
 Route::get('/agent_studio/projects/language_advanced_chatbot', [AgentStudioProjectsController::class, 'language_advanced_chatbot']);

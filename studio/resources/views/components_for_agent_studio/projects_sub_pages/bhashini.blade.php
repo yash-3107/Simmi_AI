@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/bhasini.css">
+<link rel="stylesheet" href="agent_studio_css/bhashini.css">
 <main class="flex-1 overflow-auto px-6 pt-4">
   <div id="projects-module-index-container" class="space-y-3">
     <div class="flex text-2xl gap-3 items-center" id="projects-module-index-breadcrumbs-container"><svg
@@ -118,8 +118,8 @@
               </div>
               <div class="flex items-center gap-x-5">
                 <div role="group" class="MuiToggleButtonGroup-root bg-background rounded-lg css-7rg7fp"
-                  id="all-projects-my-projects-toggle-group" aria-label="text alignment"><button
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
+                  id="all-projects-my-projects-toggle-group" aria-label="text alignment"><button id="bhashini_cards"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root toggle-button Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
                     tabindex="0" type="button" value="grid" aria-pressed="true"
                     id="all-projects-my-projects-toggle-group-grid" aria-label="left aligned" data-state="closed"><svg
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -131,8 +131,8 @@
                       <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                       <rect width="7" height="7" x="3" y="14" rx="1"></rect>
                     </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
-                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
-                    tabindex="0" type="button" value="list" aria-pressed="false"
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root toggle-button MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
+                    tabindex="0" type="button" value="list" aria-pressed="false" id="bhashini_table"
                     id="all-projects-my-projects-toggle-group-list" aria-label="left aligned" data-state="closed"><svg
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -149,133 +149,9 @@
             </div>
           </div>
           <div>
-            <div class="grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4" id="all-projects-list-grid-view">
-              <div id="project-view-pre-built-flows-0-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg cursor-pointer hover:shadow-md transition-all duration-300 flex flex-col gap-2">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="Translation">Translation</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">The Bhashini Translation Flow accurately
-                  translates text from one language to another. It processes user input, identifies source and target
-                  languages, and generates the translated text. Supports multiple languages for
-                  efficient&nbsp;communication.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
-
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              Multi Lingual</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="project-view-pre-built-flows-1-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg cursor-pointer hover:shadow-md transition-all duration-300 flex flex-col gap-2">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="Transliteration">Transliteration</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">The Bhashini Transliteration Flow converts
-                  text from one script to another while retaining pronunciation. It supports multiple languages for
-                  accurate, seamless transliteration.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
-
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              Multi Lingual</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="project-view-pre-built-flows-2-card-custom-card"
-                class="bg-agent-studio-background p-4 pb-2 rounded-lg cursor-pointer hover:shadow-md transition-all duration-300 flex flex-col gap-2">
-                <div class="flex gap-2 items-center justify-between">
-                  <div class="flex items-center gap-2">
-                    <div class="font-semibold line-clamp-1" title="Speech To Text">Speech To Text</div>
-                  </div>
-                  <div
-                    class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700">
-                    Agent</div>
-                </div>
-                <p class="text-sm text-muted-foreground line-clamp-2 flex-1">Speech-to-Text converts spoken language
-                  into accurate, transcribed text in real-time.</p>
-                <div class="pt-1 mt-auto">
-                  <div class="flex gap-2 items-start justify-between">
-                    <div dir="ltr" class="relative overflow-hidden w-full"
-                      style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
-                      <style>
-                        [data-radix-scroll-area-viewport] {
-                          scrollbar-width: none;
-                          -ms-overflow-style: none;
-                          -webkit-overflow-scrolling: touch;
-                        }
-
-                        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                          display: none
-                        }
-                      </style>
-                      <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
-                        style="overflow: scroll hidden;">
-                        <div style="min-width: 100%; display: table;">
-                          <div class="flex items-center gap-2 pb-2">
-                            <div
-                              class="inline-flex items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 pointer-events-none border-transparent hover:bg-secondary/80 bg-white/70 text-gray-700 whitespace-nowrap">
-                              STT</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4"
+              id="bhashini_cards_and_table_container">
+              <!-- content will render here -->
             </div>
             <div class="flex w-full justify-center items-center mt-5 rounded-lg">
               <div
@@ -319,3 +195,52 @@
     </div>
   </div>
 </main>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(document).ready(function() {
+
+  $.ajax({
+    url: '/agent_studio/projects/bhashini/bhashini_flows_included_cards',
+    type: 'GET',
+    success: function(res) {
+      $('#bhashini_cards_and_table_container').html(res);
+    }
+  })
+
+  $(".toggle-button").on("click", function() {
+    // Remove 'Mui-selected' and set aria-pressed to false on all buttons
+    $(".toggle-button")
+      .removeClass("Mui-selected")
+      .attr("aria-pressed", "false");
+
+    // Add 'Mui-selected' to the clicked one and set aria-pressed to true
+    $(this)
+      .addClass("Mui-selected")
+      .attr("aria-pressed", "true");
+
+
+
+    let url = $(this).attr('id') ==
+      "bhashini_cards" ?
+      '/agent_studio/projects/bhashini/bhashini_flows_included_cards' :
+      '/agent_studio/projects/bhashini/bhashini_flows_included_table'
+
+    if (url == '/agent_studio/projects/bhashini/bhashini_flows_included_cards') {
+      $('#bhashini_cards_and_table_container').addClass(
+        'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
+    } else {
+      $('#bhashini_cards_and_table_container').removeClass(
+        'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
+    }
+
+    $.ajax({
+      url: url,
+      type: 'GET',
+      success: function(res) {
+        console.log("Testing", res)
+        $('#bhashini_cards_and_table_container').html(res);
+      }
+    })
+  });
+});
+</script>
