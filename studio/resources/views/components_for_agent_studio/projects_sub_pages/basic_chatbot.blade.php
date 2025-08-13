@@ -119,26 +119,23 @@
               <div class="flex items-center gap-x-5">
                 <div role="group" class="MuiToggleButtonGroup-root bg-background rounded-lg css-7rg7fp"
                   id="all-projects-my-projects-toggle-group" aria-label="text alignment"><button
-                    id="basic_chatbot_cards"
-                    class="MuiButtonBase-root  toggle-button MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
-                    tabindex="0" type="button" value="grid" aria-pressed="true"
-                    id="all-projects-my-projects-toggle-group-grid" aria-label="left aligned" data-state="closed"><svg
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-layout-grid h-4 w-4" aria-hidden="true" data-testid="icon-layout-grid"
-                      style="stroke-width: 1.5;">
+                    class="MuiButtonBase-root toggle-button MuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root Mui-selected MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-l-lg MuiToggleButtonGroup-firstButton css-1hwqkh2"
+                    id="basic_chatbot_cards" tabindex="0" type="button" value="grid" aria-pressed="true"
+                    aria-label="left aligned" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid h-4 w-4"
+                      aria-hidden="true" data-testid="icon-layout-grid" style="stroke-width: 1.5;">
                       <rect width="7" height="7" x="3" y="3" rx="1"></rect>
                       <rect width="7" height="7" x="14" y="3" rx="1"></rect>
                       <rect width="7" height="7" x="14" y="14" rx="1"></rect>
                       <rect width="7" height="7" x="3" y="14" rx="1"></rect>
-                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button id="basic_chatbot_table"
-                    class="MuiButtonBase-root toggle-button gMuiToggleButtonGroup-grouped MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
-                    tabindex="0" type="button" value="list" aria-pressed="false"
-                    id="all-projects-my-projects-toggle-group-list" aria-label="left aligned" data-state="closed"><svg
-                      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-table-of-contents h-4 w-4" aria-hidden="true"
-                      data-testid="icon-table-of-contents" style="stroke-width: 1.5;">
+                    </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button><button
+                    class="MuiButtonBase-root MuiToggleButtonGroup-grouped toggle-button MuiToggleButtonGroup-groupedHorizontal MuiToggleButton-root MuiToggleButton-sizeSmall MuiToggleButton-standard rounded-r-lg MuiToggleButtonGroup-lastButton css-1hwqkh2"
+                    tabindex="0" type="button" value="list" aria-pressed="false" id="basic_chatbot_table"
+                    aria-label="left aligned" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                      height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-table-of-contents h-4 w-4"
+                      aria-hidden="true" data-testid="icon-table-of-contents" style="stroke-width: 1.5;">
                       <path d="M16 12H3"></path>
                       <path d="M16 18H3"></path>
                       <path d="M16 6H3"></path>
@@ -149,42 +146,45 @@
               </div>
             </div>
           </div>
-          <div id="basic_chatbot_cards_and_table_container">
-            <!-- tables and cards will render here -->
-
-          </div>
-          <div class="flex w-full justify-center items-center mt-5 rounded-lg">
-            <div
-              class="MuiTablePagination-root flex justify-center items-center rounded-lg w-fit shadow sm:rounded-lg bg-background css-o9ey65"
-              id="undefined-pagination">
-              <div class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-8nphli">
-                <div class="MuiTablePagination-spacer css-1mrwq1p"></div>
-                <p class="MuiTablePagination-selectLabel css-1chpzqh" id=":roc:">Per Page:</p>
-                <div class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-rmmij8">
-                  <div tabindex="0" role="combobox" aria-controls=":rod:" aria-expanded="false" aria-haspopup="listbox"
-                    aria-labelledby=":roc: :rob:" id=":rob:"
-                    class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1cccqvr">
-                    12</div><input aria-invalid="false" aria-hidden="true" tabindex="-1"
-                    class="MuiSelect-nativeInput css-1k3x8v3" value="12"><svg
-                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-1utq5rl"
-                    focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon">
-                    <path d="M7 10l5 5 5-5z"></path>
-                  </svg>
+          <div>
+            <div class="grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4"
+              id="basic_chatbot_cards_and_table_container">
+              <!-- content will render here -->
+            </div>
+            <div class="flex w-full justify-center items-center mt-5 rounded-lg">
+              <div
+                class="MuiTablePagination-root flex justify-center items-center rounded-lg w-fit shadow sm:rounded-lg bg-background css-o9ey65"
+                id="undefined-pagination">
+                <div
+                  class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular MuiTablePagination-toolbar css-8nphli">
+                  <div class="MuiTablePagination-spacer css-1mrwq1p"></div>
+                  <p class="MuiTablePagination-selectLabel css-1chpzqh" id=":r29:">Per Page:</p>
+                  <div class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-rmmij8">
+                    <div tabindex="0" role="combobox" aria-controls=":r2a:" aria-expanded="false"
+                      aria-haspopup="listbox" aria-labelledby=":r29: :r28:" id=":r28:"
+                      class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1cccqvr">
+                      12</div><input aria-invalid="false" aria-hidden="true" tabindex="-1"
+                      class="MuiSelect-nativeInput css-1k3x8v3" value="12"><svg
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSelect-icon MuiTablePagination-selectIcon MuiSelect-iconStandard css-1utq5rl"
+                      focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ArrowDropDownIcon">
+                      <path d="M7 10l5 5 5-5z"></path>
+                    </svg>
+                  </div>
+                  <p class="MuiTablePagination-displayedRows css-1chpzqh">0–0 of 0</p>
+                  <div class="MuiTablePagination-actions"><button
+                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
+                      tabindex="-1" type="button" disabled="" aria-label="Go to previous page"
+                      title="Go to previous page"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                        focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowLeftIcon">
+                        <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path>
+                      </svg></button><button
+                      class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
+                      tabindex="-1" type="button" disabled="" aria-label="Go to next page" title="Go to next page"><svg
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false"
+                        aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowRightIcon">
+                        <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
+                      </svg></button></div>
                 </div>
-                <p class="MuiTablePagination-displayedRows css-1chpzqh">0–0 of 0</p>
-                <div class="MuiTablePagination-actions"><button
-                    class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
-                    tabindex="-1" type="button" disabled="" aria-label="Go to previous page"
-                    title="Go to previous page"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                      focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowLeftIcon">
-                      <path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"></path>
-                    </svg></button><button
-                    class="MuiButtonBase-root Mui-disabled MuiIconButton-root Mui-disabled MuiIconButton-colorInherit MuiIconButton-sizeMedium css-1deacqj"
-                    tabindex="-1" type="button" disabled="" aria-label="Go to next page" title="Go to next page"><svg
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true"
-                      viewBox="0 0 24 24" data-testid="KeyboardArrowRightIcon">
-                      <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"></path>
-                    </svg></button></div>
               </div>
             </div>
           </div>
@@ -221,6 +221,15 @@
       let url = $(this).attr('id') == "basic_chatbot_cards" ?
         '/agent_studio/projects/basic_chatbot/basic_chatbot_flows_included_cards' :
         '/agent_studio/projects/basic_chatbot/basic_chatbot_flows_included_table'
+
+      if (url == '/agent_studio/projects/basic_chatbot/basic_chatbot_flows_included_cards') {
+        console.log("testing.......")
+        $('#basic_chatbot_cards_and_table_container').addClass(
+          'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
+      } else {
+        $('#basic_chatbot_cards_and_table_container').removeClass(
+          'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
+      }
 
 
       $.ajax({

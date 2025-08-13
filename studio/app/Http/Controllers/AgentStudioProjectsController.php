@@ -130,4 +130,43 @@ class AgentStudioProjectsController extends Controller
     {
         return view('components_for_agent_studio.projects_sub_pages.cards.language_advanced_chatbot_flows_included_cards');
     }
+
+    public function multi_agent_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.multi_agent_flows_included_table');
+    }
+
+    public function multi_agent_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.multi_agent_flows_included_cards');
+    }
+
+    public function recruitment_agent_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.recruitment_agent_flows_included_table');
+    }
+
+    public function recruitment_agent_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.recruitment_agent_flows_included_cards');
+    }
+    public function simple_research_assistant_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.simple_research_assistant_flows_included_table');
+    }
+
+    public function simple_research_assistant_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.simple_research_assistant_flows_included_cards');
+    }
+
+    public function my_project_flows_included_table()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.tables.my_project_flows_included_table');
+    }
+
+    public function my_project_flows_included_cards()
+    {
+        return view('components_for_agent_studio.projects_sub_pages.cards.my_project_flows_included_cards');
+    }
 }

@@ -2,9 +2,6 @@
 .pointer-events-none {
     pointer-events: none !important;
 }
-.relative {
-    position: relative !important;
-}
 .mt-auto {
     margin-top: auto !important;
 }
@@ -29,17 +26,11 @@
 .grid {
     display: grid !important;
 }
-.h-full {
-    height: 100% !important;
-}
-.w-full {
-    width: 100% !important;
-}
 .flex-1 {
     flex: 1 1 0% !important;
 }
-.cursor-pointer {
-    cursor: pointer !important;
+.cursor-not-allowed {
+    cursor: not-allowed !important;
 }
 .grid-cols-\[repeat\(auto-fill\,minmax\(17rem\,1fr\)\)\] {
     grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)) !important;
@@ -61,15 +52,6 @@
 }
 .gap-4 {
     gap: 1rem !important;
-}
-.overflow-hidden {
-    overflow: hidden !important;
-}
-.whitespace-nowrap {
-    white-space: nowrap !important;
-}
-.rounded-\[inherit\] {
-    border-radius: inherit !important;
 }
 .rounded-lg {
     border-radius: var(--radius) !important;
@@ -123,6 +105,15 @@
 }
 .text-muted-foreground {
     color: hsl(var(--muted-foreground)) !important;
+}
+.opacity-50 {
+    opacity: 0.5 !important;
+}
+.shadow-none {
+    --tw-shadow: 0 0 #0000 !important;
+    --tw-shadow-colored: 0 0 #0000 !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 .transition-all {
     transition-property: all !important;
@@ -215,31 +206,4 @@ p {
     --tw-ring-shadow: 0 0 #0000;
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
-}
-/*! CSS Used from: Embedded */
-[data-radix-scroll-area-viewport] {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
-}
-[data-radix-scroll-area-viewport]::-webkit-scrollbar {
-    display: none;
-}
-/*! CSS Used from: Embedded */
-[data-radix-scroll-area-viewport] {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
-}
-[data-radix-scroll-area-viewport]::-webkit-scrollbar {
-    display: none;
-}
-/*! CSS Used from: Embedded */
-[data-radix-scroll-area-viewport] {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-overflow-scrolling: touch;
-}
-[data-radix-scroll-area-viewport]::-webkit-scrollbar {
-    display: none;
 }

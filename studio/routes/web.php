@@ -65,8 +65,14 @@ Route::get('/agent_studio/projects/language_advanced_chatbot', [AgentStudioProje
 Route::get('/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_table', [AgentStudioProjectsController::class, 'language_advanced_chatbot_flows_included_table']);
 Route::get('/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_cards', [AgentStudioProjectsController::class, 'language_advanced_chatbot_flows_included_cards']);
 Route::get('/agent_studio/projects/multi_agent', [AgentStudioProjectsController::class, 'multi_agent']);
+Route::get('/agent_studio/projects/multi_agent/multi_agent_flows_included_table', [AgentStudioProjectsController::class, 'multi_agent_flows_included_table']);
+Route::get('/agent_studio/projects/multi_agent/multi_agent_flows_included_cards', [AgentStudioProjectsController::class, 'multi_agent_flows_included_cards']);
 Route::get('/agent_studio/projects/recruitment_agent', [AgentStudioProjectsController::class, 'recruitment_agent']);
+Route::get('/agent_studio/projects/recruitment_agent/recruitment_agent_flows_included_cards', [AgentStudioProjectsController::class, 'recruitment_agent_flows_included_cards']);
+Route::get('/agent_studio/projects/recruitment_agent/recruitment_agent_flows_included_table', [AgentStudioProjectsController::class, 'recruitment_agent_flows_included_table']);
 Route::get('/agent_studio/projects/simple_research_assistant', [AgentStudioProjectsController::class, 'simple_research_assistant']);
+Route::get('/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_cards', [AgentStudioProjectsController::class, 'simple_research_assistant_flows_included_cards']);
+Route::get('/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_table', [AgentStudioProjectsController::class, 'simple_research_assistant_flows_included_table']);
 Route::get('/agent_studio/projects/my_project', [AgentStudioProjectsController::class, 'my_project']);
 
 
