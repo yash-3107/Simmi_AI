@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/language_advanced_chatbot.css">
+<link rel="stylesheet" href="{{ asset('agent_studio_css/language_advanced_chatbot.css')}}">
 <main class=" flex-1 overflow-auto px-6 pt-4">
   <div id="projects-module-index-container" class="space-y-3">
     <div class="flex text-2xl gap-3 items-center" id="projects-module-index-breadcrumbs-container"><svg
@@ -198,49 +198,49 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-$(document).ready(function() {
-
-  $.ajax({
-    url: '/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_cards',
-    type: 'GET',
-    success: function(res) {
-      $('#language_advanced_chatbot_table_and_cards_container').html(res);
-    }
-  })
-
-  $(".toggle-button").on("click", function() {
-    // Remove 'Mui-selected' and set aria-pressed to false on all buttons
-    $(".toggle-button")
-      .removeClass("Mui-selected")
-      .attr("aria-pressed", "false");
-
-    // Add 'Mui-selected' to the clicked one and set aria-pressed to true
-    $(this)
-      .addClass("Mui-selected")
-      .attr("aria-pressed", "true");
-
-
-
-    let url = $(this).attr('id') == "all-projects-my-projects-toggle-group-grid" ?
-      '/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_cards' :
-      '/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_table'
-
-    if (url ==
-      '/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_cards') {
-      $('#language_advanced__chatbot_table_and_grid_container').addClass(
-        'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
-    } else {
-      $('#language_advanced_chatbot_table_and_cards_container').removeClass(
-        'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
-    }
+  $(document).ready(function() {
 
     $.ajax({
-      url: url,
+      url: '/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_cards',
       type: 'GET',
       success: function(res) {
         $('#language_advanced_chatbot_table_and_cards_container').html(res);
       }
     })
+
+    $(".toggle-button").on("click", function() {
+      // Remove 'Mui-selected' and set aria-pressed to false on all buttons
+      $(".toggle-button")
+        .removeClass("Mui-selected")
+        .attr("aria-pressed", "false");
+
+      // Add 'Mui-selected' to the clicked one and set aria-pressed to true
+      $(this)
+        .addClass("Mui-selected")
+        .attr("aria-pressed", "true");
+
+
+
+      let url = $(this).attr('id') == "all-projects-my-projects-toggle-group-grid" ?
+        '/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_cards' :
+        '/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_table'
+
+      if (url ==
+        '/agent_studio/projects/language_advanced_chatbot/language_advanced_chatbot_flows_included_cards') {
+        $('#language_advanced__chatbot_table_and_grid_container').addClass(
+          'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
+      } else {
+        $('#language_advanced_chatbot_table_and_cards_container').removeClass(
+          'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4')
+      }
+
+      $.ajax({
+        url: url,
+        type: 'GET',
+        success: function(res) {
+          $('#language_advanced_chatbot_table_and_cards_container').html(res);
+        }
+      })
+    });
   });
-});
 </script>

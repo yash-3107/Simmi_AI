@@ -205,4 +205,4 @@
         </div>
     </div>
 </div>
-<script src="js/agent_studio.js"></script>
+<script src="{{asset('js/agent_studio.js')}}"></script>

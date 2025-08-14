@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/simple_research_assistant.css">
+<link rel="stylesheet" href="{{ asset('agent_studio_css/simple_research_assistant.css')}}">
 <main class="flex-1 overflow-auto px-6 pt-4">
   <div id="projects-module-index-container" class="space-y-3">
     <div class="flex text-2xl gap-3 items-center" id="projects-module-index-breadcrumbs-container"><svg
@@ -198,46 +198,46 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script>
-$(document).ready(function() {
+  $(document).ready(function() {
 
-  // Initial AJAX load for Recruitment Agent flows
-  $.ajax({
-    url: '/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_cards',
-    type: 'GET',
-    success: function(res) {
-      $('#simple_research_assistant_cards_and_table_container').html(res);
-    }
-  });
-
-  $(".toggle-button").on("click", function() {
-    $(".toggle-button")
-      .removeClass("Mui-selected")
-      .attr("aria-pressed", "false");
-
-    $(this)
-      .addClass("Mui-selected")
-      .attr("aria-pressed", "true");
-
-    let url = $(this).attr('id') == "all-projects-my-projects-toggle-group-grid" ?
-      '/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_cards' :
-      '/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_table';
-
-    if (url ==
-      '/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_cards') {
-      $('#simple_research_assistant_cards_and_table_container').addClass(
-        'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4');
-    } else {
-      $('#simple_research_assistant_cards_and_table_container').removeClass(
-        'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4');
-    }
-
+    // Initial AJAX load for Recruitment Agent flows
     $.ajax({
-      url: url,
+      url: '/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_cards',
       type: 'GET',
       success: function(res) {
         $('#simple_research_assistant_cards_and_table_container').html(res);
       }
     });
+
+    $(".toggle-button").on("click", function() {
+      $(".toggle-button")
+        .removeClass("Mui-selected")
+        .attr("aria-pressed", "false");
+
+      $(this)
+        .addClass("Mui-selected")
+        .attr("aria-pressed", "true");
+
+      let url = $(this).attr('id') == "all-projects-my-projects-toggle-group-grid" ?
+        '/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_cards' :
+        '/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_table';
+
+      if (url ==
+        '/agent_studio/projects/simple_research_assistant/simple_research_assistant_flows_included_cards') {
+        $('#simple_research_assistant_cards_and_table_container').addClass(
+          'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4');
+      } else {
+        $('#simple_research_assistant_cards_and_table_container').removeClass(
+          'grid grid-cols-[repeat(auto-fill,minmax(17rem,1fr))] gap-4');
+      }
+
+      $.ajax({
+        url: url,
+        type: 'GET',
+        success: function(res) {
+          $('#simple_research_assistant_cards_and_table_container').html(res);
+        }
+      });
+    });
   });
-});
 </script>

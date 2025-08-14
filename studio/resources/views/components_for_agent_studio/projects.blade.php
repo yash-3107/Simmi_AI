@@ -1384,4 +1384,4 @@ $(document).ready(function() {
   });
 });
 </script>
-<script src="js/agent_studio_sub_tabs/projects.js"></script>
+<script src="{{ asset('js/agent_studio_sub_tabs/projects.js') }}"></script>

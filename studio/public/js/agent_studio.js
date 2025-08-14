@@ -1,346 +1,59 @@
 $(document).ready(function () {
-  $("#agent_studio").on("click", function () {
-      $.ajax({
-          url: "/studio/agent/overview",
-          method: "GET", // default is 'GET'
-          success: function (response) {
-              
-              console.log("Success:", response);
-              $('#parent-main').html(response);
-          },
-          error: function (xhr, status, error) {
-              // handle errors
-              console.error("Error:", error);
-          },
-      });
-  });
-});
-
-$(document).ready(function () {
-  $("#sidebar-menu-item-agent-studio-overview").on("click", function (event) {
-    event.preventDefault(); 
-    event.stopPropagation();
-      $.ajax({
-          url: "/studio/agent/overview",
-          method: "GET", // default is 'GET'
-          success: function (response) {
-              
-              console.log("Success:", response);
-              $('#parent-main').html(response);
-          },
-          error: function (xhr, status, error) {
-              // handle errors
-              console.error("Error:", error);
-          },
-      });
-  });
-});
-
-
-
-$(document).ready(function () {
-    $("#sidebar-menu-item-agent-studio-projects").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
   
-      $.ajax({
-        url: "/studio/agent/projects",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
+    function loadPage(url, push = true) {
+        $.ajax({
+            url: url,
+            method: "GET",
+            success: function (response) {
+                $('#parent-main').html(response);
+
+                // Only push to history when explicitly allowed
+                if (push) {
+                    history.pushState({ path: url }, '', url);
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error("Error:", error);
+            },
+        });
+    }
+
+    // Save the current page as initial state
+    if (!history.state) {
+        history.replaceState({ path: window.location.pathname }, '', window.location.pathname);
+    }
+
+    // Attach click handlers dynamically
+    const menuLinks = [
+        { selector: "#agent_studio", url: "/studio/agent/overview" },
+        { selector: "#sidebar-menu-item-agent-studio-overview", url: "/studio/agent/overview" },
+        { selector: "#sidebar-menu-item-agent-studio-projects", url: "/studio/agent/projects" },
+        { selector: "#sidebar-menu-item-agent-studio-components", url: "/studio/agent/components" },
+        { selector: "#sidebar-menu-item-agent-studio-flow-deployment", url: "/studio/agent/flow_deployment" },
+        { selector: "#sidebar-menu-item-agent-studio-comp-deployment", url: "/studio/agent/component_deployment" },
+        { selector: "#sidebar-menu-item-agent-studio-observability", url: "/studio/agent/observability" },
+        { selector: "#sidebar-menu-item-user-management", url: "/studio/agent/manage_users" },
+        { selector: "#sidebar-menu-item-file-manager", url: "/studio/agent/file_manager" },
+        { selector: "#sidebar-menu-item-audit-trail", url: "/studio/agent/audit_trail" },
+        { selector: "#sidebar-menu-item-key-vault", url: "/studio/agent/key_vault" },
+        { selector: "#sidebar-menu-item-support", url: "/studio/agent/support" },
+        { selector: "#sidebar-menu-item-subscription-plans", url: "/studio/agent/subscription_plans" },
+        { selector: "#sidebar-menu-item-billing", url: "/studio/agent/billing" },
+        { selector: "#sidebar-menu-item-faqs", url: "/studio/agent/faqs" }
+    ];
+
+    menuLinks.forEach(link => {
+        $(link.selector).on("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            loadPage(link.url, true);
+        });
     });
-  });
 
-  $(document).ready(function () {
-    $("#sidebar-menu-item-agent-studio-components").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/components",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
+    // Back/forward button handler
+    window.addEventListener("popstate", function (event) {
+        if (event.state && event.state.path) {
+            loadPage(event.state.path, false);
+        }
     });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-agent-studio-flow-deployment").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/flow_deployment",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-agent-studio-comp-deployment").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/component_deployment",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-agent-studio-observability").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/observability",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-user-management").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/manage_users",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-file-manager").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/file_manager",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-audit-trail").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/audit_trail",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-key-vault").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/key_vault",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-support").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/support",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-subscription-plans").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/subscription_plans",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-billing").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/billing",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-
-  $(document).ready(function () {
-    $("#sidebar-menu-item-faqs").on("click", function (event) {
-      event.preventDefault(); 
-      event.stopPropagation();
-      $.ajax({
-        url: "/studio/agent/faqs",
-        method: "GET",
-        success: function (response) {
-          console.log("Success:", response);
-          $('#parent-main').html(response);
-        },
-        error: function (xhr, status, error) {
-          console.error("Error:", error);
-        },
-      });
-    });
-  });
-  
-
-
-
-  // --- Function to make the newly loaded form interactive ---
-// This function sets up all the event listeners for the modal's content.
-// function setupInteractiveModal() {
-//   const parentContainer = $("#app-studio-parent-main");
-//   $('#team-members-app-studio-app').hide();
-//   // --- Logic for App Template Dropdown ---
-//   // Use a wrapper ID to handle clicks on the input or the arrow.
-//   parentContainer.on('click', '#my-apps-create-app-template-autocomplete-wrapper', function() {
-//       const container = $(this);
-      
-//       // If dropdown already exists, remove it and do nothing else.
-//       if (container.find('.autocomplete-dropdown').length > 0) {
-//           container.find('.autocomplete-dropdown').remove();
-//           return;
-//       }
-
-//       // Create and show the dropdown
-//       const dropdown = $('<div class="autocomplete-dropdown"></div>');
-//       const options = ['ReactJS', 'NextJS'];
-
-//       options.forEach(optionText => {
-//           const item = $('<div class="autocomplete-item"></div>').text(optionText);
-//           item.on('click', function(event) {
-//               event.stopPropagation(); // Prevents the document-level click handler from firing
-//               container.find('input').val(optionText); // Set the input value
-//               dropdown.remove(); // Close the dropdown
-//           });
-//           dropdown.append(item);
-//       });
-//       container.append(dropdown);
-//   });
-
-//   // --- Logic for Radio Card Selection (Agent Approach & Privacy) ---
-//   parentContainer.on('click', 'label[id$="-card"]', function() {
-//       const clickedCard = $(this);
-//       if (clickedCard.attr('id') == 'my-apps-create-app-access-type-private-to-members-card'){
-//           $('#team-members-app-studio-app').show();
-//           console.log('clicked any card!!!!!!');
-          
-//       }
-//       else{
-//           $('#team-members-app-studio-app').hide();
-//       }
-//       const radioGroup = clickedCard.closest('[role="radiogroup"]');
-
-//       // De-select all cards in the same group and remove the 'is-selected' class
-//       radioGroup.find('label').removeClass('border-primary bg-primary/10 is-selected').addClass('border-gray-200');
-      
-//       // Select the clicked card and add the 'is-selected' class (which shows the icon via CSS)
-//       clickedCard.addClass('border-primary bg-primary/10 is-selected').removeClass('border-gray-200');
-      
-//       // Ensure the underlying radio input is checked for form submission
-//       clickedCard.find('input[type="radio"]').prop('checked', true);
-//   });
-
-//   // --- Close dropdown if clicking anywhere else on the page ---
-//   $(document).on('click', function(event) {
-//       if (!$(event.target).closest('#my-apps-create-app-template-autocomplete-wrapper').length) {
-//           $('.autocomplete-dropdown').remove();
-//       }
-//   });
-// }
-
-
-// --- Function to hide the modal and initialize it ---
-// This is the main function you call after your AJAX call succeeds.
-
-
+});

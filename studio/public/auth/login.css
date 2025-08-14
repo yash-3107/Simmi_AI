@@ -1,0 +1,1149 @@
+/*! CSS Used from: Embedded */
+:root {
+    --toastify-color-light: #fff;
+    --toastify-color-dark: #121212;
+    --toastify-color-info: #3498db;
+    --toastify-color-success: #07bc0c;
+    --toastify-color-warning: #f1c40f;
+    --toastify-color-error: hsl(6, 78%, 57%);
+    --toastify-color-transparent: rgba(255, 255, 255, 0.7);
+    --toastify-icon-color-info: var(--toastify-color-info);
+    --toastify-icon-color-success: var(--toastify-color-success);
+    --toastify-icon-color-warning: var(--toastify-color-warning);
+    --toastify-icon-color-error: var(--toastify-color-error);
+    --toastify-container-width: fit-content;
+    --toastify-toast-width: 320px;
+    --toastify-toast-offset: 16px;
+    --toastify-toast-top: max(
+        var(--toastify-toast-offset),
+        env(safe-area-inset-top)
+    );
+    --toastify-toast-right: max(
+        var(--toastify-toast-offset),
+        env(safe-area-inset-right)
+    );
+    --toastify-toast-left: max(
+        var(--toastify-toast-offset),
+        env(safe-area-inset-left)
+    );
+    --toastify-toast-bottom: max(
+        var(--toastify-toast-offset),
+        env(safe-area-inset-bottom)
+    );
+    --toastify-toast-background: #fff;
+    --toastify-toast-padding: 14px;
+    --toastify-toast-min-height: 64px;
+    --toastify-toast-max-height: 800px;
+    --toastify-toast-bd-radius: 6px;
+    --toastify-toast-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    --toastify-font-family: sans-serif;
+    --toastify-z-index: 9999;
+    --toastify-text-color-light: #757575;
+    --toastify-text-color-dark: #fff;
+    --toastify-text-color-info: #fff;
+    --toastify-text-color-success: #fff;
+    --toastify-text-color-warning: #fff;
+    --toastify-text-color-error: #fff;
+    --toastify-spinner-color: #616161;
+    --toastify-spinner-color-empty-area: #e0e0e0;
+    --toastify-color-progress-light: linear-gradient(
+        to right,
+        #4cd964,
+        #5ac8fa,
+        #007aff,
+        #34aadc,
+        #5856d6,
+        #ff2d55
+    );
+    --toastify-color-progress-dark: #bb86fc;
+    --toastify-color-progress-info: var(--toastify-color-info);
+    --toastify-color-progress-success: var(--toastify-color-success);
+    --toastify-color-progress-warning: var(--toastify-color-warning);
+    --toastify-color-progress-error: var(--toastify-color-error);
+    --toastify-color-progress-bgo: 0.2;
+}
+/*! CSS Used from: https://vanij.adya.ai/assets/index-BM0a5d4U.css */
+body {
+    margin: 0;
+    font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+        Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+:root {
+    --font-sans: "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+    --font-chivo: "Chivo", sans-serif;
+    --font-nunito: "Nunito Sans", sans-serif;
+    --foreground: 0 0% 0%;
+    --background: 0 0% 100%;
+    --page-background: 0 0% 100%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 0%;
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 240 4% 16%;
+    --accent: 240 5% 96%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 0 0% 0%;
+    --primary-hover: 240 4% 16%;
+    --secondary-hover: 240 6% 90%;
+    --placeholder-foreground: 240 5% 65%;
+    --canvas: 240 5% 96%;
+    --canvas-dot: 240 5% 65%;
+    --accent-emerald: 149 80% 90%;
+    --accent-emerald-foreground: 161 41% 30%;
+    --accent-emerald-hover: 152.4 76% 80.4%;
+    --accent-indigo: 226 100% 94%;
+    --accent-indigo-foreground: 243 75% 59%;
+    --accent-pink: 326 78% 95%;
+    --accent-pink-foreground: 333 71% 51%;
+    --accent-blue: 220 90% 50%;
+    --accent-blue-foreground: 220 80% 40%;
+    --accent-lightblue: 199 80% 90%;
+    --accent-lightblue-foreground: 211 41% 30%;
+    --accent-lightblue-hover: 202.4 76% 80.4%;
+    --tooltip: 0 0% 0% / 80%;
+    --tooltip-foreground: 0 0% 100%;
+    --node-selected: 243 75% 59%;
+    --round-btn-shadow: #00000063;
+    --ice: #31a3cc;
+    --selected: #2196f3;
+    --error-background: #fef2f2;
+    --error-foreground: #991b1b;
+    --error: #991b1b;
+    --success-background: #f0fdf4;
+    --success-foreground: #14532d;
+    --info-background: #f0f4fd;
+    --info-foreground: #141653;
+    --high-indigo: #4338ca;
+    --medium-indigo: #6366f1;
+    --low-indigo: #e0e7ff;
+    --beta-background: rgb(219 234 254);
+    --beta-foreground: rgb(37 99 235);
+    --beta-foreground-soft: rgb(37 99 235 / 80%);
+    --chat-bot-icon: #afe6ef;
+    --chat-user-icon: #aface9;
+    --component-icon: #d8598a;
+    --flow-icon: #2f67d0;
+    --hover: #f2f4f5;
+    --disabled-run: #6366f1;
+    --filter-foreground: #4f46e5;
+    --filter-background: #eef2ff;
+    --blur-shared: #151923de;
+    --build-trigger: #dc735b;
+    --chat-trigger: #5c8be1;
+    --chat-trigger-disabled: #b4c3da;
+    --status-red: #ef4444;
+    --status-yellow: #eab308;
+    --chat-send: #000000;
+    --status-green: #4ade80;
+    --status-blue: #2563eb;
+    --status-gray: #6b7280;
+    --connection: #555;
+    --note-amber: 48 96.6% 76.7%;
+    --note-neutral: 240 5.9% 90%;
+    --note-rose: 352.7 96.1% 90%;
+    --note-blue: 213.3 96.9% 87.3%;
+    --note-lime: 80.9 88.5% 79.6%;
+    --warning: 48 96.6% 76.7%;
+    --warning-foreground: 240 6% 10%;
+    --warning-text: 0 0% 100%;
+    --error-red: 0, 86%, 97%;
+    --error-red-border: 0, 96%, 89%;
+    --code-background: 240 6% 10%;
+    --code-description-background: 240 6% 10%;
+    --code-foreground: 240 6% 90%;
+    --placeholder: 240 5% 64.9%;
+    --hard-zinc: 240 5.2% 33.9%;
+    --smooth-red: 0 93.3% 94.1%;
+    --radius: 0.65rem;
+    --datatype-pink: 333.3 71.4% 50.6%;
+    --datatype-pink-foreground: 325.7 77.8% 94.7%;
+    --datatype-yellow: 40.6 96.1% 40.4%;
+    --datatype-yellow-foreground: 54.9 96.7% 88%;
+    --datatype-blue: 221.2 83.2% 53.3%;
+    --datatype-blue-foreground: 214.3 94.6% 92.7%;
+    --datatype-gray: 215 13.8% 34.1%;
+    --datatype-gray-foreground: 220 14.3% 95.9%;
+    --datatype-lime: 84.8 85.2% 34.5%;
+    --datatype-lime-foreground: 79.6 89.1% 89.2%;
+    --datatype-red: 0 72.2% 50.6%;
+    --datatype-red-foreground: 0 93.3% 94.1%;
+    --datatype-violet: 262.1 83.3% 57.8%;
+    --datatype-violet-foreground: 251.4 91.3% 95.5%;
+    --datatype-emerald: 161.4 93.5% 30.4%;
+    --datatype-emerald-foreground: 149.3 80.4% 90%;
+    --datatype-fuchsia: 293.4 69.5% 48.8%;
+    --datatype-fuchsia-foreground: 287 100% 95.5%;
+    --datatype-purple: 271.5 81.3% 55.9%;
+    --datatype-purple-foreground: 268.7 100% 95.5%;
+    --datatype-cyan: 191.6 91.4% 36.5%;
+    --datatype-cyan-foreground: 185.1 95.9% 90.4%;
+    --datatype-indigo: 243.4 75.4% 58.6%;
+    --datatype-indigo-foreground: 226.5 100% 93.9%;
+    --datatype-orange: 20.5 90.2% 48.2%;
+    --datatype-orange-foreground: 34.3 100% 91.8%;
+    --node-ring: 240 6% 90%;
+    --neon-fuschia: 340 100% 60%;
+    --digital-orchid: 295 100% 75%;
+    --plasma-purple: 262 97% 57%;
+    --electric-blue: 248 99% 53%;
+    --holo-frost: 186 98% 80%;
+    --terminal-green: 129 98% 80%;
+    --cosmic-void: 258 95% 16%;
+    --tool-mode-gradient-1: #f480ff;
+    --tool-mode-gradient-2: #ff3276;
+    --slider-input-border: #d4d4d8;
+    --zinc-foreground: 240 5.9% 90%;
+    --accent-amber: 26 90% 37%;
+    --accent-amber-foreground: 26 90% 37%;
+    --datatype-rose: 346.8 77.2% 49.8%;
+    --datatype-rose-foreground: 355.6 100% 94.7%;
+    --agent-studio-background: #daedf8;
+    --cloud-studio-background: #d3f3ea;
+    --app-studio-background: #fff1e2;
+    --core-background: #daedf8;
+    --model-studio-background: #e9e0ff;
+    --super-agent-background: #eaf2f8;
+    --admin-background: #daedf8;
+}
+.absolute {
+    position: absolute !important;
+}
+.relative {
+    position: relative !important;
+}
+.inset-0 {
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+}
+.left-4 {
+    left: 1rem !important;
+}
+.top-1\/2 {
+    top: 50% !important;
+}
+.z-20 {
+    z-index: 20 !important;
+}
+.mx-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.mb-2 {
+    margin-bottom: 0.5rem !important;
+}
+.ml-2 {
+    margin-left: 0.5rem !important;
+}
+.mt-auto {
+    margin-top: auto !important;
+}
+.flex {
+    display: flex !important;
+}
+.inline-flex {
+    display: inline-flex !important;
+}
+.grid {
+    display: grid !important;
+}
+.hidden {
+    display: none !important;
+}
+.h-1 {
+    height: 0.25rem !important;
+}
+.h-10 {
+    height: 2.5rem !important;
+}
+.h-16 {
+    height: 4rem !important;
+}
+.h-4 {
+    height: 1rem !important;
+}
+.h-5 {
+    height: 1.25rem !important;
+}
+.h-\[52px\] {
+    height: 52px !important;
+}
+.h-full {
+    height: 100% !important;
+}
+.min-h-screen {
+    min-height: 100vh !important;
+}
+.w-12 {
+    width: 3rem !important;
+}
+.w-16 {
+    width: 4rem !important;
+}
+.w-4 {
+    width: 1rem !important;
+}
+.w-5 {
+    width: 1.25rem !important;
+}
+.w-\[1px\] {
+    width: 1px !important;
+}
+.w-full {
+    width: 100% !important;
+}
+.max-w-xl {
+    max-width: 36rem !important;
+}
+.-translate-y-1\/2 {
+    --tw-translate-y: -50% !important;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+        rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+        scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+}
+.flex-col {
+    flex-direction: column !important;
+}
+.items-center {
+    align-items: center !important;
+}
+.justify-center {
+    justify-content: center !important;
+}
+.gap-2 {
+    gap: 0.5rem !important;
+}
+.gap-4 {
+    gap: 1rem !important;
+}
+.gap-6 {
+    gap: 1.5rem !important;
+}
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0 !important;
+    margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse))) !important;
+    margin-bottom: calc(0.75rem * var(--tw-space-y-reverse)) !important;
+}
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0 !important;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse))) !important;
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse)) !important;
+}
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0 !important;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse))) !important;
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse)) !important;
+}
+.whitespace-nowrap {
+    white-space: nowrap !important;
+}
+.rounded-3xl {
+    border-radius: 1.5rem !important;
+}
+.rounded-\[14px\] {
+    border-radius: 14px !important;
+}
+.rounded-full {
+    border-radius: 9999px !important;
+}
+.border-\[1\.5px\] {
+    border-width: 1.5px !important;
+}
+.border-input {
+    border-color: hsl(var(--input)) !important;
+}
+.bg-background {
+    background-color: hsl(var(--background)) !important;
+}
+.bg-blue-600 {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(37 99 235 / var(--tw-bg-opacity)) !important;
+}
+.bg-border {
+    background-color: hsl(var(--border)) !important;
+}
+.bg-card {
+    background-color: hsl(var(--card)) !important;
+}
+.bg-gray-400 {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(156 163 175 / var(--tw-bg-opacity)) !important;
+}
+.object-contain {
+    -o-object-fit: contain !important;
+    object-fit: contain !important;
+}
+.object-cover {
+    -o-object-fit: cover !important;
+    object-fit: cover !important;
+}
+.object-center {
+    -o-object-position: center !important;
+    object-position: center !important;
+}
+.p-10 {
+    padding: 2.5rem !important;
+}
+.p-6 {
+    padding: 1.5rem !important;
+}
+.px-3 {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+}
+.px-4 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.py-1 {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+.py-2 {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+.pl-11 {
+    padding-left: 2.75rem !important;
+}
+.pr-4 {
+    padding-right: 1rem !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.text-2xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+}
+.text-3xl {
+    font-size: 1.875rem !important;
+    line-height: 2.25rem !important;
+}
+.text-\[15px\] {
+    font-size: 15px !important;
+}
+.text-lg {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+}
+.text-sm {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+}
+.font-light {
+    font-weight: 300 !important;
+}
+.font-medium {
+    font-weight: 500 !important;
+}
+.font-semibold {
+    font-weight: 600 !important;
+}
+.leading-relaxed {
+    line-height: 1.625 !important;
+}
+.tracking-tight {
+    letter-spacing: -0.025em !important;
+}
+.text-background {
+    color: hsl(var(--background)) !important;
+}
+.text-foreground {
+    color: hsl(var(--foreground)) !important;
+}
+.text-gray-600 {
+    --tw-text-opacity: 1 !important;
+    color: rgb(75 85 99 / var(--tw-text-opacity)) !important;
+}
+.text-gray-700 {
+    --tw-text-opacity: 1 !important;
+    color: rgb(55 65 81 / var(--tw-text-opacity)) !important;
+}
+.text-gray-900 {
+    --tw-text-opacity: 1 !important;
+    color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
+}
+.text-muted-foreground {
+    color: hsl(var(--muted-foreground)) !important;
+}
+.text-muted-foreground\/50 {
+    color: hsl(var(--muted-foreground) / 0.5) !important;
+}
+.shadow-sm {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+.ring-offset-background {
+    --tw-ring-offset-color: hsl(var(--background)) !important;
+}
+.transition-all {
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 0.15s !important;
+}
+.transition-colors {
+    transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 0.15s !important;
+}
+.duration-300 {
+    transition-duration: 0.3s !important;
+}
+.duration-300 {
+    animation-duration: 0.3s !important;
+}
+:focus-visible {
+    outline: none !important;
+    outline-offset: 0px !important;
+}
+.placeholder\:text-muted-foreground::placeholder {
+    color: hsl(var(--muted-foreground)) !important;
+}
+.hover\:bg-blue-700:hover {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(29 78 216 / var(--tw-bg-opacity)) !important;
+}
+.hover\:text-primary:hover {
+    color: hsl(var(--primary)) !important;
+}
+.disabled\:cursor-not-allowed:disabled {
+    cursor: not-allowed !important;
+}
+.disabled\:bg-blue-300:disabled {
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(147 197 253 / var(--tw-bg-opacity)) !important;
+}
+.disabled\:opacity-100:disabled {
+    opacity: 1 !important;
+}
+.disabled\:opacity-50:disabled {
+    opacity: 0.5 !important;
+}
+.group:hover .group-hover\:text-primary {
+    color: hsl(var(--primary)) !important;
+}
+@media (min-width: 640px) {
+    .sm\:max-w-\[28rem\] {
+        max-width: 28rem !important;
+    }
+}
+@media (min-width: 768px) {
+    .md\:text-sm {
+        font-size: 0.875rem !important;
+        line-height: 1.25rem !important;
+    }
+}
+@media (min-width: 1024px) {
+    .lg\:flex {
+        display: flex !important;
+    }
+    .lg\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+    .lg\:p-8 {
+        padding: 2rem !important;
+    }
+}
+.\[\&_svg\]\:pointer-events-none svg {
+    pointer-events: none !important;
+}
+.\[\&_svg\]\:size-4 svg {
+    width: 1rem !important;
+    height: 1rem !important;
+}
+.\[\&_svg\]\:shrink-0 svg {
+    flex-shrink: 0 !important;
+}
+body {
+    overflow: hidden;
+}
+*,
+:before,
+:after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+:before,
+:after {
+    --tw-content: "";
+}
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    margin: 0;
+    line-height: inherit;
+}
+h1 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+button,
+input {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+button {
+    text-transform: none;
+}
+button {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+}
+blockquote,
+h1,
+p {
+    margin: 0;
+}
+input::placeholder {
+    opacity: 1;
+    color: #9ca3af;
+}
+button {
+    cursor: pointer;
+}
+:disabled {
+    cursor: default;
+}
+img,
+svg {
+    display: block;
+    vertical-align: middle;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+* {
+    border-color: hsl(var(--border));
+}
+body {
+    background-color: hsl(var(--page-background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: Manrope, system-ui, sans-serif;
+}
+*,
+:before,
+:after {
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgb(59 130 246 / 0.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+}
+:root {
+    --color-bg1: rgb(255, 255, 255);
+    --color1: 255, 50, 118;
+    --color2: 244, 128, 255;
+    --color3: 117, 40, 252;
+    --color-interactive: 140, 100, 255;
+    --circle-size: 50%;
+    --blending: hard-light;
+}
+:root {
+    --swiper-theme-color: #007aff;
+}
+:root {
+    --swiper-navigation-size: 44px;
+}
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+        U+03A3-03FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggexSvfedN4.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+        U+03A3-03FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggexSvfedN4.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+        U+03A3-03FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggexSvfedN4.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+        U+03A3-03FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggexSvfedN4.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+        U+03A3-03FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggexSvfedN4.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+        U+03A3-03FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggexSvfedN4.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggqxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+        U+FE2E-FE2F;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggOxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggSxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1,
+        U+03A3-03FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggixSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+        U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323,
+        U+0329, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggmxSvfedN62Zw.woff2)
+        format("woff2");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+        U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F,
+        U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+        U+A720-A7FF;
+}
+@font-face {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/manrope/v19/xn7gYHE41ni1AdIRggexSvfedN4.woff2)
+        format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+        U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191,
+        U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

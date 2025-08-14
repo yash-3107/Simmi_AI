@@ -1,5 +1,6 @@
 <div
-    class="flex rounded-lg shadow-lg border-[3px] border-background mt-0.5 transition-all duration-300 ease-in-out z-50 w-[18rem]" style="height:90vh !important;">
+    class="flex rounded-lg shadow-lg border-[3px] border-background mt-0.5 transition-all duration-300 ease-in-out z-50 w-[18rem]"
+    style="height:90vh !important;">
     <div
         class="h-full py-4 px-3 flex flex-col justify-between relative rounded-md rounded-r-none bg-gradient-to-b from-[#DEEDFA] to-[#9ED0F9]">
         <nav class="space-y-2">
@@ -16,9 +17,8 @@
                         src="data:image/svg+xml,%3csvg%20width='24'%20height='16'%20viewBox='0%200%2024%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.34878%201.06733V1.85579C8.10966%202.44763%206.14586%204.3395%206.14586%208.00842C6.14586%208.52838%206.19987%209.76252%206.63637%2011.0221L6.63639%2011.0221C7.06164%2012.2488%207.85904%2013.5243%209.34817%2014.1654V14.9644C8.46036%2014.9294%206.93231%2014.4497%205.10354%2012.6102L5.09681%2012.6034L5.09589%2012.6025L0.692581%208.00842L5.10566%203.4042L5.10569%203.40417C5.11103%203.3986%205.11699%203.3924%205.12337%203.38577C5.14042%203.36805%205.16045%203.34723%205.17943%203.32707C5.88508%202.5884%207.15189%201.27227%209.34878%201.06733ZM18.8934%203.40389L18.8938%203.40423L23.3074%208.00843L18.8933%2012.6134C17.0656%2014.4506%2015.538%2014.9296%2014.6512%2014.9644V14.1657C16.1402%2013.5246%2016.9377%2012.2489%2017.363%2011.0221L17.363%2011.0221C17.7995%209.76252%2017.8535%208.52838%2017.8535%208.00842C17.8535%204.33959%2015.8904%202.44767%2014.6512%201.85579V1.05563C16.7368%201.13575%2018.0262%202.48513%2018.754%203.25649C18.8024%203.30794%2018.8493%203.35774%2018.8934%203.40389Z'%20stroke='%23120D0D'/%3e%3c/svg%3e"
                         alt="agent-studio" class="h-5 w-5 object-contain object-center group-hover:hidden"><img
                         src="data:image/svg+xml,%3csvg%20width='24'%20height='16'%20viewBox='0%200%2024%2016'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.34878%201.06733V1.85579C8.10966%202.44763%206.14586%204.3395%206.14586%208.00842C6.14586%208.52838%206.19987%209.76252%206.63637%2011.0221L6.63639%2011.0221C7.06164%2012.2488%207.85904%2013.5243%209.34817%2014.1654V14.9644C8.46036%2014.9294%206.93231%2014.4497%205.10354%2012.6102L5.09681%2012.6034L5.09589%2012.6025L0.692581%208.00842L5.10566%203.4042L5.10569%203.40417C5.11103%203.3986%205.11699%203.3924%205.12337%203.38577C5.14042%203.36805%205.16045%203.34723%205.17943%203.32707C5.88508%202.5884%207.15189%201.27227%209.34878%201.06733ZM18.8934%203.40389L18.8938%203.40423L23.3074%208.00843L18.8933%2012.6134C17.0656%2014.4506%2015.538%2014.9296%2014.6512%2014.9644V14.1657C16.1402%2013.5246%2016.9377%2012.2489%2017.363%2011.0221L17.363%2011.0221C17.7995%209.76252%2017.8535%208.52838%2017.8535%208.00842C17.8535%204.33959%2015.8904%202.44767%2014.6512%201.85579V1.05563C16.7368%201.13575%2018.0262%202.48513%2018.754%203.25649C18.8024%203.30794%2018.8493%203.35774%2018.8934%203.40389Z'%20stroke='url(%23paint0_diamond_6831_36877)'/%3e%3cdefs%3e%3cradialGradient%20id='paint0_diamond_6831_36877'%20cx='0'%20cy='0'%20r='1'%20gradientUnits='userSpaceOnUse'%20gradientTransform='translate(7.5%204.49988)%20rotate(39.7913)%20scale(17.1356%2020.0275)'%3e%3cstop%20stop-color='%230F0C29'/%3e%3cstop%20offset='1'%20stop-color='%230000C7'/%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e"
-                        alt="agent-studio"
-                        class="h-5 w-5 object-contain object-center hidden group-hover:block"></button></div>
-           
+                        alt="agent-studio" class="h-5 w-5 object-contain object-center hidden group-hover:block"></button></div>
+
             <div class="relative group"><button id="sidebar-logo-button-app-studio"
                     class="flex items-center justify-center w-10 h-10 rounded-lg transition-all duration-300 ease-in-out group hover:bg-white/50"
                     data-state="closed"><img src="https://vanij.adya.ai/assets/Atma-BrIuPJOP.svg" alt="app-studio"
@@ -39,7 +39,7 @@
     </div>
     <div id="sidebar-parent"
         class="h-full pt-4 pb-2 bg-background transition-all duration-300 ease-in-out overflow-hidden overflow-y-scroll relative w-56 opacity-100">
-        <div class="h-full flex flex-col overflow-y-scroll">
+        <!-- <div class="h-full flex flex-col overflow-y-scroll">
             <div class="flex items-center justify-between ml-4 mr-2 pb-2 mb-2 border-b">
                 <div class="tracking-wide truncate">Home</div><button class="p-1 rounded-lg hover:bg-accent"
                     id="panel-close-icon-button"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -176,6 +176,6 @@
                         </svg></div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

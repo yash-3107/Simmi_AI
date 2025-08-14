@@ -1,50 +1,47 @@
 $(document).ready(function () {
-    $("#sidebar-logo-button-agent-studio").on("click", function (event) {
-        $("#sidebar-logo-button-agent-studio").addClass('bg-white');
-        $("#sidebar-logo-button-app-studio").removeClass('bg-white');
-        $("#sidebar-logo-button-core").removeClass('bg-white');
+
+    function loadSidebar(url, activeButton) {
+        // Update active button styles
+        $("#sidebar-logo-button-agent-studio, #sidebar-logo-button-app-studio, #sidebar-logo-button-core")
+            .removeClass('bg-white');
+        $(activeButton).addClass('bg-white');
+
+        // AJAX load sidebar
         $.ajax({
-            url: "/agent_studio",
+            url: url,
             method: "GET",
             success: function (response) {
-                console.log("in the parent currently!!");
                 $("#sidebar-parent").html(response);
             },
             error: function (xhr, status, error) {
                 console.error("Error:", error);
             },
         });
+    }
+
+    // Click handlers
+    $("#sidebar-logo-button-agent-studio").on("click", function () {
+        loadSidebar("/agent_studio", "#sidebar-logo-button-agent-studio");
     });
-    $("#sidebar-logo-button-app-studio").on("click", function (event) {
-        $("#sidebar-logo-button-agent-studio").removeClass('bg-white');
-        $("#sidebar-logo-button-app-studio").addClass('bg-white');
-        $("#sidebar-logo-button-core").removeClass('bg-white');
-        $.ajax({
-            url: "/app_studio1",
-            method: "GET",
-            success: function (response) {
-                console.log("in the parent currently!!");
-                $("#sidebar-parent").html(response);
-            },
-            error: function (xhr, status, error) {
-                console.error("Error:", error);
-            },
-        });
+
+    $("#sidebar-logo-button-app-studio").on("click", function () {
+        loadSidebar("/app_studio1", "#sidebar-logo-button-app-studio");
     });
-    $("#sidebar-logo-button-core").on("click", function (event) {
-        $("#sidebar-logo-button-agent-studio").removeClass('bg-white');
-        $("#sidebar-logo-button-app-studio").removeClass('bg-white');
-        $("#sidebar-logo-button-core").addClass('bg-white');
-        $.ajax({
-            url: "/sidebar_home",
-            method: "GET",
-            success: function (response) {
-                console.log("in the parent currently!!");
-                $("#sidebar-parent").html(response);
-            },
-            error: function (xhr, status, error) {
-                console.error("Error:", error);
-            },
-        });
+
+    $("#sidebar-logo-button-core").on("click", function () {
+        loadSidebar("/sidebar_home", "#sidebar-logo-button-core");
     });
+
+    // Auto-load sidebar based on current URL
+    const path = window.location.pathname;
+
+    if (path.includes("/agent/")) {
+        loadSidebar("/agent_studio", "#sidebar-logo-button-agent-studio");
+    } 
+    else if (path.includes("/app")) {
+        loadSidebar("/app_studio1", "#sidebar-logo-button-app-studio");
+    } 
+    else {
+        loadSidebar("/sidebar_home", "#sidebar-logo-button-core");
+    }
 });

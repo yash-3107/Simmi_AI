@@ -3,7 +3,9 @@
 @section('title', 'Dashboard')
 
 @section('content')
-<div id="parent-main"></div>
+<div id="parent-main">
+  {!! $content ?? '' !!}
+</div>
 @endsection
 @push('styles')
 
@@ -47,6 +49,6 @@
 <link rel="stylesheet" href="{{asset('/app_studio_css/observability.css')}}">
 @endpush
 @push('scripts')
-<script src="js/sidebar.js"></script>
+<script src="{{asset('js/sidebar.js')}}"></script>
 
 @endpush

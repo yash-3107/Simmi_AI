@@ -8,71 +8,158 @@ class AgentStudioController extends Controller
 {
     public function overview()
     {
-        return view('components_for_agent_studio.overview');
+
+        if (request()->ajax()) {
+            // Return only the partial content for AJAX
+            return view('components_for_agent_studio.overview')->render();
+        }
+
+        // On normal browser load, return the full parent blade with CSS included
+        return view('index', [
+            'content' => view('components_for_agent_studio.overview')
+        ]);
     }
 
     public function projects()
     {
-        return view('components_for_agent_studio.projects');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.projects')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.projects')->render()
+        ]);
     }
 
     public function components()
     {
-        return view('components_for_agent_studio.components');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.components')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.components')->render()
+        ]);
     }
 
     public function flow_deployment()
     {
-        return view('components_for_agent_studio.flow-deployment');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.flow-deployment')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.flow-deployment')->render()
+        ]);
     }
 
     public function component_deployment()
     {
-        return view('components_for_agent_studio.component-deployment');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.component-deployment')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.component-deployment')->render()
+        ]);
     }
 
     public function observability()
     {
-        return view('components_for_agent_studio.observability');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.observability')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.observability')->render()
+        ]);
     }
 
     public function manage_users()
     {
-        return view('components_for_agent_studio.manage-users');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.manage-users')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.manage-users')->render()
+        ]);
     }
 
     public function file_manager()
     {
-        return view('components_for_agent_studio.file-manager');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.file-manager')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.file-manager')->render()
+        ]);
     }
 
     public function audit_trail()
     {
-        return view('components_for_agent_studio.audit-trail');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.audit-trail')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.audit-trail')->render()
+        ]);
     }
 
     public function key_vault()
     {
-        return view('components_for_agent_studio.key-vault');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.key-vault')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.key-vault')->render()
+        ]);
     }
 
     public function support()
     {
-        return view('components_for_agent_studio.support');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.support')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.support')->render()
+        ]);
     }
 
     public function subscription_plans()
     {
-        return view('components_for_agent_studio.subscription-plans');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.subscription-plans')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.subscription-plans')->render()
+        ]);
     }
 
     public function billing()
     {
-        return view('components_for_agent_studio.billing');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.billing')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.billing')->render()
+        ]);
     }
 
     public function faqs()
     {
-        return view('components_for_agent_studio.faqs');
+        if (request()->ajax()) {
+            return view('components_for_agent_studio.faqs')->render();
+        }
+
+        return view('index', [
+            'content' => view('components_for_agent_studio.faqs')->render()
+        ]);
     }
 }

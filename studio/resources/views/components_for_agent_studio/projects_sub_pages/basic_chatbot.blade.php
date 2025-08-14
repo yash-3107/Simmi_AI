@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/basic_chatbot.css">
+<link rel="stylesheet" href="{{ asset('agent_studio_css/basic_chatbot.css')}}">
 <main class="flex-1 overflow-auto px-6 pt-4">
   <div id="projects-module-index-container" class="space-y-3">
     <div class="flex text-2xl gap-3 items-center" id="projects-module-index-breadcrumbs-container"><svg

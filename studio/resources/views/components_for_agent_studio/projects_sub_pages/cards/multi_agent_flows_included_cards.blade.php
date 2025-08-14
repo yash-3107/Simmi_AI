@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/multi_agent_flows_included_cards.css">
+<link rel="stylesheet" href="{{ asset('agent_studio_css/multi_agent_flows_included_cards.css')}}">
 <div id="project-view-pre-built-flows-0-card-custom-card"
   class="bg-agent-studio-background p-4 pb-2 rounded-lg hover:shadow-md transition-all duration-300 flex flex-col gap-2 opacity-50 shadow-none cursor-not-allowed">
   <div class="flex gap-2 items-center justify-between">

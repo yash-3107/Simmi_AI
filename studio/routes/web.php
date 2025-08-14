@@ -14,6 +14,7 @@ Route::get('/', function () {
     return view('index');
 });
 
+
 //sidebar-main routes
 Route::get('/app_studio1', [SidebarController::class, 'app_studio']);
 Route::get('/agent_studio', [SidebarController::class, 'agent_studio']);

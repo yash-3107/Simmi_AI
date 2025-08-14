@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/bhashini_flows_included_cards.css">
+<link rel="stylesheet" href="{{ asset('agent_studio_css/bhashini_flows_included_cards.css') }}">
 <div id="project-view-pre-built-flows-0-card-custom-card"
   class="bg-agent-studio-background p-4 pb-2 rounded-lg cursor-pointer hover:shadow-md transition-all duration-300 flex flex-col gap-2">
   <div class="flex gap-2 items-center justify-between">
@@ -18,15 +18,15 @@
       <div dir="ltr" class="relative overflow-hidden w-full"
         style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
         <style>
-          [data-radix-scroll-area-viewport] {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            -webkit-overflow-scrolling: touch;
-          }
+        [data-radix-scroll-area-viewport] {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+          -webkit-overflow-scrolling: touch;
+        }
 
-          [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-            display: none
-          }
+        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+          display: none
+        }
         </style>
         <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
           style="overflow: scroll hidden;">
@@ -60,15 +60,15 @@
       <div dir="ltr" class="relative overflow-hidden w-full"
         style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
         <style>
-          [data-radix-scroll-area-viewport] {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            -webkit-overflow-scrolling: touch;
-          }
+        [data-radix-scroll-area-viewport] {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+          -webkit-overflow-scrolling: touch;
+        }
 
-          [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-            display: none
-          }
+        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+          display: none
+        }
         </style>
         <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
           style="overflow: scroll hidden;">
@@ -101,15 +101,15 @@
       <div dir="ltr" class="relative overflow-hidden w-full"
         style="position: relative; --radix-scroll-area-corner-width: 0px; --radix-scroll-area-corner-height: 0px;">
         <style>
-          [data-radix-scroll-area-viewport] {
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            -webkit-overflow-scrolling: touch;
-          }
+        [data-radix-scroll-area-viewport] {
+          scrollbar-width: none;
+          -ms-overflow-style: none;
+          -webkit-overflow-scrolling: touch;
+        }
 
-          [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-            display: none
-          }
+        [data-radix-scroll-area-viewport]::-webkit-scrollbar {
+          display: none
+        }
         </style>
         <div data-radix-scroll-area-viewport="" class="h-full w-full rounded-[inherit]"
           style="overflow: scroll hidden;">

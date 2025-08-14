@@ -156,7 +156,6 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
             </div>
           </div>
 
-
           <div data-state="inactive" data-orientation="horizontal" role="tabpanel"
             aria-labelledby="radix-:r3j:-trigger-ready-to-deploy" hidden="" id="radix-:r3j:-content-ready-to-deploy"
             tabindex="0"
@@ -167,4 +166,4 @@ px-6 pt-4" style="height:90vh !important;overflow: scroll;">
     </div>
   </div>
 </main>
-<script src="/js/agent_studio_sub_tabs/flow_deployment.js"></script>
+<script src="{{ asset('js/agent_studio_sub_tabs/flow_deployment.js') }}"></script>

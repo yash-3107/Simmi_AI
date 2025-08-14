@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/recruitment_agent_flows_included_table.css">
+<link rel="stylesheet" href="{{ asset('agent_studio_css/recruitment_agent_flows_included_table.css')}}">
 <div
   class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiTableContainer-root rounded-lg shadow border css-13xy2my"
   id="project-view-flow-listing-table-container">

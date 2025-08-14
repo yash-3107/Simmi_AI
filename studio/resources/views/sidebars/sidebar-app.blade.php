@@ -171,4 +171,4 @@
         </div>
     </div>
 </div>
-<script src="js/app_studio.js"></script>
+<script src="{{asset('js/app_studio.js')}}"></script>

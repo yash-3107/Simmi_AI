@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="agent_studio_css/flows_included_table.css">
+<link rel="stylesheet" href="{{ asset('agent_studio_css/flows_included_table.css')}}">
 <div>
   <div>
     <div
