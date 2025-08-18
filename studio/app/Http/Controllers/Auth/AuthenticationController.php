@@ -11,4 +11,9 @@ class AuthenticationController extends Controller
     {
         return view('auth.login');
     }
+
+    public function send_otp()
+    {
+        
+    }
 }

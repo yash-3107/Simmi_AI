@@ -8,11 +8,22 @@ use App\Http\Controllers\AgentStudioFlowDeploymentController;
 use App\Http\Controllers\AgentStudioComponentDeploymentController;
 use App\Http\Controllers\AgentStudioObservabilityController;
 use App\Http\Controllers\AgentStudioProjectsController;
+use App\Http\Controllers\Auth\AuthenticationController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/login', function () {
+    return view('auth.login');
+});
+
+
+//authentication
+
+Route::get('/login', [AuthenticationController::class, 'login']);
+Route::post('/send_otp', [AuthenticationController::class, 'send_otp']);
 
 
 //sidebar-main routes
@@ -20,6 +31,7 @@ Route::get('/app_studio1', [SidebarController::class, 'app_studio']);
 Route::get('/agent_studio', [SidebarController::class, 'agent_studio']);
 Route::get('/sidebar_home', [SidebarController::class, 'sidebar_home']);
 //Agent Studio Module
+
 Route::get('/studio/agent/overview', [AgentStudioController::class, 'overview']);
 Route::get('/studio/agent/projects', [AgentStudioController::class, 'projects']);
 Route::get('/studio/agent/components', [AgentStudioController::class, 'components']);
